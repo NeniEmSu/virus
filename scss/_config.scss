@@ -1,16 +1,21 @@
-$backgroudColor: #F5F5F5;
-
+$backgroudColor: #E5E5E5;
 $primary-color: #333333;
-
 $secondary-color: #2C5E8E;
-$mainFont: sans-serif;
-$fontColor: #6D6D6D;
-$lightColor: #ffffff;
-$darkColor: #333333;
-;
+$mainFont: 'Roboto',
+sans-serif;
+$secondaryFont:'Roboto Condensed',
+sans-serif;
+$headingsFontColor: #8B8B8B;
+$lightColor: #FFFFFF;
+$darkColor: #000000;
+$redColor: #D41F26;
 
 @mixin easeOut {
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
 }
 
 // Functions
