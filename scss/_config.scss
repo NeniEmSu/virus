@@ -1,0 +1,89 @@
+$backgroudColor: #F5F5F5;
+
+$primary-color: #333333;
+
+$secondary-color: #2C5E8E;
+$mainFont: sans-serif;
+$fontColor: #6D6D6D;
+$lightColor: #ffffff;
+$darkColor: #333333;
+;
+
+@mixin easeOut {
+    transition: all 500ms ease-in-out;
+}
+
+// Functions
+@function set-text-color($backgroudColor) {
+    @if(lightness($backgroudColor) > 40) {
+        @return #000000;
+    }
+
+    @else {
+        @return #ffffff;
+    }
+}
+
+
+//Media Query Mixins
+
+@mixin mediaXlLandscape {
+    @media screen and (max-width: 980px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaLandscape {
+    @media screen and (max-width: 720px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaSmLandscape {
+    @media screen and (max-width: 540px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaXXXSm {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mediaXXSm {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin mediaXSm {
+    @media screen and (max-width: 414px) {
+        @content;
+    }
+}
+
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
