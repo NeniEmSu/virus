@@ -92,3 +92,9 @@ $redColor: #D41F26;
         @content;
     }
 }
+
+@mixin mediaMenu {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}

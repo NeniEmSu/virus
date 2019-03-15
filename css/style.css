@@ -19,20 +19,6 @@ body {
   padding: 0;
   overflow-x: hidden; }
 
-a {
-  text-decoration: none;
-  transition: ease-in-out 300ms;
-  -webkit-transition: ease-in-out 300ms;
-  -moz-transition: ease-in-out 300ms;
-  -ms-transition: ease-in-out 300ms;
-  -o-transition: ease-in-out 300ms; }
-  a:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1); }
-
 button {
   cursor: pointer; }
 
@@ -103,6 +89,7 @@ header {
 
 .logo {
   position: absolute;
+  z-index: 100;
   float: left;
   margin-right: 36px;
   padding: 0;
@@ -118,7 +105,12 @@ nav ul {
   overflow: hidden;
   padding: 0;
   text-align: right;
-  margin: 0; }
+  margin: 0;
+  transition: all ease-in-out 1000ms;
+  -webkit-transition: all ease-in-out 1000ms;
+  -moz-transition: all ease-in-out 1000ms;
+  -ms-transition: all ease-in-out 1000ms;
+  -o-transition: all ease-in-out 1000ms; }
 
 nav ul li {
   display: inline-block; }
@@ -146,9 +138,9 @@ nav ul li a {
     color: #D41F26; }
 
 .menu-icon {
+  position: relative;
+  z-index: 99;
   line-height: 60px;
-  width: 100%;
-  background: #f3f3f3;
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -184,6 +176,19 @@ main {
 .jumbotron {
   background: #F2F2F2;
   margin-top: 40px; }
+  .jumbotron a {
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms; }
+    .jumbotron a:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1); }
   .jumbotron h2 {
     color: #8B8B8B;
     font-family: "Roboto Condensed", sans-serif;
@@ -250,6 +255,7 @@ main {
       text-align: center;
       color: #FFFFFF; }
   .jumbotron .btn {
+    padding: 10px 32px;
     background: #D41F26;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
     border-radius: 50px;
@@ -259,4 +265,85 @@ main {
     font-size: 20px;
     line-height: normal;
     text-align: center;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    border: none; }
+
+footer {
+  background: #000000;
+  color: #FFFFFF; }
+  footer a {
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms; }
+    footer a:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1); }
+  footer .logo {
+    position: relative;
+    line-height: 140px; }
+  footer .bottom-contact {
+    padding: 40px 0;
+    position: relative; }
+    footer .bottom-contact ul {
+      list-style: none;
+      overflow: hidden;
+      padding: 0;
+      margin: 0; }
+    footer .bottom-contact ul li {
+      display: block;
+      padding: 10px 0;
+      margin: 0; }
+    footer .bottom-contact ul li a {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: normal;
+      text-align: center;
+      transition: all ease-in-out 300ms;
+      -webkit-transition: all ease-in-out 300ms;
+      -moz-transition: all ease-in-out 300ms;
+      -ms-transition: all ease-in-out 300ms;
+      -o-transition: all ease-in-out 300ms; }
+      footer .bottom-contact ul li a:hover {
+        text-decoration: none;
+        color: #D41F26;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1); }
+      footer .bottom-contact ul li a.instagram, footer .bottom-contact ul li a.facebook {
+        margin-left: 20px; }
+
+@media screen and (max-width: 1200px) {
+  nav {
+    position: relative;
+    line-height: 0px; }
+  .logo {
+    position: absolute;
+    margin-top: -30px; }
+  nav ul {
+    max-height: 0px; }
+  .showing {
+    position: relative;
+    z-index: 99;
+    max-height: 34em;
+    background: #000000; }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    text-align: center; }
+  .menu-icon {
+    display: block; } }
