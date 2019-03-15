@@ -22,17 +22,17 @@ function style() {
 
 gulp.task('minifyImg', () =>
     gulp.src('./img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./img'))
+    .pipe(imagemin())
+    .pipe(gulp.dest('./img'))
 );
 
 gulp.task('autoPrefixer', () =>
     gulp.src('./css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('style.css'))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(gulp.dest('style.css'))
 );
 
 function watch() {
