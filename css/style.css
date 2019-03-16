@@ -394,6 +394,8 @@ main {
 
 .process {
   margin-top: 40px; }
+  .process h6 {
+    margin-top: 30px; }
 
 footer {
   background: #000000;
