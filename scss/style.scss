@@ -289,6 +289,7 @@ main {
         font-size: 80px;
         line-height: 47px;
         letter-spacing: -0.05em;
+
         margin-bottom: 40px;
     }
 
@@ -301,6 +302,43 @@ main {
             border-radius: 20px;
             margin-bottom: 40px;
 
+            justify-items: center;
+
+            img {
+                align-self: center;
+            }
+
+            &:nth-child(1) {
+                img {
+                    width: 209px;
+                    height: auto;
+                }
+            }
+
+            &:nth-child(2) {
+                img {
+                    margin: 8.5px 0;
+                    width: 182px;
+                    height: auto;
+                }
+            }
+
+            &:nth-child(3) {
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+
+            hr {
+                width: 270px;
+                align-self: center;
+
+                margin: 0;
+
+                border: 1px solid #C4C4C4;
+            }
+
             .card-title {
                 font-family: $mainFont;
                 font-style: normal;
@@ -310,7 +348,7 @@ main {
                 color: $darkColor;
             }
 
-            p {
+            small {
                 s {
                     font-family: $mainFont;
                     font-style: normal;
@@ -351,6 +389,8 @@ main {
                 line-height: normal;
 
                 color: #239A0F;
+
+                margin-right: 22px;
             }
 
             .btn {
