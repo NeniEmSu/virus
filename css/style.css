@@ -367,12 +367,18 @@ main {
   margin-top: 20px;
   border: 2px solid #C4C4C4;
   box-sizing: border-box;
-  border-radius: 50px; }
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #8B8B8B; }
 
 .contact select {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: normal;
   color: #000000; }
@@ -381,7 +387,7 @@ main {
   margin-top: -44px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: normal;
   color: #000000; }

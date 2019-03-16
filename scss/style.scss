@@ -524,12 +524,21 @@ main {
         border: 2px solid #C4C4C4;
         box-sizing: border-box;
         border-radius: 50px;
+
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+
+        color: $headingsFontColor;
+
     }
 
     select {
         font-family: $mainFont;
         font-style: normal;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 14px;
         line-height: normal;
 
@@ -542,7 +551,7 @@ main {
 
         font-family: $mainFont;
         font-style: normal;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 14px;
         line-height: normal;
 
