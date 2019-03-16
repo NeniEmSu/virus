@@ -431,7 +431,6 @@ main {
 }
 
 .cars-card {
-
     margin-bottom: 40px;
 
     h2 {
@@ -488,12 +487,14 @@ main {
             margin-left: -16px;
         }
     }
-
-
-
-
 }
 
+.contact {}
+
+
+.process {
+    margin-top: 40px;
+}
 
 footer {
     background: $darkColor;

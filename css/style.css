@@ -341,6 +341,9 @@ main {
     .cars-card .card img {
       margin-left: -16px; }
 
+.process {
+  margin-top: 40px; }
+
 footer {
   background: #000000;
   color: #FFFFFF; }
