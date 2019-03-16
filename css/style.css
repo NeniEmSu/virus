@@ -300,6 +300,47 @@ main {
     color: #FFFFFF;
     border: none; }
 
+.cars-card {
+  margin-bottom: 40px; }
+  .cars-card h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 39px;
+    letter-spacing: -0.05em;
+    color: #8B8B8B;
+    margin: 40px 0; }
+  .cars-card .card {
+    background: #000000;
+    border-radius: 20px;
+    width: 580px;
+    margin: 5px;
+    justify-content: center;
+    justify-items: center;
+    align-self: center; }
+    .cars-card .card h4 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: normal;
+      text-align: right;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      justify-self: center; }
+      .cars-card .card h4 span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+        text-align: right;
+        letter-spacing: 0.05em;
+        color: #FFFFFF; }
+    .cars-card .card img {
+      margin-left: -16px; }
+
 footer {
   background: #000000;
   color: #FFFFFF; }

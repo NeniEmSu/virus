@@ -430,6 +430,70 @@ main {
 
 }
 
+.cars-card {
+
+    margin-bottom: 40px;
+
+    h2 {
+        font-family: $secondaryFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 39px;
+        letter-spacing: -0.05em;
+
+        color: $headingsFontColor;
+
+        margin: 40px 0;
+    }
+
+    .card {
+        background: #000000;
+        border-radius: 20px;
+        width: 580px;
+
+        margin: 5px;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+
+        h4 {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: normal;
+            text-align: right;
+            letter-spacing: 0.05em;
+
+            color: $lightColor;
+
+            justify-self: center;
+
+            span {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: normal;
+                text-align: right;
+                letter-spacing: 0.05em;
+
+                color: $lightColor;
+
+            }
+        }
+
+        img {
+            margin-left: -16px;
+        }
+    }
+
+
+
+
+}
+
 
 footer {
     background: $darkColor;
@@ -511,10 +575,6 @@ footer {
         }
     }
 }
-
-
-
-
 
 
 @import "mobile";
