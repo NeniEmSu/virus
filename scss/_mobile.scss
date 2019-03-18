@@ -36,11 +36,367 @@
 
 @include mediaXl {}
 
-@include mediaLg {}
+@include mediaLg {
+    .hide {
+        display: none;
+    }
 
-@include mediaMd {}
+    .contact {
+        .card {
+            background: $lightColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+            height: 350px;
+        }
 
-@include mediaSm {}
+        h3 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+            color: $darkColor;
+
+            span.red {
+                font-family: $secondaryFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+                color: $redColor;
+            }
+        }
+
+        input,
+        select {
+            height: 40px;
+            margin-top: 10px;
+            border: 2px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 50px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: normal;
+            color: $headingsFontColor;
+
+            &:focus {
+                border: 2px solid $redColor;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        select {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        p {
+            margin-top: -80px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        .btn {
+            padding: 10px 35px;
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+            color: $lightColor;
+            border: none;
+            margin-top: 40px;
+        }
+    }
+}
+
+@include mediaMd {
+
+    .hide,
+    .hide-md {
+        display: none;
+    }
+
+    .contact {
+        .card {
+            background: $lightColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+        }
+
+        h3 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+            color: $darkColor;
+
+            span.red {
+                font-family: $secondaryFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+                color: $redColor;
+            }
+        }
+
+        input,
+        select {
+            height: 40px;
+            margin-top: 10px;
+            border: 2px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 50px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: normal;
+            color: $headingsFontColor;
+
+            &:focus {
+                border: 2px solid $redColor;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        select {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        p {
+            margin-top: -95px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        .btn {
+            padding: 10px 35px;
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+            color: $lightColor;
+            border: none;
+            margin-top: 40px;
+        }
+    }
+
+
+
+
+    footer {
+        background: $darkColor;
+        color: $lightColor;
+
+        a {
+            text-decoration: none;
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
+
+            &:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+
+        .logo {
+            position: absolute;
+            line-height: 140px;
+        }
+
+        .bottom-contact {
+            padding: 40px 0;
+            background: $darkColor;
+
+            ul {
+                position: relative;
+                display: block;
+                text-align: center;
+                list-style: none;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                margin-top: 60px;
+            }
+
+            ul li {
+                display: block;
+                padding: 10px 0;
+                margin: 0;
+            }
+
+            ul li a {
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                color: $lightColor;
+                font-family: $secondaryFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: normal;
+                text-align: center;
+                transition: all ease-in-out 300ms;
+                -webkit-transition: all ease-in-out 300ms;
+                -moz-transition: all ease-in-out 300ms;
+                -ms-transition: all ease-in-out 300ms;
+                -o-transition: all ease-in-out 300ms;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $redColor;
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                }
+
+                &.instagram,
+                &.facebook {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include mediaSm {
+
+    .hide,
+    .hide-md,
+    .hide-sm {
+        display: none;
+    }
+
+    .top-contacts ul li {
+        display: inline-block;
+        padding: 11px 10px !important;
+        margin: 0;
+    }
+
+
+    .contact {
+        .card {
+            background: $lightColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+            padding: 10px !important;
+            height: 480px;
+        }
+
+        h3 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            color: $darkColor;
+
+            span.red {
+                font-family: $secondaryFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: normal;
+                color: $redColor;
+            }
+        }
+
+        input,
+        select {
+            height: 40px;
+            margin-top: 10px;
+            border: 2px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 50px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: normal;
+            color: $headingsFontColor;
+
+            &:focus {
+                border: 2px solid $redColor;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        select {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        p {
+            margin-top: -100px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        .btn {
+            padding: 10px 35px;
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+            color: $lightColor;
+            border: none;
+            margin-top: 50px;
+        }
+    }
+
+}
 
 @include mediaXSm {}
 

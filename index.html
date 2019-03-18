@@ -30,6 +30,49 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}    
+    </style>
 </head>
 
 <body>
@@ -38,20 +81,20 @@
             <div class="top-contacts">
                 <ul>
                     <li>
-                        <a target="_blank" href="https://www.google.com/maps/place/Prymiska+Street,+15,+Ternopil,+Ternopil's'ka+oblast,+46002/@49.5580616,25.5647496,17z/data=!3m1!4b1!4m5!3m4!1s0x473036d3732e7d65:0x644ab0160d8ccdf2!8m2!3d49.5580616!4d25.5669383">Україна,
-                            <span>м. Тернопіль, вул. Приміська 15А</span>
+                        <a target="_blank" href="https://www.google.com/maps/place/Prymiska+Street,+15,+Ternopil,+Ternopil's'ka+oblast,+46002/@49.5580616,25.5647496,17z/data=!3m1!4b1!4m5!3m4!1s0x473036d3732e7d65:0x644ab0160d8ccdf2!8m2!3d49.5580616!4d25.5669383">
+                            <span class="hide">Україна, м. Тернопіль, вул. Приміська 15А</span>
 
-                            <i class="fas fa-map-marker-alt p-2"></i>
+                            <i class="fa fa-map-marker-alt bounce p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+380673334040"><span>+38 (067) 333-40-40</span>
-
-                            <i class="fas fa-phone p-2"></i>
+                        <a href="tel:+380673334040"> <span class="hide-sm">+38 (067) 333-40-40</span>
+                            <i style="transform:rotate(90deg);" class="fa fa-phone p-2"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:deteylingvirus@gmail.com"><span>deteylingvirus@gmail.com</span>
+                        <a href="
+                                mailto:deteylingvirus@gmail.com"> <span class="hide-md">deteylingvirus@gmail.com</span>
 
                             <i class="far fa-envelope p-2"></i>
                         </a>
@@ -296,11 +339,11 @@
                 <div class=" container contact">
                     <div class="card p-5">
                         <form class="text-right">
-                            <h3 class="text-left"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ ДЕТЕЙЛІНГА</span><br>
+                            <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ ДЕТЕЙЛІНГА</span><br>
                                 ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
 
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-6">
 
 
                                     <div class="form-group">
@@ -318,7 +361,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-md-6">
 
 
                                     <div class="form-group">
@@ -333,7 +376,8 @@
                                     <button type="submit" class="btn">ВІДПРАВИТИ</button>
                                 </div>
                             </div>
-                            <p class="text-left">Відправте запит, і наш менеджер зв’яжеться з <br> вами найближчим
+                            <p class="text-left col-12">Відправте запит, і наш менеджер зв’яжеться з вами
+                                найближчим
                                 часом</p>
 
                         </form>
@@ -384,7 +428,7 @@
                         <img src="img/logo.png" alt="virus logo">
                     </a>
                 </div>
-                <ul class="text-right">
+                <ul>
 
                     <li>
                         <a href="mailto:deteylingvirus@gmail.com">deteylingvirus@gmail.com
