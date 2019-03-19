@@ -32,6 +32,22 @@
         display: block;
     }
 
+    .top-grid {
+        h1 {
+            text-align: center !important;
+        }
+
+        a {
+            margin: 0 auto !important;
+            padding: 0 !important;
+
+            img {
+                margin: 0 auto !important;
+                padding: 0 !important;
+            }
+        }
+    }
+
 }
 
 @include mediaXl {}

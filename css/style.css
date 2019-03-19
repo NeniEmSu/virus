@@ -617,7 +617,15 @@ footer {
     padding: 20px;
     text-align: center; }
   .menu-icon {
-    display: block; } }
+    display: block; }
+  .top-grid h1 {
+    text-align: center !important; }
+  .top-grid a {
+    margin: 0 auto !important;
+    padding: 0 !important; }
+    .top-grid a img {
+      margin: 0 auto !important;
+      padding: 0 !important; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .hide {
