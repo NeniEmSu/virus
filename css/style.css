@@ -75,6 +75,8 @@ header {
       display: inline-block;
       padding: 11px 20px;
       margin: 0; }
+      header .top-contacts ul li.instagram, header .top-contacts ul li.facebook {
+        float: right; }
     header .top-contacts ul li a {
       padding: 0;
       margin: 0;
@@ -99,6 +101,120 @@ header {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1); }
+    header .top-contacts .bounce {
+      display: inline-block;
+      position: relative;
+      -moz-animation: bounce 500ms infinite linear;
+      -o-animation: bounce 500ms infinite linear;
+      -webkit-animation: bounce 500ms infinite linear;
+      animation: bounce 500ms infinite linear; }
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0; }
+  50% {
+    top: -0.2em; }
+  70% {
+    top: -0.3em; }
+  100% {
+    top: 0; } }
+
+@-moz-keyframes bounce {
+  0% {
+    top: 0; }
+  50% {
+    top: -0.2em; }
+  70% {
+    top: -0.3em; }
+  100% {
+    top: 0; } }
+
+@-o-keyframes bounce {
+  0% {
+    top: 0; }
+  50% {
+    top: -0.2em; }
+  70% {
+    top: -0.3em; }
+  100% {
+    top: 0; } }
+
+@-ms-keyframes bounce {
+  header .top-contacts 0% {
+    top: 0; }
+  header .top-contacts 50% {
+    top: -0.2em; }
+  header .top-contacts 70% {
+    top: -0.3em; }
+  header .top-contacts 100% {
+    top: 0; } }
+
+@keyframes bounce {
+  0% {
+    top: 0; }
+  50% {
+    top: -0.2em; }
+  70% {
+    top: -0.3em; }
+  100% {
+    top: 0; } }
+    header .top-contacts .ring {
+      display: inline-block;
+      position: relative;
+      -moz-animation: ring 500ms infinite linear;
+      -o-animation: ring 500ms infinite linear;
+      -webkit-animation: ring 500ms infinite linear;
+      animation: ring 500ms infinite linear; }
+
+@-webkit-keyframes ring {
+  0% {
+    right: 0; }
+  50% {
+    right: -0.1em; }
+  70% {
+    right: -0.2em; }
+  100% {
+    right: 0; } }
+
+@-moz-keyframes ring {
+  0% {
+    right: 0; }
+  50% {
+    right: -0.1em; }
+  70% {
+    right: -0.2em; }
+  100% {
+    right: 0; } }
+
+@-o-keyframes ring {
+  0% {
+    right: 0; }
+  50% {
+    right: -0.1em; }
+  70% {
+    right: -0.2em; }
+  100% {
+    right: 0; } }
+
+@-ms-keyframes ring {
+  header .top-contacts 0% {
+    right: 0; }
+  header .top-contacts 50% {
+    right: -0.1em; }
+  header .top-contacts 70% {
+    right: -0.2em; }
+  header .top-contacts 100% {
+    right: 0; } }
+
+@keyframes ring {
+  0% {
+    right: 0; }
+  50% {
+    right: -0.1em; }
+  70% {
+    right: -0.2em; }
+  100% {
+    right: 0; } }
 
 .logo {
   position: absolute;
