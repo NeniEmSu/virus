@@ -323,6 +323,11 @@ main {
     justify-items: center;
     align-self: center;
     padding: 0; }
+    .cars-card .card.five {
+      height: 164px; }
+      .cars-card .card.five img {
+        min-height: 170px;
+        margin-left: -5px; }
     .cars-card .card h4 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
@@ -332,8 +337,7 @@ main {
       text-align: right;
       letter-spacing: 0.05em;
       color: #FFFFFF;
-      line-height: 140px;
-      margin-right: 20px; }
+      margin-right: 10px; }
       .cars-card .card h4 span {
         font-family: "Roboto", sans-serif;
         font-style: normal;
@@ -343,8 +347,6 @@ main {
         text-align: right;
         letter-spacing: 0.05em;
         color: #FFFFFF; }
-    .cars-card .card img {
-      height: 164px; }
 
 .contact .card {
   background: #FFFFFF;

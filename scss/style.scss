@@ -425,6 +425,7 @@ main {
         margin: 40px 0;
     }
 
+
     .card {
         background: #000000;
         border-radius: 20px;
@@ -435,6 +436,15 @@ main {
         align-self: center;
         padding: 0;
 
+        &.five {
+            height: 164px;
+
+            img {
+                min-height: 170px;
+                margin-left: -5px;
+            }
+        }
+
         h4 {
             font-family: $mainFont;
             font-style: normal;
@@ -444,8 +454,7 @@ main {
             text-align: right;
             letter-spacing: 0.05em;
             color: $lightColor;
-            line-height: 140px;
-            margin-right: 20px;
+            margin-right: 10px;
 
             span {
                 font-family: $mainFont;
@@ -459,9 +468,7 @@ main {
             }
         }
 
-        img {
-            height: 164px;
-        }
+        img {}
     }
 }
 
