@@ -284,13 +284,14 @@ main {
     margin: 0;
     padding: 0; }
   main .top-grid a img {
+    opacity: 0.9;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
     -moz-transition: all ease-in-out 300ms;
     -ms-transition: all ease-in-out 300ms;
     -o-transition: all ease-in-out 300ms; }
     main .top-grid a img:hover {
-      opacity: 0.9;
+      opacity: 1;
       text-decoration: none;
       color: #D41F26;
       transform: scale(1.02);

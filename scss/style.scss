@@ -423,6 +423,7 @@ main {
     .top-grid {
 
         a img {
+            opacity: 0.9;
             transition: all ease-in-out 300ms;
             -webkit-transition: all ease-in-out 300ms;
             -moz-transition: all ease-in-out 300ms;
@@ -430,7 +431,7 @@ main {
             -o-transition: all ease-in-out 300ms;
 
             &:hover {
-                opacity: 0.9;
+                opacity: 1;
                 text-decoration: none;
                 color: $redColor;
                 transform: scale(1.02);
