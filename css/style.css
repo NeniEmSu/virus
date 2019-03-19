@@ -283,6 +283,21 @@ main {
   main .no-gutters {
     margin: 0;
     padding: 0; }
+  main .top-grid a img {
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms; }
+    main .top-grid a img:hover {
+      opacity: 0.9;
+      text-decoration: none;
+      color: #D41F26;
+      transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      -o-transform: scale(1.02); }
   main h1 {
     color: #8B8B8B;
     font-family: "Roboto Condensed", sans-serif;

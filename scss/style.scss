@@ -420,6 +420,30 @@ main {
         padding: 0;
     }
 
+    .top-grid {
+
+        a img {
+            transition: all ease-in-out 300ms;
+            -webkit-transition: all ease-in-out 300ms;
+            -moz-transition: all ease-in-out 300ms;
+            -ms-transition: all ease-in-out 300ms;
+            -o-transition: all ease-in-out 300ms;
+
+            &:hover {
+                opacity: 0.9;
+                text-decoration: none;
+                color: $redColor;
+                transform: scale(1.02);
+                -webkit-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                -o-transform: scale(1.02);
+            }
+        }
+
+
+    }
+
     h1 {
         color: $headingsFontColor;
         font-family: $secondaryFont;
