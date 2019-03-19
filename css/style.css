@@ -104,10 +104,10 @@ header {
     header .top-contacts .bounce {
       display: inline-block;
       position: relative;
-      -moz-animation: bounce 500ms infinite linear;
-      -o-animation: bounce 500ms infinite linear;
-      -webkit-animation: bounce 500ms infinite linear;
-      animation: bounce 500ms infinite linear; }
+      -moz-animation: bounce 1000ms infinite linear;
+      -o-animation: bounce 1000ms infinite linear;
+      -webkit-animation: bounce 1000ms infinite linear;
+      animation: bounce 1000ms infinite linear; }
 
 @-webkit-keyframes bounce {
   0% {
@@ -168,53 +168,150 @@ header {
 
 @-webkit-keyframes ring {
   0% {
-    right: 0; }
-  50% {
-    right: -0.1em; }
-  70% {
-    right: -0.2em; }
-  100% {
-    right: 0; } }
-
-@-moz-keyframes ring {
-  0% {
-    right: 0; }
-  50% {
-    right: -0.1em; }
-  70% {
-    right: -0.2em; }
-  100% {
-    right: 0; } }
-
-@-o-keyframes ring {
-  0% {
-    right: 0; }
-  50% {
-    right: -0.1em; }
-  70% {
-    right: -0.2em; }
-  100% {
-    right: 0; } }
-
-@-ms-keyframes ring {
-  header .top-contacts 0% {
-    right: 0; }
-  header .top-contacts 50% {
-    right: -0.1em; }
-  header .top-contacts 70% {
-    right: -0.2em; }
-  header .top-contacts 100% {
-    right: 0; } }
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  2% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  4% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg); }
+  6% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg); }
+  8% {
+    -webkit-transform: rotate(-22deg);
+    transform: rotate(-22deg); }
+  10% {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg); }
+  12% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg); }
+  14% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg); }
+  16% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg); }
+  18% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg); }
+  20% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 
 @keyframes ring {
   0% {
-    right: 0; }
-  50% {
-    right: -0.1em; }
-  70% {
-    right: -0.2em; }
-  100% {
-    right: 0; } }
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  2% {
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  4% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg); }
+  6% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg); }
+  8% {
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-22deg); }
+  10% {
+    -webkit-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    transform: rotate(22deg); }
+  12% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg); }
+  14% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg); }
+  16% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg); }
+  18% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg); }
+  20% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+    header .top-contacts .faa-ring.animated,
+    header .top-contacts .faa-ring.animated-hover:hover,
+    header .top-contacts .faa-parent.animated-hover:hover > .faa-ring {
+      -webkit-animation: ring 2s ease infinite;
+      animation: ring 2s ease infinite;
+      transform-origin-x: 50%;
+      transform-origin-y: 0px;
+      transform-origin-z: initial; }
+
+@-webkit-keyframes horizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  6% {
+    -webkit-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  12% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  18% {
+    -webkit-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  24% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  30% {
+    -webkit-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  36% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes horizontal {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  6% {
+    -webkit-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  12% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  18% {
+    -webkit-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  24% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  30% {
+    -webkit-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    transform: translate(5px, 0); }
+  36% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+    header .top-contacts .faa-horizontal.animated,
+    header .top-contacts .faa-horizontal.animated-hover:hover,
+    header .top-contacts .faa-parent.animated-hover:hover > .faa-horizontal {
+      -webkit-animation: horizontal 2s ease infinite;
+      animation: horizontal 2s ease infinite; }
 
 .logo {
   position: absolute;
@@ -450,6 +547,7 @@ main {
     background: #000000;
     border-radius: 20px;
     max-width: 580px;
+    height: 168px;
     margin: 5px 0;
     justify-content: center;
     justify-items: center;
@@ -458,7 +556,6 @@ main {
     .cars-card .card.five {
       height: 164px; }
       .cars-card .card.five img {
-        min-height: 170px;
         margin-left: -5px; }
     .cars-card .card h4 {
       font-family: "Roboto", sans-serif;
@@ -479,6 +576,9 @@ main {
         text-align: right;
         letter-spacing: 0.05em;
         color: #FFFFFF; }
+    .cars-card .card img {
+      height: 168px;
+      margin-left: -1px; }
 
 .contact .card {
   background: #FFFFFF;
@@ -635,13 +735,44 @@ footer {
   .menu-icon {
     display: block; }
   .top-grid h1 {
-    text-align: center !important; }
+    text-align: center !important;
+    font-size: 62px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    margin-bottom: 40px; }
   .top-grid a {
     margin: 0 auto !important;
     padding: 0 !important; }
     .top-grid a img {
       margin: 0 auto !important;
-      padding: 0 !important; } }
+      padding: 0 !important; }
+  .top-grid .col-md {
+    margin: 0 auto !important;
+    padding: 0 !important; }
+    .top-grid .col-md a {
+      margin: 0 auto !important;
+      padding: 0 !important; }
+      .top-grid .col-md a img {
+        margin: 0 auto !important;
+        padding: 0 !important; }
+  .jumbotron h2 {
+    color: #8B8B8B;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px !important;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    margin-bottom: 40px; }
+  .cars-card h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 39px;
+    letter-spacing: -0.05em;
+    color: #8B8B8B;
+    margin: 40px 0; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .hide {
@@ -918,3 +1049,36 @@ footer {
     color: #FFFFFF;
     border: none;
     margin-top: 50px; } }
+
+@media screen and (max-width: 360px) {
+  .jumbotron {
+    text-align: center; }
+    .jumbotron h2 {
+      color: #8B8B8B;
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px !important;
+      line-height: 47px;
+      letter-spacing: -0.05em;
+      margin-bottom: 40px; }
+  .cars-card {
+    text-align: center; }
+    .cars-card h2 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 39px;
+      letter-spacing: -0.05em;
+      color: #8B8B8B;
+      margin: 40px 0; }
+  .jumbotron .card-deck .card {
+    max-width: 260px;
+    min-width: 250px;
+    height: 343px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    justify-items: center; } }

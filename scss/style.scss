@@ -143,10 +143,10 @@ header {
         .bounce {
             display: inline-block;
             position: relative;
-            -moz-animation: bounce 500ms infinite linear;
-            -o-animation: bounce 500ms infinite linear;
-            -webkit-animation: bounce 500ms infinite linear;
-            animation: bounce 500ms infinite linear;
+            -moz-animation: bounce 1000ms infinite linear;
+            -o-animation: bounce 1000ms infinite linear;
+            -webkit-animation: bounce 1000ms infinite linear;
+            animation: bounce 1000ms infinite linear;
         }
 
         @-webkit-keyframes bounce {
@@ -250,93 +250,228 @@ header {
 
         @-webkit-keyframes ring {
             0% {
-                right: 0;
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
             }
 
-            50% {
-                right: -0.1em;
+            2% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
             }
 
-            70% {
-                right: -0.2em;
+            4% {
+                -webkit-transform: rotate(-18deg);
+                transform: rotate(-18deg);
             }
 
-            100% {
-                right: 0;
-            }
-        }
-
-        @-moz-keyframes ring {
-            0% {
-                right: 0;
+            6% {
+                -webkit-transform: rotate(18deg);
+                transform: rotate(18deg);
             }
 
-            50% {
-                right: -0.1em;
+            8% {
+                -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
             }
 
-            70% {
-                right: -0.2em;
+            10% {
+                -webkit-transform: rotate(22deg);
+                transform: rotate(22deg);
             }
 
-            100% {
-                right: 0;
-            }
-        }
-
-        @-o-keyframes ring {
-            0% {
-                right: 0;
+            12% {
+                -webkit-transform: rotate(-18deg);
+                transform: rotate(-18deg);
             }
 
-            50% {
-                right: -0.1em;
+            14% {
+                -webkit-transform: rotate(18deg);
+                transform: rotate(18deg);
             }
 
-            70% {
-                right: -0.2em;
+            16% {
+                -webkit-transform: rotate(-12deg);
+                transform: rotate(-12deg);
             }
 
-            100% {
-                right: 0;
-            }
-        }
-
-        @-ms-keyframes ring {
-            0% {
-                right: 0;
+            18% {
+                -webkit-transform: rotate(12deg);
+                transform: rotate(12deg);
             }
 
-            50% {
-                right: -0.1em;
-            }
-
-            70% {
-                right: -0.2em;
-            }
-
-            100% {
-                right: 0;
+            20% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
             }
         }
 
         @keyframes ring {
             0% {
-                right: 0;
+                -webkit-transform: rotate(-15deg);
+                -ms-transform: rotate(-15deg);
+                transform: rotate(-15deg);
             }
 
-            50% {
-                right: -0.1em;
+            2% {
+                -webkit-transform: rotate(15deg);
+                -ms-transform: rotate(15deg);
+                transform: rotate(15deg);
             }
 
-            70% {
-                right: -0.2em;
+            4% {
+                -webkit-transform: rotate(-18deg);
+                -ms-transform: rotate(-18deg);
+                transform: rotate(-18deg);
             }
 
-            100% {
-                right: 0;
+            6% {
+                -webkit-transform: rotate(18deg);
+                -ms-transform: rotate(18deg);
+                transform: rotate(18deg);
+            }
+
+            8% {
+                -webkit-transform: rotate(-22deg);
+                -ms-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+            }
+
+            10% {
+                -webkit-transform: rotate(22deg);
+                -ms-transform: rotate(22deg);
+                transform: rotate(22deg);
+            }
+
+            12% {
+                -webkit-transform: rotate(-18deg);
+                -ms-transform: rotate(-18deg);
+                transform: rotate(-18deg);
+            }
+
+            14% {
+                -webkit-transform: rotate(18deg);
+                -ms-transform: rotate(18deg);
+                transform: rotate(18deg);
+            }
+
+            16% {
+                -webkit-transform: rotate(-12deg);
+                -ms-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+            }
+
+            18% {
+                -webkit-transform: rotate(12deg);
+                -ms-transform: rotate(12deg);
+                transform: rotate(12deg);
+            }
+
+            20% {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
             }
         }
+
+        .faa-ring.animated,
+        .faa-ring.animated-hover:hover,
+        .faa-parent.animated-hover:hover>.faa-ring {
+            -webkit-animation: ring 2s ease infinite;
+            animation: ring 2s ease infinite;
+            transform-origin-x: 50%;
+            transform-origin-y: 0px;
+            transform-origin-z: initial;
+        }
+
+        @-webkit-keyframes horizontal {
+            0% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            6% {
+                -webkit-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            12% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            18% {
+                -webkit-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            24% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            30% {
+                -webkit-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            36% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes horizontal {
+            0% {
+                -webkit-transform: translate(0, 0);
+                -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            6% {
+                -webkit-transform: translate(5px, 0);
+                -ms-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            12% {
+                -webkit-transform: translate(0, 0);
+                -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            18% {
+                -webkit-transform: translate(5px, 0);
+                -ms-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            24% {
+                -webkit-transform: translate(0, 0);
+                -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            30% {
+                -webkit-transform: translate(5px, 0);
+                -ms-transform: translate(5px, 0);
+                transform: translate(5px, 0);
+            }
+
+            36% {
+                -webkit-transform: translate(0, 0);
+                -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+        }
+
+        .faa-horizontal.animated,
+        .faa-horizontal.animated-hover:hover,
+        .faa-parent.animated-hover:hover>.faa-horizontal {
+            -webkit-animation: horizontal 2s ease infinite;
+            animation: horizontal 2s ease infinite;
+        }
+
+
     }
 }
 
@@ -655,6 +790,7 @@ main {
         background: #000000;
         border-radius: 20px;
         max-width: 580px;
+        height: 168px;
         margin: 5px 0;
         justify-content: center;
         justify-items: center;
@@ -665,7 +801,6 @@ main {
             height: 164px;
 
             img {
-                min-height: 170px;
                 margin-left: -5px;
             }
         }
@@ -693,7 +828,10 @@ main {
             }
         }
 
-        img {}
+        img {
+            height: 168px;
+            margin-left: -1px;
+        }
     }
 }
 
