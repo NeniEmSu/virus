@@ -100,6 +100,43 @@
         display: none;
     }
 
+    .top-grid {
+        h1 {
+            text-align: center !important;
+            font-size: 62px;
+            line-height: 47px;
+            letter-spacing: -0.05em;
+            margin-bottom: 40px;
+        }
+
+        a {
+            margin: 0 auto !important;
+            padding: 0 !important;
+
+            img {
+                margin: 0 auto !important;
+                padding: 0 !important;
+            }
+        }
+
+        .col-md {
+
+            margin: 0 auto !important;
+            padding: 0 !important;
+
+            a {
+                margin: 0 auto !important;
+                padding: 0 !important;
+
+                img {
+                    margin: 0 auto !important;
+                    padding: 0 !important;
+                }
+            }
+
+        }
+    }
+
     .contact {
         .card {
             background: $lightColor;
@@ -357,58 +394,15 @@
         }
     }
 
-    .cars-card {
-        margin-bottom: 40px;
-
-        h2 {
-            font-family: $secondaryFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 80px;
-            line-height: 39px;
-            letter-spacing: -0.05em;
-            color: $headingsFontColor;
-            margin: 40px 0;
-        }
-
-
-        .card {
-            background: transparent;
-            border-radius: 20px;
-            max-width: 580px;
-            height: 168px;
-            margin: 5px 0;
-            justify-content: center;
-            justify-items: center;
-            align-self: center;
-            padding: 0;
-            border: 0;
-
-            h4 {
-                font-family: $mainFont;
-                font-style: normal;
-                font-weight: bolder;
-                font-size: 20px;
-                line-height: normal;
-                text-align: right;
-                letter-spacing: 0.05em;
-                color: $redColor;
-                margin-right: 10px;
-
-                span {
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 20px;
-                    line-height: normal;
-                    text-align: right;
-                    letter-spacing: 0.05em;
-                    color: $redColor;
-                }
+    footer {
+        .logo {
+            img {
+                margin-left: calc(100vw - 65vw);
             }
-
         }
     }
+
+
 }
 
 @include mediaSm {
@@ -509,9 +503,85 @@
         }
     }
 
+    .cars-card {
+        margin-bottom: 40px;
+
+        h2 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 39px;
+            letter-spacing: -0.05em;
+            color: $headingsFontColor;
+            margin: 40px 0;
+        }
+
+
+        .card {
+            background: transparent;
+            border-radius: 20px;
+            max-width: 580px;
+            height: 168px;
+            margin: 5px 0;
+            justify-content: center;
+            justify-items: center;
+            align-self: center;
+            padding: 0;
+            border: 0;
+
+            h4 {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: $lightColor;
+                margin-right: 10px;
+                background: $darkColor;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+
+
+                span {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: normal;
+                    text-align: right;
+                    letter-spacing: 0.05em;
+                    color: $lightColor;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        .logo {
+            img {
+                margin-left: calc(100vw - 70vw);
+            }
+        }
+    }
+
 }
 
-@include mediaXSm {}
+@include mediaXSm {
+    footer {
+        .logo {
+            img {
+                margin-left: calc(100vw - 75vw);
+            }
+        }
+    }
+}
 
 @include mediaXXSm {
 
