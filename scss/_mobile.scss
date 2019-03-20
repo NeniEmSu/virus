@@ -356,6 +356,59 @@
             }
         }
     }
+
+    .cars-card {
+        margin-bottom: 40px;
+
+        h2 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 39px;
+            letter-spacing: -0.05em;
+            color: $headingsFontColor;
+            margin: 40px 0;
+        }
+
+
+        .card {
+            background: transparent;
+            border-radius: 20px;
+            max-width: 580px;
+            height: 168px;
+            margin: 5px 0;
+            justify-content: center;
+            justify-items: center;
+            align-self: center;
+            padding: 0;
+            border: 0;
+
+            h4 {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bolder;
+                font-size: 20px;
+                line-height: normal;
+                text-align: right;
+                letter-spacing: 0.05em;
+                color: $redColor;
+                margin-right: 10px;
+
+                span {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: normal;
+                    text-align: right;
+                    letter-spacing: 0.05em;
+                    color: $redColor;
+                }
+            }
+
+        }
+    }
 }
 
 @include mediaSm {

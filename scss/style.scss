@@ -483,9 +483,14 @@ header {
     margin-right: 36px;
     padding: 0;
     margin: 0;
+
+    img {
+        height: 2.4rem;
+    }
 }
 
 nav {
+    margin-left: 0;
     position: relative;
     line-height: 90px;
 }
@@ -622,7 +627,7 @@ main {
 
 .jumbotron {
     background: #F2F2F2;
-    padding: 0rem 2rem 40px 2rem;
+    padding: 40px 2rem;
     margin: 0;
     margin-top: 40px;
 
@@ -845,13 +850,80 @@ main {
         align-self: center;
         padding: 0;
 
-        &.five {
-            height: 164px;
-
-            img {
-                margin-left: -5px;
-            }
+        .work-one {
+            box-sizing: border-box;
+            background-image: url("../img/car1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: border-box;
+            height: 100%;
+            max-height: 168px;
         }
+
+        .work-two {
+            background-image: url("../img/car2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: border-box;
+            height: 100%;
+        }
+
+        .work-three {
+            background-image: url("../img/car3.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
+        .work-four {
+            background-image: url("../img/car4.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
+        .work-five {
+            background-image: url("../img/car5.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
+        .work-six {
+            background-image: url("../img/car6.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
+        .work-seven {
+            background-image: url("../img/car7.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
+        .work-eight {
+            background-image: url("../img/car8.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-origin: padding-box;
+            height: 100%;
+        }
+
 
         h4 {
             font-family: $mainFont;
@@ -882,6 +954,7 @@ main {
         }
     }
 }
+
 
 .contact {
     .card {
