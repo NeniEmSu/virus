@@ -99,11 +99,12 @@ header {
             padding: 0;
             text-align: center;
             margin: 0;
+            line-height: 40px;
         }
 
         ul li {
             display: inline-block;
-            padding: 11px 20px;
+            padding: 0 20px;
             margin: 0;
 
             &.instagram,
@@ -486,7 +487,7 @@ header {
 
 nav {
     position: relative;
-    line-height: 70px;
+    line-height: 90px;
 }
 
 nav ul {
@@ -621,6 +622,8 @@ main {
 
 .jumbotron {
     background: #F2F2F2;
+    padding: 0rem 2rem 40px 2rem;
+    margin: 0;
     margin-top: 40px;
 
     a .btn {
@@ -655,6 +658,7 @@ main {
 
     .card-deck {
         .card {
+            width: 100%;
             max-width: 343px;
             min-width: 285px;
             height: 343px;
@@ -1007,7 +1011,7 @@ footer {
 
         ul li {
             display: block;
-            padding: 10px 0;
+            padding: 5px 0;
             margin: 0;
         }
 
