@@ -582,7 +582,9 @@
         .card {
             background: transparent;
             border-radius: 20px;
+
             max-width: 580px;
+            min-width: 580px;
             height: 168px;
             margin: 5px 0;
             justify-content: center;
@@ -629,7 +631,7 @@
             .work-one {
                 box-sizing: border-box;
                 background-image: url("../img/1.png");
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: left;
                 background-origin: border-box;
@@ -670,8 +672,9 @@
             }
 
             .work-five {
+                box-sizing: border-box;
                 background-image: url("../img/1 (4).png");
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: left;
                 background-origin: padding-box;
@@ -730,7 +733,7 @@
             font-family: "Roboto Condensed", sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: px !important;
+            font-size: 50px !important;
             line-height: 47px;
             letter-spacing: -0.05em;
             margin-bottom: 40px;

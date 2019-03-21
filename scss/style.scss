@@ -782,6 +782,47 @@ main {
                 }
             }
         }
+
+        .card__hover {
+            transition: transform 500ms;
+            -webkit-transition: transform 500ms;
+            -moz-transition: transform 500ms;
+            -ms-transition: transform 500ms;
+            -o-transition: transform 500ms;
+
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+                box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+                content: '';
+                opacity: 0;
+                z-index: -1;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+            }
+
+            &:hover,
+            &:focus {
+                transform: scale3d(1.01, 1.01, 1);
+                -webkit-transform: scale3d(1.01, 1.01, 1);
+                -moz-transform: scale3d(1.01, 1.01, 1);
+                -ms-transform: scale3d(1.01, 1.01, 1);
+                -o-transform: scale3d(1.01, 1.01, 1);
+
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     .btn {
@@ -834,6 +875,20 @@ main {
         margin: 40px 0;
     }
 
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0 !important;
+        margin-left: -1px !important;
+
+        .work-five {
+            margin-left: -5px !important;
+        }
+
+    }
+
 
     .card {
         background: #000000;
@@ -844,7 +899,7 @@ main {
         justify-content: center;
         justify-items: center;
         align-self: center;
-        padding: 0;
+        padding: 0 !important;
 
         .work-one {
             box-sizing: border-box;
@@ -930,7 +985,7 @@ main {
             text-align: right;
             letter-spacing: 0.05em;
             color: $lightColor;
-            margin-right: 10px;
+            margin-right: 5px;
 
             span {
                 font-family: $mainFont;
@@ -947,6 +1002,40 @@ main {
         img {
             height: 168px;
             margin-left: -1px;
+        }
+    }
+
+    .card__hover_two {
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale3d(0, 0, 1);
+            transition: transform .3s ease-out 0s;
+            background: rgba(255, 255, 255, .1);
+            content: '';
+            pointer-events: none;
+        }
+
+        &::before {
+            transform-origin: left top;
+        }
+
+        &::after {
+            transform-origin: right bottom;
+        }
+
+        &:hover,
+        &:focus {
+
+            &::before,
+            &::after {
+                transform: scale3d(1, 1, 1);
+            }
         }
     }
 }
@@ -1118,5 +1207,6 @@ footer {
         }
     }
 }
+
 
 @import "mobile";
