@@ -584,7 +584,6 @@
             border-radius: 20px;
 
             max-width: 580px;
-            min-width: 580px;
             height: 168px;
             margin: 5px 0;
             justify-content: center;
@@ -631,7 +630,7 @@
             .work-one {
                 box-sizing: border-box;
                 background-image: url("../img/1.png");
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 background-position: left;
                 background-origin: border-box;
@@ -674,7 +673,7 @@
             .work-five {
                 box-sizing: border-box;
                 background-image: url("../img/1 (4).png");
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 background-position: left;
                 background-origin: padding-box;
