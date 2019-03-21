@@ -27,5 +27,8 @@
   },
   "bugs": {
     "url": "https://github.com/cryptodoct0r/virus/issues"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.10"
   }
 }
