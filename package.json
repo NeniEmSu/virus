@@ -29,6 +29,7 @@
     "url": "https://github.com/cryptodoct0r/virus/issues"
   },
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "typed.js": "^2.0.10"
   }
 }

@@ -410,10 +410,10 @@ main {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 50px;
     line-height: 47px;
     letter-spacing: -0.05em;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   main .row img {
     padding: 0;
     margin: 0; }
@@ -455,7 +455,7 @@ main {
     margin-bottom: 40px; }
   .jumbotron .card-deck .card {
     width: 100%;
-    max-width: 343px;
+    max-width: 339px;
     min-width: 285px;
     height: 343px;
     background: #FFFFFF;
@@ -465,15 +465,12 @@ main {
     justify-items: center; }
     .jumbotron .card-deck .card img {
       align-self: center; }
-    .jumbotron .card-deck .card:nth-child(1) img {
+    .jumbotron .card-deck .card.one img, .jumbotron .card-deck .card.four img, .jumbotron .card-deck .card.seven img {
       width: 209px;
       height: auto; }
-    .jumbotron .card-deck .card:nth-child(2) img {
+    .jumbotron .card-deck .card.two img, .jumbotron .card-deck .card.five img, .jumbotron .card-deck .card.eight img {
       margin: 8.5px 0;
       width: 182px;
-      height: auto; }
-    .jumbotron .card-deck .card:nth-child(3) img {
-      width: auto;
       height: auto; }
     .jumbotron .card-deck .card hr {
       width: 270px;
@@ -633,7 +630,8 @@ main {
     justify-content: center;
     justify-items: center;
     align-self: center;
-    padding: 0 !important; }
+    padding: 0 !important;
+    cursor: pointer; }
     .cars-card .card .work-one {
       box-sizing: border-box;
       background-image: url("../img/car1.png");
@@ -724,7 +722,12 @@ main {
     transition: transform .3s ease-out 0s;
     background: rgba(255, 255, 255, 0.1);
     content: '';
-    pointer-events: none; }
+    pointer-events: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
   .cars-card .card__hover_two::before {
     transform-origin: left top; }
   .cars-card .card__hover_two::after {
@@ -735,7 +738,14 @@ main {
 .contact .card {
   background: #FFFFFF;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-  border-radius: 20px; }
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 2.5rem !important; }
 
 .contact h3 {
   font-family: "Roboto Condensed", sans-serif;
@@ -878,10 +888,10 @@ footer {
       padding: 0;
       text-align: center;
       margin: 0;
-      line-height: 40px; }
+      line-height: 40px !important; }
     .top-contacts ul li {
       display: inline-block;
-      padding: 0 20px;
+      padding: 0 10px !important;
       margin: 0; }
       .top-contacts ul li.instagram, .top-contacts ul li.facebook {
         float: none !important; }
@@ -1199,8 +1209,9 @@ footer {
         padding: 0 !important; }
   .top-contacts ul li {
     display: inline-block;
-    padding: 11px 10px !important;
-    margin: 0; }
+    padding: 11px 10px !important !important;
+    margin: 0;
+    line-height: 40px; }
   .contact .card {
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
