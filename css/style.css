@@ -453,6 +453,16 @@ main {
     line-height: 47px;
     letter-spacing: -0.05em;
     margin-bottom: 40px; }
+  .jumbotron .card-deck .owl-carousel .owl-nav button.owl-next,
+  .jumbotron .card-deck .owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #D41F26;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    font-size: 42px;
+    cursor: pointer !important;
+    margin-top: -40px; }
   .jumbotron .card-deck .card {
     width: 100%;
     max-width: 320px;
