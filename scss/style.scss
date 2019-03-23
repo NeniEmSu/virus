@@ -1213,6 +1213,24 @@ main {
     h6 {
         margin-top: 30px;
     }
+
+    img {
+        text-decoration: none;
+        transition: ease-in-out 350ms;
+        -webkit-transition: ease-in-out 350ms;
+        -moz-transition: ease-in-out 350ms;
+        -ms-transition: ease-in-out 350ms;
+        -o-transition: ease-in-out 350ms;
+
+        &:hover {
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+
+    }
 }
 
 footer {
