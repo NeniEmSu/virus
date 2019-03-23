@@ -562,11 +562,6 @@ main {
     position: relative;
     margin-top: 183px;
 
-    .no-gutters {
-        margin: 0;
-        padding: 0;
-    }
-
     .top-grid {
 
         a img {
@@ -587,6 +582,48 @@ main {
                 -ms-transform: scale(1.02);
                 -o-transform: scale(1.02);
             }
+
+            &.one {
+                width: 373.96px;
+                height: 410px;
+                border: 1px solid #000000;
+                box-sizing: content-box;
+
+            }
+
+            &.two {
+                width: 780.1px;
+                height: 340px;
+                border: 1px solid #000000;
+                box-sizing: content-box;
+            }
+
+            &.three {
+                width: 373.96px;
+                height: 532px;
+            }
+
+            &.four {
+                width: 450.32px;
+                height: 280px;
+            }
+
+            &.five {
+                width: 325.85px;
+                height: 280px;
+            }
+
+            &.six {
+                width: 785.1px;
+                height: 318px;
+            }
+
+            &.seven {
+                width: 1156px;
+                height: 364px;
+            }
+
+
         }
 
 
@@ -673,7 +710,7 @@ main {
 
         .card {
             width: 100%;
-            max-width: 320px;
+            max-width: 343px;
             min-width: 285px;
             height: 343px;
             background: $lightColor;
@@ -910,7 +947,9 @@ main {
     .card {
         background: #000000;
         border-radius: 20px;
+        width: 100%;
         max-width: 580px;
+        min-width: 540px;
         height: 168px;
         margin: 5px 0;
         justify-content: center;
@@ -1077,7 +1116,7 @@ main {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
 
-        padding: 2.5rem !important;
+        padding: 3rem !important;
     }
 
     h3 {

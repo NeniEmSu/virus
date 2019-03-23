@@ -386,9 +386,6 @@ nav ul li a {
 main {
   position: relative;
   margin-top: 183px; }
-  main .no-gutters {
-    margin: 0;
-    padding: 0; }
   main .top-grid a img {
     opacity: 0.9;
     transition: all ease-in-out 300ms;
@@ -405,6 +402,31 @@ main {
       -moz-transform: scale(1.02);
       -ms-transform: scale(1.02);
       -o-transform: scale(1.02); }
+    main .top-grid a img.one {
+      width: 373.96px;
+      height: 410px;
+      border: 1px solid #000000;
+      box-sizing: content-box; }
+    main .top-grid a img.two {
+      width: 780.1px;
+      height: 340px;
+      border: 1px solid #000000;
+      box-sizing: content-box; }
+    main .top-grid a img.three {
+      width: 373.96px;
+      height: 532px; }
+    main .top-grid a img.four {
+      width: 450.32px;
+      height: 280px; }
+    main .top-grid a img.five {
+      width: 325.85px;
+      height: 280px; }
+    main .top-grid a img.six {
+      width: 785.1px;
+      height: 318px; }
+    main .top-grid a img.seven {
+      width: 1156px;
+      height: 364px; }
   main h1 {
     color: #8B8B8B;
     font-family: "Roboto Condensed", sans-serif;
@@ -465,7 +487,7 @@ main {
     margin-top: -40px; }
   .jumbotron .card-deck .card {
     width: 100%;
-    max-width: 320px;
+    max-width: 343px;
     min-width: 285px;
     height: 343px;
     background: #FFFFFF;
@@ -634,7 +656,9 @@ main {
   .cars-card .card {
     background: #000000;
     border-radius: 20px;
+    width: 100%;
     max-width: 580px;
+    min-width: 540px;
     height: 168px;
     margin: 5px 0;
     justify-content: center;
@@ -755,7 +779,7 @@ main {
   -o-border-radius: 20px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  padding: 2.5rem !important; }
+  padding: 3rem !important; }
 
 .contact h3 {
   font-family: "Roboto Condensed", sans-serif;
@@ -946,9 +970,12 @@ footer {
   .top-grid .three,
   .top-grid .four,
   .top-grid .five,
-  .top-grid .six {
+  .top-grid .six,
+  .top-grid .seven {
     width: 100vw !important;
-    height: auto; }
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important; }
   .top-grid h1 {
     text-align: center !important;
     font-size: 62px;
@@ -961,13 +988,13 @@ footer {
     .top-grid a img {
       margin: 0 auto !important;
       padding: 0 !important; }
-  .top-grid .col-md {
+  .top-grid .col {
     margin: 0 auto !important;
     padding: 0 !important; }
-    .top-grid .col-md a {
+    .top-grid .col a {
       margin: 0 auto !important;
       padding: 0 !important; }
-      .top-grid .col-md a img {
+      .top-grid .col a img {
         margin: 0 auto !important;
         padding: 0 !important; }
   .jumbotron h2 {
