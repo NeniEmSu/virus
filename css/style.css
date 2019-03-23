@@ -663,11 +663,8 @@ main {
     flex-wrap: wrap;
     margin-right: 0 !important;
     margin-left: -1px !important; }
-    .cars-card .row .work-five {
-      margin-left: -5px !important; }
   .cars-card .card {
     background: #000000;
-    border-radius: 20px;
     width: 100%;
     max-width: 580px;
     min-width: 540px;
@@ -677,7 +674,12 @@ main {
     justify-items: center;
     align-self: center;
     padding: 0 !important;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px; }
     .cars-card .card .work-one {
       box-sizing: border-box;
       background-image: url("../img/car1.png");

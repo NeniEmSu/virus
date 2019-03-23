@@ -951,17 +951,11 @@ main {
         flex-wrap: wrap;
         margin-right: 0 !important;
         margin-left: -1px !important;
-
-        .work-five {
-            margin-left: -5px !important;
-        }
-
     }
 
 
     .card {
         background: #000000;
-        border-radius: 20px;
         width: 100%;
         max-width: 580px;
         min-width: 540px;
@@ -972,6 +966,12 @@ main {
         align-self: center;
         padding: 0 !important;
         cursor: pointer;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+
 
         .work-one {
             box-sizing: border-box;
