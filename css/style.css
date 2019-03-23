@@ -387,6 +387,7 @@ main {
   position: relative;
   margin-top: 183px; }
   main .top-grid a img {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
     opacity: 0.9;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -404,25 +405,40 @@ main {
       -o-transform: scale(1.02); }
     main .top-grid a img.one {
       width: 373.96px;
-      height: 410px; }
+      height: 410px;
+      border-radius: 20px 0 0 0;
+      -webkit-border-radius: 20px 0 0 0;
+      -moz-border-radius: 20px 0 0 0;
+      -ms-border-radius: 20px 0 0 0;
+      -o-border-radius: 20px 0 0 0; }
     main .top-grid a img.two {
       width: 780.1px;
-      height: 340px; }
+      height: 340px;
+      border-radius: 0 20px 0 0;
+      -webkit-border-radius: 0 20px 0 0;
+      -moz-border-radius: 0 20px 0 0;
+      -ms-border-radius: 0 20px 0 0;
+      -o-border-radius: 0 20px 0 0; }
     main .top-grid a img.three {
       width: 373.96px;
       height: 532px; }
     main .top-grid a img.four {
-      width: 450.32px;
-      height: 280px; }
+      width: 448.32px;
+      height: 274px; }
     main .top-grid a img.five {
       width: 325.85px;
-      height: 280px; }
+      height: 274px; }
     main .top-grid a img.six {
-      width: 785.1px;
+      width: 778.1px;
       height: 318px; }
     main .top-grid a img.seven {
       width: 1156px;
-      height: 364px; }
+      height: 364px;
+      border-radius: 0 0 20px 20px;
+      -webkit-border-radius: 0 0 20px 20px;
+      -moz-border-radius: 0 0 20px 20px;
+      -ms-border-radius: 0 0 20px 20px;
+      -o-border-radius: 0 0 20px 20px; }
   main h1 {
     color: #8B8B8B;
     font-family: "Roboto Condensed", sans-serif;
@@ -970,8 +986,20 @@ footer {
   .top-grid .seven {
     width: 100vw !important;
     height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important; }
+    margin: 5px 0 !important;
+    padding: 10px !important; }
+  .top-grid .one {
+    border-radius: 20px 20px 0 0 !important;
+    -webkit-border-radius: 20px 20px 0 0 !important;
+    -moz-border-radius: 20px 20px 0 0 !important;
+    -ms-border-radius: 20px 20px 0 0 !important;
+    -o-border-radius: 20px 20px 0 0 !important; }
+  .top-grid .two {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important; }
   .top-grid h1 {
     text-align: center !important;
     font-size: 62px;
@@ -984,13 +1012,20 @@ footer {
     .top-grid a img {
       margin: 0 auto !important;
       padding: 0 !important; }
-  .top-grid .col {
-    margin: 0 auto !important;
+  .top-grid .col-md {
+    margin: 0 !important;
     padding: 0 !important; }
-    .top-grid .col a {
+    .top-grid .col-md .four,
+    .top-grid .col-md .five,
+    .top-grid .col-md .six {
+      width: 100vw !important;
+      height: auto !important;
+      margin: 5px 0 !important;
+      padding: 10px !important; }
+    .top-grid .col-md a {
       margin: 0 auto !important;
       padding: 0 !important; }
-      .top-grid .col a img {
+      .top-grid .col-md a img {
         margin: 0 auto !important;
         padding: 0 !important; }
   .jumbotron h2 {
