@@ -404,14 +404,10 @@ main {
       -o-transform: scale(1.02); }
     main .top-grid a img.one {
       width: 373.96px;
-      height: 410px;
-      border: 1px solid #000000;
-      box-sizing: content-box; }
+      height: 410px; }
     main .top-grid a img.two {
       width: 780.1px;
-      height: 340px;
-      border: 1px solid #000000;
-      box-sizing: content-box; }
+      height: 340px; }
     main .top-grid a img.three {
       width: 373.96px;
       height: 532px; }
