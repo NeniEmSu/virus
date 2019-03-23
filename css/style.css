@@ -455,7 +455,7 @@ main {
     margin-bottom: 40px; }
   .jumbotron .card-deck .card {
     width: 100%;
-    max-width: 339px;
+    max-width: 320px;
     min-width: 285px;
     height: 343px;
     background: #FFFFFF;
@@ -1207,6 +1207,11 @@ footer {
       .top-grid .col-md a img {
         margin: 0 auto !important;
         padding: 0 !important; }
+  .jumbotron.recomendations {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .jumbotron.recomendations .item {
+      margin-left: 18px; }
   .top-contacts ul li {
     display: inline-block;
     padding: 11px 10px !important !important;
@@ -1407,6 +1412,11 @@ footer {
       line-height: 47px;
       letter-spacing: -0.05em;
       margin-bottom: 40px; }
+  .jumbotron.recomendations {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .jumbotron.recomendations .item {
+      margin-left: 10px; }
   .cars-card {
     text-align: center; }
     .cars-card h2 {
@@ -1444,58 +1454,63 @@ footer {
       letter-spacing: -0.05em;
       color: #8B8B8B;
       margin: 40px 0; }
-  .jumbotron .card-deck .card {
-    width: 100%;
-    max-width: 260px;
-    min-width: 240px;
-    height: 343px;
-    background: #FFFFFF;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
-    border-radius: 20px;
-    margin-bottom: 40px;
-    justify-items: center; }
-    .jumbotron .card-deck .card hr {
-      width: 80%;
-      align-self: center;
-      margin: 0;
-      border: 1px solid #C4C4C4; }
-    .jumbotron .card-deck .card .card-text {
-      font-family: "Roboto", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: -0.05em;
-      color: #8B8B8B; }
-      .jumbotron .card-deck .card .card-text span {
+  .jumbotron.recomendations {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .jumbotron.recomendations .item {
+      margin-left: 5px; }
+    .jumbotron.recomendations .card-deck .card {
+      width: 100%;
+      max-width: 240px;
+      min-width: 240px;
+      height: 343px;
+      background: #FFFFFF;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+      border-radius: 20px;
+      margin-bottom: 40px;
+      justify-items: center;
+      padding-left: 20px !important hr;
+        padding-left-width: 80%;
+        padding-left-align-self: center;
+        padding-left-margin: 0;
+        padding-left-border: 1px solid #C4C4C4; }
+      .jumbotron.recomendations .card-deck .card .card-text {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 10px;
-        text-align: center; }
-    .jumbotron .card-deck .card a .btn {
-      padding: 8px 24px;
-      background: #D41F26;
-      border-radius: 50px;
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: normal;
-      text-align: center;
-      color: #FFFFFF;
-      text-decoration: none;
-      transition: ease-in-out 300ms;
-      -webkit-transition: ease-in-out 300ms;
-      -moz-transition: ease-in-out 300ms;
-      -ms-transition: ease-in-out 300ms;
-      -o-transition: ease-in-out 300ms; }
-      .jumbotron .card-deck .card a .btn:hover {
-        color: #D41F26;
-        background: #FFFFFF;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1); } }
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.05em;
+        color: #8B8B8B; }
+        .jumbotron.recomendations .card-deck .card .card-text span {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 10px;
+          text-align: center; }
+      .jumbotron.recomendations .card-deck .card a .btn {
+        padding: 8px 24px;
+        background: #D41F26;
+        border-radius: 50px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms; }
+        .jumbotron.recomendations .card-deck .card a .btn:hover {
+          color: #D41F26;
+          background: #FFFFFF;
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1); } }
