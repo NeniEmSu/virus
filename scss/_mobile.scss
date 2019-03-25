@@ -171,15 +171,23 @@
         margin-bottom: 40px;
     }
 
-    .cars-card h2 {
-        font-family: "Roboto Condensed", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 62px;
-        line-height: 39px;
-        letter-spacing: -0.05em;
-        color: #8B8B8B;
-        margin: 40px 0;
+    .cars-card {
+
+        .card {
+            max-width: 580px;
+            min-width: 200px;
+        }
+
+        h2 {
+            font-family: "Roboto Condensed", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 39px;
+            letter-spacing: -0.05em;
+            color: #8B8B8B;
+            margin: 40px 0;
+        }
     }
 
 }
@@ -676,7 +684,7 @@
                 background-origin: border-box;
                 height: 100%;
                 max-height: 168px;
-                border-radius: 45px;
+
 
             }
 
@@ -687,7 +695,7 @@
                 background-position: left;
                 background-origin: border-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-three {
@@ -697,7 +705,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-four {
@@ -707,7 +715,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-five {
@@ -718,7 +726,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-six {
@@ -728,7 +736,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-seven {
@@ -738,7 +746,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
 
             .work-eight {
@@ -748,7 +756,7 @@
                 background-position: left;
                 background-origin: padding-box;
                 height: 100%;
-                border-radius: 45px;
+
             }
         }
     }
@@ -869,6 +877,10 @@
                 align-self: center;
                 margin: 0;
                 border: 1px solid #C4C4C4;
+            }
+
+            hr {
+                width: 80%;
             }
 
             .card-text {
