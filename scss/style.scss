@@ -711,6 +711,7 @@ main {
 
     .card-deck {
 
+        // Currently disabled but this is used for there styling
         .owl-carousel .owl-nav button.owl-next,
         .owl-carousel .owl-nav button.owl-prev {
             background: 0 0;
@@ -721,6 +722,12 @@ main {
             font-size: 42px;
             cursor: pointer !important;
             margin-top: -40px;
+        }
+
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: -5px;
+            z-index: 3;
+            outline: none;
         }
 
         .card {

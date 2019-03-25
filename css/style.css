@@ -497,6 +497,10 @@ main {
     font-size: 42px;
     cursor: pointer !important;
     margin-top: -40px; }
+  .jumbotron .card-deck .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -5px;
+    z-index: 3;
+    outline: none; }
   .jumbotron .card-deck .card {
     width: 100%;
     max-width: 343px;
