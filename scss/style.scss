@@ -641,6 +641,13 @@ main {
 
         }
 
+        .col-md {
+            margin: 0;
+            padding: 0;
+            margin-top: -3rem;
+            margin-left: -0.5rem;
+        }
+
 
     }
 
@@ -664,11 +671,6 @@ main {
         a {
             margin: 0;
             padding: 0;
-
-            &.no-gutters {
-                margin: 0 !important;
-                padding: 0;
-            }
         }
     }
 }
@@ -724,7 +726,7 @@ main {
             margin-top: -40px;
         }
 
-        .owl-theme .owl-nav.disabled + .owl-dots {
+        .owl-theme .owl-nav.disabled+.owl-dots {
             margin-top: -5px;
             z-index: 3;
             outline: none;
