@@ -983,6 +983,7 @@ footer {
   .menu-icon {
     display: block; }
   .jumbotron h2 {
+    text-align: center !important;
     color: #8B8B8B;
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
@@ -1004,138 +1005,6 @@ footer {
     color: #8B8B8B;
     margin: 40px 0;
     text-align: center; } }
-
-@media screen and (min-width: 761px) and (max-width: 990px) {
-  .hide {
-    display: none; }
-  .contact .card {
-    background: #FFFFFF;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-    border-radius: 20px;
-    height: 350px; }
-  .contact h3 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: normal;
-    color: #000000; }
-    .contact h3 span.red {
-      font-family: "Roboto Condensed", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: normal;
-      color: #D41F26; }
-  .contact input,
-  .contact select {
-    height: 40px;
-    margin-top: 10px;
-    border: 2px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 50px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: normal;
-    color: #8B8B8B; }
-    .contact input:focus,
-    .contact select:focus {
-      border: 2px solid #D41F26;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35); }
-  .contact select {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: normal;
-    color: #000000; }
-  .contact p {
-    margin-top: -80px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: normal;
-    color: #000000; }
-  .contact .btn {
-    padding: 10px 35px;
-    background: #D41F26;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-    border-radius: 50px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: normal;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-    margin-top: 40px; }
-  .top-grid h1 {
-    text-align: center !important; }
-  .top-grid .row {
-    margin-left: 80px;
-    margin-right: 40px; }
-  .top-grid a img {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
-    opacity: 0.9;
-    transition: all ease-in-out 300ms;
-    -webkit-transition: all ease-in-out 300ms;
-    -moz-transition: all ease-in-out 300ms;
-    -ms-transition: all ease-in-out 300ms;
-    -o-transition: all ease-in-out 300ms; }
-    .top-grid a img:hover {
-      opacity: 1;
-      text-decoration: none;
-      color: #D41F26;
-      transform: scale(1.02);
-      -webkit-transform: scale(1.02);
-      -moz-transform: scale(1.02);
-      -ms-transform: scale(1.02);
-      -o-transform: scale(1.02); }
-    .top-grid a img.one {
-      width: 186.98px !important;
-      height: 205px !important;
-      border-radius: 20px 0 0 0;
-      -webkit-border-radius: 20px 0 0 0;
-      -moz-border-radius: 20px 0 0 0;
-      -ms-border-radius: 20px 0 0 0;
-      -o-border-radius: 20px 0 0 0; }
-    .top-grid a img.two {
-      width: 390.05px !important;
-      height: 170px !important;
-      border-radius: 0 20px 0 0;
-      -webkit-border-radius: 0 20px 0 0;
-      -moz-border-radius: 0 20px 0 0;
-      -ms-border-radius: 0 20px 0 0;
-      -o-border-radius: 0 20px 0 0; }
-    .top-grid a img.three {
-      width: 186.98px !important;
-      height: 266px !important; }
-    .top-grid a img.four {
-      width: 224.16px !important;
-      height: 137px !important; }
-    .top-grid a img.five {
-      width: 162.925px !important;
-      height: 137px !important; }
-    .top-grid a img.six {
-      width: 389.05px !important;
-      height: 159px !important; }
-    .top-grid a img.seven {
-      width: 578px !important;
-      height: 182px !important;
-      border-radius: 0 0 20px 20px;
-      -webkit-border-radius: 0 0 20px 20px;
-      -moz-border-radius: 0 0 20px 20px;
-      -ms-border-radius: 0 0 20px 20px;
-      -o-border-radius: 0 0 20px 20px; }
-  .top-grid .col-md {
-    margin: 0;
-    padding: 0;
-    margin-top: -1rem !important;
-    margin-left: -0.99rem !important; } }
 
 @media screen and (min-width: 990px) and (max-width: 1200px) {
   .hide {
@@ -1267,7 +1136,157 @@ footer {
     margin: 0;
     padding: 0;
     margin-top: -1.8rem !important;
-    margin-left: -4rem !important; } }
+    margin-left: -4rem !important; }
+  .jumbotron {
+    margin-right: 0px; }
+    .jumbotron.recomendations {
+      padding-left: 100px;
+      padding-right: 0px; }
+      .jumbotron.recomendations h2 {
+        text-align: center !important; }
+      .jumbotron.recomendations .item {
+        margin-left: 0px; } }
+
+@media screen and (min-width: 761px) and (max-width: 990px) {
+  .hide {
+    display: none; }
+  .contact .card {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    height: 350px; }
+  .contact h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    color: #000000; }
+    .contact h3 span.red {
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: normal;
+      color: #D41F26; }
+  .contact input,
+  .contact select {
+    height: 40px;
+    margin-top: 10px;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    color: #8B8B8B; }
+    .contact input:focus,
+    .contact select:focus {
+      border: 2px solid #D41F26;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35); }
+  .contact select {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    color: #000000; }
+  .contact p {
+    margin-top: -80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    color: #000000; }
+  .contact .btn {
+    padding: 10px 35px;
+    background: #D41F26;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 40px; }
+  .top-grid h1 {
+    text-align: center !important; }
+  .top-grid .row {
+    margin-left: 80px;
+    margin-right: 40px; }
+  .top-grid a img {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+    opacity: 0.9;
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms; }
+    .top-grid a img:hover {
+      opacity: 1;
+      text-decoration: none;
+      color: #D41F26;
+      transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      -o-transform: scale(1.02); }
+    .top-grid a img.one {
+      width: 186.98px !important;
+      height: 205px !important;
+      border-radius: 20px 0 0 0;
+      -webkit-border-radius: 20px 0 0 0;
+      -moz-border-radius: 20px 0 0 0;
+      -ms-border-radius: 20px 0 0 0;
+      -o-border-radius: 20px 0 0 0; }
+    .top-grid a img.two {
+      width: 390.05px !important;
+      height: 170px !important;
+      border-radius: 0 20px 0 0;
+      -webkit-border-radius: 0 20px 0 0;
+      -moz-border-radius: 0 20px 0 0;
+      -ms-border-radius: 0 20px 0 0;
+      -o-border-radius: 0 20px 0 0; }
+    .top-grid a img.three {
+      width: 186.98px !important;
+      height: 266px !important; }
+    .top-grid a img.four {
+      width: 224.16px !important;
+      height: 137px !important; }
+    .top-grid a img.five {
+      width: 162.925px !important;
+      height: 137px !important; }
+    .top-grid a img.six {
+      width: 389.05px !important;
+      height: 159px !important; }
+    .top-grid a img.seven {
+      width: 578px !important;
+      height: 182px !important;
+      border-radius: 0 0 20px 20px;
+      -webkit-border-radius: 0 0 20px 20px;
+      -moz-border-radius: 0 0 20px 20px;
+      -ms-border-radius: 0 0 20px 20px;
+      -o-border-radius: 0 0 20px 20px; }
+  .top-grid .col-md {
+    margin: 0;
+    padding: 0;
+    margin-top: -1rem !important;
+    margin-left: -0.99rem !important; }
+  .jumbotron {
+    margin-right: -20px; }
+    .jumbotron.recomendations {
+      padding-left: 0px;
+      padding-right: -5px; }
+      .jumbotron.recomendations h2 {
+        text-align: center !important; }
+      .jumbotron.recomendations .item {
+        margin-left: -12px; } }
 
 @media screen and (max-width: 760px) {
   .hide,
@@ -1498,6 +1517,8 @@ footer {
   .jumbotron.recomendations {
     padding-left: 20px;
     padding-right: 20px; }
+    .jumbotron.recomendations h2 {
+      text-align: center !important; }
     .jumbotron.recomendations .item {
       margin-left: 18px; }
   .top-contacts ul li {
@@ -1695,6 +1716,8 @@ footer {
   .jumbotron.recomendations {
     padding-left: 20px;
     padding-right: 20px; }
+    .jumbotron.recomendations h2 {
+      text-align: center !important; }
     .jumbotron.recomendations .item {
       margin-left: 10px; }
   .cars-card {
@@ -1737,6 +1760,8 @@ footer {
   .jumbotron.recomendations {
     padding-left: 20px;
     padding-right: 20px; }
+    .jumbotron.recomendations h2 {
+      text-align: center !important; }
     .jumbotron.recomendations .item {
       margin-left: 5px; }
     .jumbotron.recomendations .card-deck .card {

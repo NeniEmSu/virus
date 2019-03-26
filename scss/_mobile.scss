@@ -63,6 +63,7 @@
     }
 
     .jumbotron h2 {
+        text-align: center !important;
         color: #8B8B8B;
         font-family: "Roboto Condensed", sans-serif;
         font-style: normal;
@@ -96,6 +97,212 @@
 }
 
 @include mediaXl {}
+
+@include mediaLg2 {
+    .hide {
+        display: none;
+    }
+
+    .contact {
+        .card {
+            background: $lightColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 20px;
+            height: 350px;
+        }
+
+        h3 {
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+            color: $darkColor;
+
+            span.red {
+                font-family: $secondaryFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+                color: $redColor;
+            }
+        }
+
+        input,
+        select {
+            height: 40px;
+            margin-top: 10px;
+            border: 2px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 50px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: normal;
+            color: $headingsFontColor;
+
+            &:focus {
+                border: 2px solid $redColor;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        select {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        p {
+            margin-top: -80px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: normal;
+            color: $darkColor;
+        }
+
+        .btn {
+            padding: 10px 35px;
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+            color: $lightColor;
+            border: none;
+            margin-top: 40px;
+        }
+    }
+
+    .top-grid {
+
+        h1 {
+            text-align: center !important;
+        }
+
+        .row {
+            margin-left: 80px;
+            margin-right: 40px;
+        }
+
+        a img {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+            opacity: 0.9;
+            transition: all ease-in-out 300ms;
+            -webkit-transition: all ease-in-out 300ms;
+            -moz-transition: all ease-in-out 300ms;
+            -ms-transition: all ease-in-out 300ms;
+            -o-transition: all ease-in-out 300ms;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+                color: $redColor;
+                transform: scale(1.02);
+                -webkit-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                -o-transform: scale(1.02);
+            }
+
+            &.one {
+                width: 249.306666667px !important;
+                height: 273.333333333px !important;
+                border-radius: 20px 0 0 0;
+                -webkit-border-radius: 20px 0 0 0;
+                -moz-border-radius: 20px 0 0 0;
+                -ms-border-radius: 20px 0 0 0;
+                -o-border-radius: 20px 0 0 0;
+            }
+
+            &.two {
+                width: 520.066666667px !important;
+                height: 226.666666667px !important;
+                border-radius: 0 20px 0 0;
+                -webkit-border-radius: 0 20px 0 0;
+                -moz-border-radius: 0 20px 0 0;
+                -ms-border-radius: 0 20px 0 0;
+                -o-border-radius: 0 20px 0 0;
+            }
+
+            &.three {
+
+                width: 249.306666667px !important;
+                height: 354.666666667px !important;
+            }
+
+            &.four {
+
+                width: 298.88px !important;
+                height: 182.666666667px !important;
+            }
+
+            &.five {
+
+                width: 217.233333333px !important;
+                height: 182.666666667px !important;
+            }
+
+            &.six {
+
+                width: 518.733333333px !important;
+                height: 212px !important;
+            }
+
+            &.seven {
+                width: 770.666666667px !important;
+                height: 242.666666667px !important;
+                border-radius: 0 0 20px 20px;
+                -webkit-border-radius: 0 0 20px 20px;
+                -moz-border-radius: 0 0 20px 20px;
+                -ms-border-radius: 0 0 20px 20px;
+                -o-border-radius: 0 0 20px 20px;
+            }
+
+
+        }
+
+        .col-md {
+
+            margin: 0;
+            padding: 0;
+            margin-top: -1.8rem !important;
+            margin-left: -4rem !important;
+        }
+
+    }
+
+    .jumbotron {
+
+        margin-right: 0px;
+
+        &.recomendations {
+            padding-left: 100px;
+            padding-right: 0px;
+
+            h2 {
+                text-align: center !important;
+            }
+
+            .item {
+                margin-left: 0px;
+            }
+        }
+    }
+
+
+}
 
 @include mediaLg {
     .hide {
@@ -281,193 +488,21 @@
 
     }
 
+    .jumbotron {
+        margin-right: -20px;
 
-}
+        &.recomendations {
+            padding-left: 0px;
+            padding-right: -5px;
 
-@include mediaLg2 {
-    .hide {
-        display: none;
-    }
-
-    .contact {
-        .card {
-            background: $lightColor;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-            border-radius: 20px;
-            height: 350px;
-        }
-
-        h3 {
-            font-family: $secondaryFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: normal;
-            color: $darkColor;
-
-            span.red {
-                font-family: $secondaryFont;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: normal;
-                color: $redColor;
-            }
-        }
-
-        input,
-        select {
-            height: 40px;
-            margin-top: 10px;
-            border: 2px solid #C4C4C4;
-            box-sizing: border-box;
-            border-radius: 50px;
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: normal;
-            color: $headingsFontColor;
-
-            &:focus {
-                border: 2px solid $redColor;
-                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-            }
-        }
-
-        select {
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: normal;
-            color: $darkColor;
-        }
-
-        p {
-            margin-top: -80px;
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: normal;
-            color: $darkColor;
-        }
-
-        .btn {
-            padding: 10px 35px;
-            background: $redColor;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-            border-radius: 50px;
-            font-family: $secondaryFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: normal;
-            text-align: center;
-            color: $lightColor;
-            border: none;
-            margin-top: 40px;
-        }
-    }
-
-    .top-grid {
-
-        h1 {
-            text-align: center !important;
-        }
-
-        .row {
-            margin-left: 80px;
-            margin-right: 40px;
-        }
-
-        a img {
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
-            opacity: 0.9;
-            transition: all ease-in-out 300ms;
-            -webkit-transition: all ease-in-out 300ms;
-            -moz-transition: all ease-in-out 300ms;
-            -ms-transition: all ease-in-out 300ms;
-            -o-transition: all ease-in-out 300ms;
-
-            &:hover {
-                opacity: 1;
-                text-decoration: none;
-                color: $redColor;
-                transform: scale(1.02);
-                -webkit-transform: scale(1.02);
-                -moz-transform: scale(1.02);
-                -ms-transform: scale(1.02);
-                -o-transform: scale(1.02);
+            h2 {
+                text-align: center !important;
             }
 
-            &.one {
-                width: 249.306666667px !important;
-                height: 273.333333333px !important;
-                border-radius: 20px 0 0 0;
-                -webkit-border-radius: 20px 0 0 0;
-                -moz-border-radius: 20px 0 0 0;
-                -ms-border-radius: 20px 0 0 0;
-                -o-border-radius: 20px 0 0 0;
+            .item {
+                margin-left: -12px;
             }
-
-            &.two {
-                width: 520.066666667px !important;
-                height: 226.666666667px !important;
-                border-radius: 0 20px 0 0;
-                -webkit-border-radius: 0 20px 0 0;
-                -moz-border-radius: 0 20px 0 0;
-                -ms-border-radius: 0 20px 0 0;
-                -o-border-radius: 0 20px 0 0;
-            }
-
-            &.three {
-
-                width: 249.306666667px !important;
-                height: 354.666666667px !important;
-            }
-
-            &.four {
-
-                width: 298.88px !important;
-                height: 182.666666667px !important;
-            }
-
-            &.five {
-
-                width: 217.233333333px !important;
-                height: 182.666666667px !important;
-            }
-
-            &.six {
-
-                width: 518.733333333px !important;
-                height: 212px !important;
-            }
-
-            &.seven {
-                width: 770.666666667px !important;
-                height: 242.666666667px !important;
-                border-radius: 0 0 20px 20px;
-                -webkit-border-radius: 0 0 20px 20px;
-                -moz-border-radius: 0 0 20px 20px;
-                -ms-border-radius: 0 0 20px 20px;
-                -o-border-radius: 0 0 20px 20px;
-            }
-
-
         }
-
-        .col-md {
-
-            margin: 0;
-            padding: 0;
-            margin-top: -1.8rem !important;
-            margin-left: -4rem !important;
-        }
-
-
     }
 
 
@@ -803,6 +838,10 @@
         padding-left: 20px;
         padding-right: 20px;
 
+        h2 {
+            text-align: center !important;
+        }
+
         .item {
             margin-left: 18px;
         }
@@ -1078,6 +1117,10 @@
         padding-left: 20px;
         padding-right: 20px;
 
+        h2 {
+            text-align: center !important;
+        }
+
         .item {
             margin-left: 10px;
         }
@@ -1143,6 +1186,10 @@
     .jumbotron.recomendations {
         padding-left: 20px;
         padding-right: 20px;
+
+        h2 {
+            text-align: center !important;
+        }
 
         .item {
             margin-left: 5px;
