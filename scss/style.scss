@@ -1174,10 +1174,12 @@ main {
         font-size: 14px;
         line-height: normal;
         color: $headingsFontColor;
+        outline: none;
 
         &:focus {
             border: 2px solid $redColor;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            // box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            box-shadow: none;
         }
     }
 
