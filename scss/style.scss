@@ -379,7 +379,7 @@ header {
         .faa-parent.animated-hover:hover>.faa-ring {
             -webkit-animation: ring 2s ease infinite;
             animation: ring 2s ease infinite;
-            transform-origin: 50% 0px initial;
+            transform-origin: 50% 0px none;
         }
 
         @-webkit-keyframes horizontal {
