@@ -493,7 +493,7 @@
 
         &.recomendations {
             padding-left: 0px;
-            padding-right: -5px;
+            padding-right: 0px;
 
             h2 {
                 text-align: center !important;
@@ -849,7 +849,7 @@
 
     .top-contacts ul li {
         display: inline-block;
-        padding: 11px 10px !important !important;
+        padding: 11px 10px !important;
         margin: 0;
         line-height: 40px;
     }
@@ -1206,7 +1206,9 @@
             margin-bottom: 40px;
             justify-items: center;
 
-            padding-left: 20px !important hr {
+            padding-left: 20px !important;
+
+            hr {
                 width: 80%;
                 align-self: center;
                 margin: 0;
