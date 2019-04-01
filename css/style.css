@@ -516,6 +516,12 @@ main {
     justify-items: center; }
     .jumbotron .card-deck .card img {
       align-self: center; }
+      .jumbotron .card-deck .card img.small-img {
+        width: 100%;
+        height: auto;
+        max-width: 343px;
+        min-height: 200px;
+        object-fit: scale-down; }
     .jumbotron .card-deck .card.one img, .jumbotron .card-deck .card.four img, .jumbotron .card-deck .card.seven img {
       width: 209px;
       height: auto; }
@@ -1010,7 +1016,7 @@ footer {
     margin: 40px 0;
     text-align: center; } }
 
-@media screen and (min-width: 990px) and (max-width: 1200px) {
+@media screen and (min-width: 991px) and (max-width: 1199.9px) {
   .hide {
     display: none; }
   .contact .card {
@@ -1151,7 +1157,7 @@ footer {
       .jumbotron.recomendations .item {
         margin-left: 0px; } }
 
-@media screen and (min-width: 761px) and (max-width: 990px) {
+@media screen and (min-width: 769px) and (max-width: 990.9px) {
   .hide {
     display: none; }
   .contact .card {
@@ -1292,7 +1298,7 @@ footer {
       .jumbotron.recomendations .item {
         margin-left: -12px; } }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .hide,
   .hide-md {
     display: none; }
@@ -1777,8 +1783,7 @@ footer {
       box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
       border-radius: 20px;
       margin-bottom: 40px;
-      justify-items: center;
-      padding-left: 20px !important; }
+      justify-items: center; }
       .jumbotron.recomendations .card-deck .card hr {
         width: 80%;
         align-self: center;
@@ -1801,8 +1806,8 @@ footer {
           font-size: 12px;
           line-height: 10px;
           text-align: center; }
-      .jumbotron.recomendations .card-deck .card a .btn {
-        padding: 8px 24px;
+      .jumbotron.recomendations .card-deck .card .btn {
+        padding: 10px 28px !important;
         background: #D41F26;
         border-radius: 50px;
         font-family: "Roboto Condensed", sans-serif;
@@ -1818,7 +1823,7 @@ footer {
         -moz-transition: ease-in-out 300ms;
         -ms-transition: ease-in-out 300ms;
         -o-transition: ease-in-out 300ms; }
-        .jumbotron.recomendations .card-deck .card a .btn:hover {
+        .jumbotron.recomendations .card-deck .card .btn:hover {
           color: #D41F26;
           background: #FFFFFF;
           transform: scale(1.1);

@@ -1211,7 +1211,6 @@
             margin-bottom: 40px;
             justify-items: center;
 
-            padding-left: 20px !important;
 
             hr {
                 width: 80%;
@@ -1243,8 +1242,8 @@
                 }
             }
 
-            a .btn {
-                padding: 8px 24px;
+            .btn {
+                padding: 10px 28px !important;
                 background: $redColor;
                 border-radius: 50px;
                 font-family: $secondaryFont;

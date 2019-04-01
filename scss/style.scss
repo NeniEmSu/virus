@@ -746,7 +746,16 @@ main {
 
             img {
                 align-self: center;
+
+                &.small-img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 343px;
+                    min-height: 200px;
+                    object-fit: scale-down;
+                }
             }
+
 
             &.one,
             &.four,
@@ -772,6 +781,8 @@ main {
             &.nine {
                 img {}
             }
+
+
 
 
             hr {
