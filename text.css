@@ -1,3 +1,7 @@
+.top-grid a:hover {
+    color: red;
+}
+
 .top-grid h2 {
     position:absolute; 
     z-index:1;    
@@ -123,15 +127,16 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 900;
-        font-size: 24px;
+        font-size: 34px;
         line-height: normal;                     
         letter-spacing: 0.1em;
+        text-align: left;
         color: #FFFFFF;
     }
 
     .top1{
-        margin-top : 20px;
-        margin-left: 20px;
+        margin-top : 500px;
+        margin-left: 240px;
     }
     .top2{
         margin-top : 20px;
@@ -143,18 +148,169 @@
     }
     .top4{
         margin-top : 20px;
-        margin-left: 40px;
+        margin-left: 240px;
     }
     .top5{
-        margin-top : 20px;
-        margin-left: 40px;
+        margin-top : 350px;
+        margin-left: 300px;
     }
     .top6{
         margin-top : 20px;
-        margin-left: 40px;
+        margin-left: 130px;
     }
     .top7{
         margin-top : 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 766.9px) {
+    .top-grid h2 {
+        position:absolute; 
+        z-index:1;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: normal;                     
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    
+}
+
+@media screen and (max-width: 560.9px) {
+    .top-grid h2 {
+        position:absolute; 
+        z-index:1;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: normal;                     
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .top1{
+        margin-top : 500px;
+        margin-left: 180px;
+    }
+    .top2{
+        margin-top : 20px;
+        margin-left: 20px;
+    }
+    .top3{
+        margin-top : 20px;
+        margin-left: 20px;
+    }
+    .top4{
+        margin-top : 20px;
+        margin-left: 200px;
+    }
+    .top5{
+        margin-top : 300px;
+        margin-left: 300px;
+    }
+    .top6{
+        margin-top : 20px;
+        margin-left: 150px;
+    }
+    .top7{
+        margin-top : 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .top-grid h2 {
+        position:absolute; 
+        z-index:1;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: normal;                     
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .top1{
+        margin-top : 320px;
+        margin-left: 120px;
+    }
+    .top2{
+        margin-top : 80px;
+        margin-left: 210px;
+    }
+    .top3{
+        margin-top : 20px;
+        margin-left: 20px;
+    }
+    .top4{
+        margin-top : 20px;
+        margin-left: 150px;
+    }
+    .top5{
+        margin-top : 250px;
+        margin-left: 180px;
+    }
+    .top6{
+
+        margin-top : 130px;
+        margin-left: 55px;
+    }
+    .top7{
+        margin-top : 50px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .top-grid h2 {
+        position:absolute; 
+        z-index:1;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: normal;                     
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .top1{
+        margin-top : 280px;
+        margin-left: 80px;
+    }
+    .top2{
+        margin-top : 80px;
+        margin-left: 180px;
+    }
+    .top3{
+        margin-top : 20px;
+        margin-left: 20px;
+    }
+    .top4{
+        margin-top : 20px;
+        margin-left: 100px;
+    }
+    .top5{
+        margin-top : 200px;
+        margin-left: 140px;
+    }
+    .top6{
+
+        margin-top : 110px;
+        margin-left: 50px;
+    }
+    .top7{
+        margin-top : 50px;
         margin-left: 20px;
     }
 }
