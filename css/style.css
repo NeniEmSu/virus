@@ -1168,8 +1168,8 @@ footer {
   .jumbotron {
     margin-right: 0px; }
     .jumbotron.recomendations {
-      padding-left: 100px;
-      padding-right: 0px; }
+      padding-left: 0px;
+      padding-right: 2rem; }
       .jumbotron.recomendations h2 {
         text-align: center !important; }
       .jumbotron.recomendations .item {
@@ -1307,7 +1307,7 @@ footer {
     margin-top: -1rem !important;
     margin-left: -0.99rem !important; }
   .jumbotron {
-    margin-right: -20px; }
+    margin-right: 0px; }
     .jumbotron.recomendations {
       padding-left: 0px;
       padding-right: 0px; }
@@ -1411,8 +1411,8 @@ footer {
   .top-grid .seven {
     width: 100vw !important;
     height: auto !important;
-    margin: 5px 0 !important;
-    padding: 10px !important; }
+    margin: 0px 0 !important;
+    padding: 5px !important; }
   .top-grid .one {
     border-radius: 20px 20px 0 0 !important;
     -webkit-border-radius: 20px 20px 0 0 !important;
@@ -1445,8 +1445,8 @@ footer {
     .top-grid .col-md .six {
       width: 100vw !important;
       height: auto !important;
-      margin: 5px 0 !important;
-      padding: 10px !important; }
+      margin: 0px 0 !important;
+      padding: 5px !important; }
     .top-grid .col-md a {
       margin: 0 auto !important;
       padding: 0 !important; }
@@ -1545,7 +1545,7 @@ footer {
         padding: 0 !important; }
   .jumbotron.recomendations {
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 0px; }
     .jumbotron.recomendations h2 {
       text-align: center !important; }
     .jumbotron.recomendations .item {
@@ -1743,8 +1743,8 @@ footer {
       letter-spacing: -0.05em;
       margin-bottom: 40px; }
   .jumbotron.recomendations {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 0px; }
     .jumbotron.recomendations h2 {
       text-align: center !important; }
     .jumbotron.recomendations .item {
