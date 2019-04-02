@@ -136,57 +136,7 @@
     }
 }
 
-@media screen and (max-width: 766px) {
-    .top-grid h2 {
-        position: absolute;
-        z-index: 1;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 34px;
-        line-height: normal;
-        letter-spacing: 0.1em;
-        text-align: left;
-        color: #FFFFFF;
-    }
-
-    .top1 {
-        margin-top: 550px;
-        margin-left: 240px;
-    }
-
-    .top2 {
-        margin-top: 100px;
-        margin-left: 450px;
-    }
-
-    .top3 {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .top4 {
-        margin-top: 20px;
-        margin-left: 230px;
-    }
-
-    .top5 {
-        margin-top: 450px;
-        margin-left: 380px;
-    }
-
-    .top6 {
-        margin-top: 20px;
-        margin-left: 120px;
-    }
-
-    .top7 {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 760.9px) {
+@media screen and (max-width: 766.9px) {
     .top-grid h2 {
         position: absolute;
         z-index: 1;
@@ -210,12 +160,44 @@
         margin-left: 350px;
     }
 
+
+    .top3 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .top4 {
+        margin-top: 20px;
+        margin-left: 230px;
+    }
+
     .top5 {
         margin-top: 350px;
         margin-left: 300px;
     }
 
+    .top6 {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
 
+    .top7 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 700.9px) {
+
+    .top4 {
+        margin-top: 20px;
+        margin-left: 180px;
+    }
+
+    .top6 {
+        margin-top: 20px;
+        margin-left: 95px;
+    }
 }
 
 @media screen and (max-width: 560.9px) {

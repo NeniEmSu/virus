@@ -404,14 +404,14 @@ main {
       color: #D41F26; }
   main .top-grid a img {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
-    opacity: 0.9;
+    opacity: 1;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
     -moz-transition: all ease-in-out 300ms;
     -ms-transition: all ease-in-out 300ms;
     -o-transition: all ease-in-out 300ms; }
     main .top-grid a img:hover {
-      opacity: 1;
+      opacity: 0.9;
       text-decoration: none;
       color: #D41F26;
       transform: scale(1.02);
@@ -1384,6 +1384,7 @@ footer {
     border: none;
     margin-top: 40px; }
   .top-grid a img {
+    box-shadow: none !important;
     opacity: 1 !important;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;

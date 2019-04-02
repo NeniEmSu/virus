@@ -606,6 +606,7 @@
     .top-grid {
 
         a img {
+            box-shadow: none !important;
             opacity: 1 !important;
             transition: all ease-in-out 300ms;
             -webkit-transition: all ease-in-out 300ms;
