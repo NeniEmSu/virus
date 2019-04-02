@@ -387,6 +387,21 @@ nav ul li a {
 main {
   position: relative;
   margin-top: 183px; }
+  main .top-grid a h2 {
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms; }
+    main .top-grid a h2:hover {
+      text-decoration: none;
+      color: #D41F26;
+      transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      color: #D41F26; }
   main .top-grid a img {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
     opacity: 0.9;
@@ -403,7 +418,8 @@ main {
       -webkit-transform: scale(1.02);
       -moz-transform: scale(1.02);
       -ms-transform: scale(1.02);
-      -o-transform: scale(1.02); }
+      -o-transform: scale(1.02);
+      color: #D41F26; }
     main .top-grid a img.one {
       width: 373.96px;
       height: 410px;
@@ -1157,7 +1173,7 @@ footer {
       .jumbotron.recomendations .item {
         margin-left: 0px; } }
 
-@media screen and (min-width: 769px) and (max-width: 990.9px) {
+@media screen and (min-width: 768px) and (max-width: 990.9px) {
   .hide {
     display: none; }
   .contact .card {
@@ -1298,7 +1314,7 @@ footer {
       .jumbotron.recomendations .item {
         margin-left: -12px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hide,
   .hide-md {
     display: none; }
