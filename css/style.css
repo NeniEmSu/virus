@@ -529,7 +529,9 @@ main {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     margin-bottom: 40px;
-    justify-items: center; }
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto; }
     .jumbotron .card-deck .card img {
       align-self: center; }
       .jumbotron .card-deck .card img.small-img {
@@ -1800,7 +1802,9 @@ footer {
       box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
       border-radius: 20px;
       margin-bottom: 40px;
-      justify-items: center; }
+      justify-items: center;
+      margin-left: auto;
+      margin-right: auto; }
       .jumbotron.recomendations .card-deck .card hr {
         width: 80%;
         align-self: center;
