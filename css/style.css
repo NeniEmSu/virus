@@ -443,6 +443,7 @@ main {
       width: 448.32px;
       height: 274px; }
     main .top-grid a img.five {
+      border: .15px grey solid;
       width: 325.85px;
       height: 274px; }
     main .top-grid a img.six {
