@@ -69,98 +69,7 @@
     </script>
 
     <style>
-        h1 {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold !important;
-            font-size: 40px !important;
-            line-height: 33px !important;
-            letter-spacing: 0 !important;
 
-            color: #000000 !important;
-
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        h1:before,
-        h1:after {
-            content: '';
-            border: 1px solid #000000;
-            margin: 0 20px 0 0;
-            flex: 1 0 20px;
-        }
-
-        h1:after {
-            margin: 0 0 0 20px;
-        }
-
-
-        .heading {
-            margin: 33px auto;
-        }
-
-        .top-separator {
-            margin: 0;
-            border: 3px solid #000000;
-        }
-
-        .displays {
-            margin-top: 0;
-        }
-
-        .block-one {
-            background-image: url("img/Блог1.png") !important;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-        }
-
-        .block-two {
-            background-image: url("img/Блог2.png") !important;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-        }
-
-        .block-three {
-            background-image: url("img/Блог3.png") !important;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-        }
-
-        a .btn {
-            padding: 12px 66px !important;
-        }
-
-        .display {
-            height: 300px;
-            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-            border-radius: 0 !important;
-            background-color: #000000 !important;
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: normal;
-
-            color: #FFFFFF !important;
-        }
-
-        .separator {
-            margin: 0;
-            opacity: 0.6;
-            border: 1px solid #000000;
-        }
     </style>
 
 </head>
@@ -253,149 +162,105 @@
         </header>
 
         <main>
+            <div class="heading-image" style="background-image:url(img/contactPageHeadImg.png);">
 
-            <div class="container text-center heading p-0">
-                <h1>Блог</h1>
             </div>
-            <hr class="top-separator">
 
-            <div class="jumbotron displays">
+
+
+
+
+
+
+
+
+            <div class="jumbotron">
                 <div class=" container mx-auto contact">
-                    <div class="card display block-one p-5">
-                        <div class="row m-auto">
-                            <div class="col-md-9  m-auto">
-                                <h2>Як самостійно доглядати за салоном автомобіля?</h2>
+                    <div class="card p-5">
+                        <form class="text-right">
+                            <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
+                                    ДЕТЕЙЛІНГА</span><br>
+                                ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+
+                                    <div class="form-group">
+                                        <label hidden for="carModel">Введіть модель авто</label>
+                                        <input type="text" id="carModel" name="carModel" class="form-control"
+                                            aria-describedby="carModel" placeholder="Введіть модель авто">
+                                    </div>
+                                    <div class="form-group">
+                                        <label hidden for="typeOfWork">Оберіть тип робіт</label>
+                                        <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+
+
+                                    <div class="form-group">
+                                        <label hidden for="name">Ім’я</label>
+                                        <input type="text" id="name" name="name" class="form-control"
+                                            aria-describedby="name" placeholder="Ім’я*">
+                                    </div>
+                                    <div class="form-group">
+                                        <label hidden for="phone">Телефон</label>
+                                        <input type="number" id="phone" aria-describedby="phone" name="phone"
+                                            class="form-control" placeholder="Телефон*">
+                                    </div>
+
+
+                                    <button type="submit" class="btn">ВІДПРАВИТИ</button>
+                                </div>
                             </div>
-                            <div class="col-md-3 m-auto">
-                                <a href="#" class="btn">ЧИТАТИ</a>
-                            </div>
-                        </div>
+                            <p class="text-left col-12">Відправте запит, і наш менеджер
+                                зв’яжеться з вами
+                                найближчим
+                                часом</p>
+
+                        </form>
 
                     </div>
-
-                    <hr class="separator">
-
-                    <div class="card display block-two p-5">
-                        <div class="row  m-auto">
-                            <div class="col-md-3  m-auto">
-                                <a href="#" class="btn">ЧИТАТИ</a>
-                            </div>
-                            <div class="col-md-9  m-auto text-right">
-                                <h2>Скільки разів можна полірувати автомобіль?</h2>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <hr class="separator">
-
-                    <div class="card display block-three p-5">
-                        <div class="row  m-auto">
-                            <div class="col-md-9  m-auto">
-                                <h2>Чому не варто полірувати автомобіль в домашніх умовах?</h2>
-                            </div>
-                            <div class="col-md-3  m-auto">
-                                <a href="#" class="btn">ЧИТАТИ</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-
                 </div>
 
 
-
-
-
-
-                <div class="jumbotron">
-                    <div class=" container mx-auto contact">
-                        <div class="card p-5">
-                            <form class="text-right">
-                                <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
-                                        ДЕТЕЙЛІНГА</span><br>
-                                    ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-
-
-                                        <div class="form-group">
-                                            <label hidden for="carModel">Введіть модель авто</label>
-                                            <input type="text" id="carModel" name="carModel" class="form-control"
-                                                aria-describedby="carModel" placeholder="Введіть модель авто">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="typeOfWork">Оберіть тип робіт</label>
-                                            <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-
-
-                                        <div class="form-group">
-                                            <label hidden for="name">Ім’я</label>
-                                            <input type="text" id="name" name="name" class="form-control"
-                                                aria-describedby="name" placeholder="Ім’я*">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="phone">Телефон</label>
-                                            <input type="number" id="phone" aria-describedby="phone" name="phone"
-                                                class="form-control" placeholder="Телефон*">
-                                        </div>
-
-
-                                        <button type="submit" class="btn">ВІДПРАВИТИ</button>
-                                    </div>
-                                </div>
-                                <p class="text-left col-12">Відправте запит, і наш менеджер
-                                    зв’яжеться з вами
-                                    найближчим
-                                    часом</p>
-
-                            </form>
-
+                <div class="container text-center process">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
+                            <div>
+                                <h6>Великий спектр послуг</h6>
+                            </div>
                         </div>
-                    </div>
-
-
-                    <div class="container text-center process">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
-                                <div>
-                                    <h6>Великий спектр послуг</h6>
-                                </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-service-filled-100.png" alt="icons service filled">
+                            <div>
+                                <h6>Персонал та сервіс</h6>
                             </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-service-filled-100.png" alt="icons service filled">
-                                <div>
-                                    <h6>Персонал та сервіс</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
-                                <div>
-                                    <h6>Лояльність</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
-                                <div>
-                                    <h6>Ексклюзивні пропозиції</h6>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
+                            <div>
+                                <h6>Лояльність</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
+                            <div>
+                                <h6>Ексклюзивні пропозиції</h6>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </div>
 
         </main>
 
