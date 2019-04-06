@@ -530,7 +530,6 @@ main {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     margin-bottom: 40px;
-    justify-items: center;
     margin-left: auto;
     margin-right: auto; }
     .jumbotron .card-deck .card img {
@@ -968,6 +967,205 @@ footer {
         -o-transform: scale(1.1); }
       footer .bottom-contact ul li a.instagram, footer .bottom-contact ul li a.facebook {
         margin-left: 20px; }
+
+.shop-heading-image {
+  margin-top: -53px;
+  background: #000000;
+  background-image: url(../img/shopPageHeadImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px; }
+  .shop-heading-image h1 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150px;
+    color: #FFFFFF; }
+    .shop-heading-image h1 span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 150px;
+      color: #D41F26; }
+
+.sales-cards .btn {
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms; }
+  .sales-cards .btn:hover {
+    color: #D41F26;
+    background: #FFFFFF;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1); }
+
+.sales-cards h2 {
+  color: #8B8B8B;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+  margin-bottom: 40px; }
+
+.sales-cards .card-deck .card {
+  width: 100%;
+  height: 343px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  margin-bottom: 40px; }
+  .sales-cards .card-deck .card img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    object-fit: scale-down; }
+    .sales-cards .card-deck .card img.small-img {
+      width: 100%;
+      height: auto;
+      min-height: 200px;
+      object-fit: scale-down; }
+  .sales-cards .card-deck .card hr {
+    width: 90%;
+    align-self: center;
+    margin: 0;
+    border: 1px solid #C4C4C4; }
+  .sales-cards .card-deck .card .card-title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    color: #000000; }
+  .sales-cards .card-deck .card small s {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #D41F26; }
+  .sales-cards .card-deck .card .card-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    color: #8B8B8B; }
+    .sales-cards .card-deck .card .card-text span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 10px;
+      text-align: center; }
+  .sales-cards .card-deck .card .discount {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #239A0F;
+    margin-right: 22px; }
+  .sales-cards .card-deck .card .btn {
+    padding: 10px 26px;
+    background: #D41F26;
+    border-radius: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms; }
+    .sales-cards .card-deck .card .btn:hover {
+      color: #D41F26;
+      background: #FFFFFF;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1); }
+
+.sales-cards .card-deck .card__hover {
+  transition: transform 500ms;
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  -o-transition: transform 500ms; }
+  .sales-cards .card-deck .card__hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
+  .sales-cards .card-deck .card__hover:hover, .sales-cards .card-deck .card__hover:focus {
+    transform: scale3d(1.01, 1.01, 1);
+    -webkit-transform: scale3d(1.01, 1.01, 1);
+    -moz-transform: scale3d(1.01, 1.01, 1);
+    -ms-transform: scale3d(1.01, 1.01, 1);
+    -o-transform: scale3d(1.01, 1.01, 1); }
+    .sales-cards .card-deck .card__hover:hover::after, .sales-cards .card-deck .card__hover:focus::after {
+      opacity: 1; }
+
+.sales-cards .btn {
+  padding: 10px 32px;
+  background: #D41F26;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms; }
+  .sales-cards .btn:hover {
+    color: #D41F26;
+    background: #FFFFFF;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1); }
+  .sales-cards .btn.see-more {
+    margin-top: 40px; }
 
 .contact-heading-image {
   margin-top: -53.5px;
