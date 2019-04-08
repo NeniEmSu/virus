@@ -68,167 +68,6 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <style>
-        .btn {
-            padding: 8px 23px !important;
-            background-color: #ffffff;
-            border-radius: 50px;
-            font-family: 'Roboto Condensed';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: normal;
-
-            color: #000000;
-            line-height: normal;
-            text-align: center;
-            border: 1px solid #D41F26;
-            box-sizing: border-box;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: ease-in-out 300ms;
-            -webkit-transition: ease-in-out 300ms;
-            -moz-transition: ease-in-out 300ms;
-            -ms-transition: ease-in-out 300ms;
-            -o-transition: ease-in-out 300ms;
-        }
-
-        .btn:hover {
-            color: #fff;
-            background-color: #D41F26;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-
-        .car-toggle {
-            margin-top: 48px;
-        }
-
-        .red {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: normal;
-            text-align: center;
-
-            color: #D41F26;
-
-        }
-
-        button.btn {
-            padding: 10px 37px !important;
-            background-color: #D41F26;
-            border-radius: 50px;
-            font-family: 'Roboto Condensed';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: normal;
-
-            text-align: center;
-            color: #ffffff;
-            text-decoration: none;
-            transition: ease-in-out 300ms;
-            -webkit-transition: ease-in-out 300ms;
-            -moz-transition: ease-in-out 300ms;
-            -ms-transition: ease-in-out 300ms;
-            -o-transition: ease-in-out 300ms;
-        }
-
-        button.btn:hover {
-            color: #D41F26;
-            background-color: #ffffff;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-
-        button.btn:hover:after {
-            color: #D41F26;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-
-        button.btn:after {
-            color: #ffffff;
-            float: right;
-            font-size: 20px;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f054";
-            margin-left: 20px;
-            margin-right: -20px;
-            transition: ease-in-out 300ms;
-            -webkit-transition: ease-in-out 300ms;
-            -moz-transition: ease-in-out 300ms;
-            -ms-transition: ease-in-out 300ms;
-            -o-transition: ease-in-out 300ms;
-        }
-
-        select {
-            height: 48px !important;
-            margin-top: 20px;
-            border: 2px solid #E5E5E5 !important;
-            box-sizing: border-box !important;
-            border-radius: 50px !important;
-        }
-
-        form.choose-brand {
-            margin-top: 100px;
-            margin-bottom: 127px;
-        }
-
-        form.choose-brand p {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: normal;
-            text-align: center;
-
-            color: #000000;
-        }
-
-        .card-heading,
-        .fab-header {
-            font-family: Roboto !important;
-            font-style: normal !important;
-            font-weight: bold !important;
-            font-size: 40px !important;
-            line-height: normal !important;
-
-            color: #000000 !important;
-
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-
-        .fab-header:before,
-        .fab-header:after {
-            content: '';
-            border: 1px solid #000000;
-            margin: 0 20px 0 0;
-            flex: 1 0 40px;
-        }
-
-        .fab-header:after {
-            margin: 0 0 0 20px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -360,7 +199,7 @@
 
                     <div class="form-group w-50 mx-auto">
                         <label hidden for="brand">Марка</label>
-                        <select id="brand" aria-describedby="brand" class="form-control">
+                        <select id="brand" aria-describedby="brand" class="form-control brand">
                             <option>Марка</option>
                             <option>Марка</option>
                             <option>Марка</option>
@@ -371,7 +210,7 @@
 
                     <div class="form-group w-50 mx-auto">
                         <label hidden for="model">Модель</label>
-                        <select id="model" aria-describedby="model" class="form-control">
+                        <select id="model" aria-describedby="model" class="form-control model">
                             <option>Модель</option>
                             <option>Модель</option>
                             <option>Модель</option>
@@ -385,96 +224,30 @@
             </div>
 
 
-            <div class="jumbotron" style="margin: 0;
-            padding: 0;">
-                <div class="container" style="padding: 40px 0 0 0;">
+            <div class="jumbotron services">
+                <div class="container services-container">
 
 
                     <!-- Полірування Without images -->
                     <h2 class="text-center fab-header">Полірування</h2>
-                    <div class="card-deck m-0 p-0" style="
-                    margin: 0;
-                   padding: 0;
-                    box-sizing: border-box;
-                    ">
-                        <div class="card" style="
-                         background-image: url('img/services1.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 277px;
-                            max-width: 277px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
-
-
-                            <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            ">
-
-                            </div>
-
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                            ">
-                                <h5 style="
-                                 
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #FFFFFF;
-
-                            box-sizing: border-box;
-
-                            ">Полірування автомобіля</h5>
-
+                    <div class="card-deck m-0 p-0">
+                        <div class="card four-cards  service-one">
+                            <div class="card-body"></div>
+                            <div class="card-end">
+                                <h5>Полірування автомобіля</h5>
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                                    padding: 7px 0;
-                                    font-family: 'Roboto';
-                                    font-style: normal;
-                                    font-weight: bold;
-                                    font-size: 18px;
-                                    line-height: normal;
-
-                                    color: #D41F26;">
-                                            <small style="font-size: 14px;">від
-
+                                        <p class="">
+                                            <small>від
                                             </small>
                                             5999
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                                    font-family: 'Roboto Condensed';
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 16px;
-                                    line-height: normal;
-                                    background-color: transparent;
-                                    border: #D41F26 1px solid;
-
-                                    color: #FFFFFF;
-                                    padding: 8px 14px;
-                                    ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -484,84 +257,30 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services2.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                        height: 277px;
-                        width: 100%;
-                        min-width: 277px;
-                        max-width: 277px;
-                        background-color: #000000;
-                        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                        border-radius: 20px;">
+                        <div class="card four-cards  service-two">
 
 
-                            <div class="card-body" style="
-                        height: 212px;
-                        box-sizing: border-box;
-                        padding: 20px;
-                        margin-bottom: 10px;
-                        ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                             
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: normal;
-
-                        color: #FFFFFF;
-
-                        box-sizing: border-box;
-
-                        ">Полірування фар</h5>
+                            <div class="card-end">
+                                <h5>Полірування фар</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                                padding: 7px 0;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 18px;
-                                line-height: normal;
-
-                                color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             600
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                                font-family: 'Roboto Condensed';
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 16px;
-                                line-height: normal;
-                                background-color: transparent;
-                                border: #D41F26 1px solid;
-
-                                color: #FFFFFF;
-                                padding: 8px 14px;
-                                ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -571,85 +290,31 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services3.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 277px;
-                    max-width: 277px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card four-cards  service-three">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-
-                    color: #FFFFFF;
-
-                    box-sizing: border-box;
-
-                    ">Полірування
+                            <div class="card-end">
+                                <h5>Полірування
                                     вставок салону</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             500
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -659,85 +324,31 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services4.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                height: 277px;
-                width: 100%;
-                min-width: 277px;
-                max-width: 277px;
-                background-color: #000000;
-                box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                border-radius: 20px;">
+                        <div class="card four-cards  service-four">
 
 
-                            <div class="card-body" style="
-                height: 212px;
-                box-sizing: border-box;
-                padding: 20px;
-                margin-bottom: 10px;
-                ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                     
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: normal;
-
-                color: #FFFFFF;
-
-                box-sizing: border-box;
-
-                ">Полірування
+                            <div class="card-end">
+                                <h5>Полірування
                                     центральних стійок</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                        padding: 7px 0;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: normal;
-
-                        color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             800
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                        font-family: 'Roboto Condensed';
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: normal;
-                        background-color: transparent;
-                        border: #D41F26 1px solid;
-
-                        color: #FFFFFF;
-                        padding: 8px 14px;
-                        ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -752,89 +363,31 @@
 
                     <!-- Хімчистка Without images -->
                     <h2 class="text-center fab-header">Хімчистка</h2>
-                    <div class="card-deck" style="
-                    margin: 0;
-                   padding: 0;
-                    box-sizing: border-box;
-                    ">
-                        <div class="card" style="
-                         background-image: url('img/services5.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 277px;
-                            max-width: 277px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
+                    <div class="card-deck">
+                        <div class="card four-cards  service-four">
 
 
-                            <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                                 
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #FFFFFF;
-
-                            box-sizing: border-box;
-
-                            ">Хімчистка</h5>
+                            <div class="card-end">
+                                <h5>Хімчистка</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                                    padding: 7px 0;
-                                    font-family: 'Roboto';
-                                    font-style: normal;
-                                    font-weight: bold;
-                                    font-size: 18px;
-                                    line-height: normal;
-
-                                    color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             1999
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                                    font-family: 'Roboto Condensed';
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 16px;
-                                    line-height: normal;
-                                    background-color: transparent;
-                                    border: #D41F26 1px solid;
-
-                                    color: #FFFFFF;
-                                    padding: 8px 14px;
-                                    ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -844,85 +397,31 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services6.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                        height: 277px;
-                        width: 100%;
-                        min-width: 277px;
-                        max-width: 277px;
-                        background-color: #000000;
-                        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                        border-radius: 20px;">
+                        <div class="card four-cards  service-six">
 
 
-                            <div class="card-body" style="
-                        height: 212px;
-                        box-sizing: border-box;
-                        padding: 20px;
-                        margin-bottom: 10px;
-                        ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                             
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: normal;
-
-                        color: #FFFFFF;
-
-                        box-sizing: border-box;
-
-                        ">Хімчистка колесних арок,
+                            <div class="card-end">
+                                <h5>Хімчистка колесних арок,
                                     підвіски, дисків</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                                padding: 7px 0;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 18px;
-                                line-height: normal;
-
-                                color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             800
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                                font-family: 'Roboto Condensed';
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 16px;
-                                line-height: normal;
-                                background-color: transparent;
-                                border: #D41F26 1px solid;
-
-                                color: #FFFFFF;
-                                padding: 8px 14px;
-                                ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -932,85 +431,31 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services7.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 277px;
-                    max-width: 277px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card four-cards  service-seven">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-
-                    color: #FFFFFF;
-
-                    box-sizing: border-box;
-
-                    ">Хімчистка
+                            <div class="card-end">
+                                <h5>Хімчистка
                                     передніх сидінь</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             275
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1020,85 +465,31 @@
 
                         </div>
 
-                        <div class="card" style="
-                         background-image: url('img/services8.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                height: 277px;
-                width: 100%;
-                min-width: 277px;
-                max-width: 277px;
-                background-color: #000000;
-                box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                border-radius: 20px;">
+                        <div class="card four-cards  service-eight">
 
 
-                            <div class="card-body" style="
-                height: 212px;
-                box-sizing: border-box;
-                padding: 20px;
-                margin-bottom: 10px;
-                ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                     
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: normal;
-
-                color: #FFFFFF;
-
-                box-sizing: border-box;
-
-                ">Хімчистка
+                            <div class="card-end">
+                                <h5>Хімчистка
                                     задніх сидінь</h5>
 
                                 <div class="row">
                                     <div class="col-5 pr-0">
-                                        <p class="" style="
-                        padding: 7px 0;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: normal;
-
-                        color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             495
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-7 m-0 p-0">
-                                        <a href="#" class="btn" style="
-                        font-family: 'Roboto Condensed';
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: normal;
-                        background-color: transparent;
-                        border: #D41F26 1px solid;
-
-                        color: #FFFFFF;
-                        padding: 8px 14px;
-                        ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1111,295 +502,102 @@
 
                     <!-- Воскове покриття Without images -->
                     <h2 class="text-center fab-header">Воскове покриття</h2>
-                    <div class="card-deck" style="
-                    margin: 0;
-                   padding: 0;
-                    box-sizing: border-box;
-                    ">
-                        <div class="card" style="
-                         background-image: url('img/services9.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 560px;
-                            max-width: 560px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
+                    <div class="card-deck">
+                        <div class="card two-cards  service-nine">
 
 
-                            <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                                 
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #FFFFFF;
-
-                            box-sizing: border-box;
-
-                            ">Покриття твердим універсальним воском Soft 99</h5>
+                            <div class="card-end">
+                                <h5>Покриття твердим універсальним воском Soft 99</h5>
 
                                 <div class="row">
                                     <div class="col-8">
-                                        <p class="text-right" style="
-padding: 7px 0;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: normal;
-
-color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="text-right">
+                                            <small>від
 
                                             </small>
                                             1200
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <a href="#" class="btn" style="
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: normal;
-background-color: transparent;
-border: #D41F26 1px solid;
+                                        <a href="#" class="btn">
+                                            Читати більше
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-color: #FFFFFF;
-padding: 8px 14px;
-">
+
+                        <div class="card two-cards  service-ten">
+
+                            <div class="card-body">
+                            </div>
+
+                            <div class="card-end">
+                                <h5>Покриття твердим воском Dark Soft 99</h5>
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="text-right">
+                                            <small>від
+
+                                            </small>
+                                            1200
+                                            <small>
+                                                грн
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
-
                         </div>
-
-                        <div class="card" style="
-                         background-image: url('img/services10.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                        height: 277px;
-                        width: 100%;
-                        min-width:560px;
-                        max-width:560px;
-                        background-color: #000000;
-                        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                        border-radius: 20px;">
-
-
-                            <div class="card-body" style="
-                        height: 212px;
-                        box-sizing: border-box;
-                        padding: 20px;
-                        margin-bottom: 10px;
-                        ">
-
-                            </div>
-
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                             
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: normal;
-
-                        color: #FFFFFF;
-
-                        box-sizing: border-box;
-
-                        ">Покриття твердим воском Dark Soft 99</h5>
-
-                                <div class="row">
-                                    <div class="col-8">
-                                        <p class="text-right" style="
-padding: 7px 0;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: normal;
-
-color: #D41F26;">
-                                            <small style="font-size: 14px;">від
-
-                                            </small>
-                                            1200
-                                            <small style="font-size: 14px;">
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        <a href="#" class="btn" style="
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: normal;
-background-color: transparent;
-border: #D41F26 1px solid;
-
-color: #FFFFFF;
-padding: 8px 14px;
-">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
 
                     </div>
 
 
-                    <div class="card-deck" style="
-                    margin: 0;
-                   padding: 0;
-                    box-sizing: border-box;
-                    ">
+                    <div class="card-deck">
 
 
                         <div class="row">
                             <!-- Керамічне покриття Without images -->
-                            <div class="col-6">
+                            <div class="col-xl-6 mx-auto p-0">
                                 <h2 class="text-center card-heading ">Керамічне покриття</h2>
-                                <div class="card" style="
-
-background-image: url('img/services11.png')!important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 560px;
-                            max-width: 560px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
+                                <div class="card two-cards  service-eleven">
 
 
-                                    <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            "> </div>
+                                    <div class="card-body"> </div>
 
 
-                                    <div class="card-end" style="
-                                background-color: rgba(0, 0, 0, 0.6);
-                                backdrop-filter: blur(5px);
-                                border-radius: 0px 0px 20px 20px;
-                                box-sizing: border-box;
-                                padding: 0 20px;
-                                padding-bottom: 10px;
-                            ">
-                                        <h5 class="col-12" style="
-                                
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #FFFFFF;
-
-                            box-sizing: border-box;
-
-                            ">Керамічне покриття кузова</h5>
-                                        <hr style="width: 100%;">
+                                    <div class="card-end">
+                                        <h5 class="col-12">Керамічне покриття кузова</h5>
+                                        <hr>
                                         <div class="row">
                                             <div class="col-3">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Двухфазна мийка</p>
+                                                <p class="subtext">Двухфазна мийка</p>
                                             </div>
                                             <div class="col-3">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Очищення кузова
+                                                <p class="subtext">Очищення кузова
                                                     від бітуму</p>
                                             </div>
                                             <div class="col-3">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Легке вілновлююче
+                                                <p class="subtext">Легке вілновлююче
                                                     полірування</p>
                                             </div>
                                             <div class="col-3">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Керамічне покриття
+                                                <p class="subtext">Керамічне покриття
                                                     окремих деталей</p>
                                             </div>
                                         </div>
@@ -1407,37 +605,18 @@ background-image: url('img/services11.png')!important;
 
                                         <div class="row">
                                             <div class="col-8">
-                                                <p class="text-right" style="
-        padding: 7px 0;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: normal;
-
-        color: #D41F26;">
-                                                    <small style="font-size: 14px;">від
+                                                <p class="text-right">
+                                                    <small>від
 
                                                     </small>
                                                     12999
-                                                    <small style="font-size: 14px;">
+                                                    <small>
                                                         грн
                                                     </small>
                                                 </p>
                                             </div>
                                             <div class="col-4 text-right">
-                                                <a href="#" class="btn" style="
-        font-family: 'Roboto Condensed';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: normal;
-        background-color: transparent;
-        border: #D41F26 1px solid;
-
-        color: #FFFFFF;
-        padding: 8px 14px;
-        ">
+                                                <a href="#" class="btn">
                                                     Читати більше
                                                 </a>
                                             </div>
@@ -1449,91 +628,29 @@ background-image: url('img/services11.png')!important;
                             </div>
 
                             <!-- Передпродажна підготовка Without images -->
-                            <div class="col-6">
+                            <div class="col-xl-6 mx-auto px-3">
                                 <h2 class="text-center card-heading">Передпродажна підготовка</h2>
-                                <div class="card" style="
-                             background-image: url('img/services12.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 560px;
-                            max-width: 560px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
+                                <div class="card two-cards  service-twelve">
 
 
-                                    <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            ">
+                                    <div class="card-body">
 
                                     </div>
 
-                                    <div class="card-end" style="
-                                background-color: rgba(0, 0, 0, 0.6);
-                                backdrop-filter: blur(5px);
-                                border-radius: 0px 0px 20px 20px;
-                                box-sizing: border-box;
-                                padding: 0 20px;
-                                padding-bottom: 10px;
-                            ">
-                                        <h5 class="col-12" style="
-                                
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-
-                            color: #FFFFFF;
-
-                            box-sizing: border-box;
-
-                            ">Комплекс</h5>
+                                    <div class="card-end">
+                                        <h5 class="col-12">Комплекс</h5>
                                         <hr style="width: 100%;">
                                         <div class="row">
                                             <div class="col-4">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Трьохфазна мийка авто
+                                                <p class="subtext">Трьохфазна мийка авто
                                                     + Чистка ковроліну підлоги</p>
                                             </div>
                                             <div class="col-4">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Чистка дверних карт
+                                                <p class="subtext">Чистка дверних карт
                                                     + Чистка панелі</p>
                                             </div>
                                             <div class="col-4">
-                                                <p style="
-                                            font-family: Roboto;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 12px;
-                                            line-height: normal;
-
-                                            color: #FFFFFF;
-
-                                            ">Чистка воздуховодів
+                                                <p class="subtext">Чистка воздуховодів
                                                     + Чистка сидінь і стелі
                                                     + Ароматизація салону</p>
                                             </div>
@@ -1542,37 +659,18 @@ background-image: url('img/services11.png')!important;
 
                                         <div class="row">
                                             <div class="col-8">
-                                                <p class="text-right" style="
-                                    padding: 7px 0;
-                                    font-family: 'Roboto';
-                                    font-style: normal;
-                                    font-weight: bold;
-                                    font-size: 18px;
-                                    line-height: normal;
-
-                                    color: #D41F26;">
-                                                    <small style="font-size: 14px;">від
+                                                <p class="text-right">
+                                                    <small>від
 
                                                     </small>
                                                     1100
-                                                    <small style="font-size: 14px;">
+                                                    <small>
                                                         грн
                                                     </small>
                                                 </p>
                                             </div>
                                             <div class="col-4 text-right">
-                                                <a href="#" class="btn" style="
-                                    font-family: 'Roboto Condensed';
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 16px;
-                                    line-height: normal;
-                                    background-color: transparent;
-                                    border: #D41F26 1px solid;
-
-                                    color: #FFFFFF;
-                                    padding: 8px 14px;
-                                    ">
+                                                <a href="#" class="btn">
                                                     Читати більше
                                                 </a>
                                             </div>
@@ -1589,90 +687,32 @@ background-image: url('img/services11.png')!important;
 
 
                     <h2 class="text-center fab-header">Додаткові послуги</h2>
-                    <div class="card-deck" style="
-                        margin: 0;
-                       padding: 0;
-                        box-sizing: border-box;
-                        ">
+                    <div class="card-deck">
 
-                        <div class="card" style="
-                                background-image: url('img/services13.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover; 
-                            height: 277px;
-                            width: 100%;
-                            min-width: 376px;
-                            max-width: 376px;
-                            background-color: #000000;
-                            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                            border-radius: 20px;">
+                        <div class="card three-cards  service-13">
 
 
-                            <div class="card-body" style="
-                            height: 212px;
-                            box-sizing: border-box;
-                            padding: 20px;
-                            margin-bottom: 10px;
-                            ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                                 
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #FFFFFF;
-    
-                            box-sizing: border-box;
-    
-                            ">Реставнація подряпин на кузові</h5>
+                            <div class="card-end">
+                                <h5>Реставнація подряпин на кузові</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-    padding: 7px 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: normal;
-    
-    color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             130
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: normal;
-    background-color: transparent;
-    border: #D41F26 1px solid;
-    
-    color: #FFFFFF;
-    padding: 8px 14px;
-    ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1682,84 +722,30 @@ background-image: url('img/services11.png')!important;
 
                         </div>
 
-                        <div class="card" style="
-        background-image: url('img/services14.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                        height: 277px;
-                        width: 100%;
-                        min-width: 376px;
-                        max-width: 376px;
-                        background-color: #000000;
-                        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                        border-radius: 20px;">
+                        <div class="card three-cards  service-14">
 
 
-                            <div class="card-body" style="
-                        height: 212px;
-                        box-sizing: border-box;
-                        padding: 20px;
-                        margin-bottom: 10px;
-                        ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                             
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: normal;
-    
-                        color: #FFFFFF;
-    
-                        box-sizing: border-box;
-    
-                        ">Перешиття шкіряних деталей салону</h5>
+                            <div class="card-end">
+                                <h5>Перешиття шкіряних деталей салону</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-    padding: 7px 0;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: normal;
-    
-    color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             500
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: normal;
-    background-color: transparent;
-    border: #D41F26 1px solid;
-    
-    color: #FFFFFF;
-    padding: 8px 14px;
-    ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1769,84 +755,30 @@ background-image: url('img/services11.png')!important;
 
                         </div>
 
-                        <div class="card" style="
-        background-image: url('img/services15.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-15">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Антидощ</h5>
+                            <div class="card-end" s>
+                                <h5>Антидощ</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             600
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1857,84 +789,30 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services16.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-16">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Мийка мотору парою</h5>
+                            <div class="card-end">
+                                <h5>Мийка мотору парою</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             500
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -1945,82 +823,28 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services17.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-17">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Шумоізоляція</h5>
+                            <div class="card-end">
+                                <h5>Шумоізоляція</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
+                                        <p class="">
 
                                             330
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 $
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2031,85 +855,31 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services18.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-18">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Видалення запахів
+                            <div class="card-end">
+                                <h5>Видалення запахів
                                     <br>Бактерецидна обробка</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             500
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2120,84 +890,30 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services19.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-19">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                         font-family: Roboto;
-                         font-style: normal;
-                         font-weight: normal;
-                         font-size: 18px;
-                         line-height: normal;
-         
-                         color: #FFFFFF;
-         
-                         box-sizing: border-box;
-         
-                         ">Видалення вмятин без покраски PDR</h5>
+                            <div class="card-end">
+                                <h5>Видалення вмятин без покраски PDR</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             0
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2207,84 +923,30 @@ background-image: url('img/services11.png')!important;
 
                         </div>
 
-                        <div class="card" style="
-        background-image: url('img/services20.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-20">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Озонація</h5>
+                            <div class="card-end">
+                                <h5>Озонація</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             1000
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2294,84 +956,30 @@ background-image: url('img/services11.png')!important;
 
                         </div>
 
-                        <div class="card" style="
-                                 background-image: url('img/services21.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                                height: 277px;
-                                width: 100%;
-                                min-width: 376px;
-                                max-width: 376px;
-                                background-color: #000000;
-                                box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                                border-radius: 20px;">
+                        <div class="card three-cards  service-21">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Очистка кондиціонера</h5>
+                            <div class="card-end">
+                                <h5>Очистка кондиціонера</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             1200
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2382,82 +990,28 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services22.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-22">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Чистка дисків</h5>
+                            <div class="card-end">
+                                <h5>Чистка дисків</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
+                                        <p class="">
 
                                             250
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн / шт
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2468,18 +1022,7 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services23.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-23">
 
 
                             <div class="card-body" style="
@@ -2491,59 +1034,21 @@ background-image: url('img/services11.png')!important;
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Керамічне покриття сидінь</h5>
+                            <div class="card-end">
+                                <h5>Керамічне покриття сидінь</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
+                                        <p class="">
 
                                             500
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн / шт
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>
@@ -2554,84 +1059,30 @@ background-image: url('img/services11.png')!important;
                         </div>
 
 
-                        <div class="card" style="
-        background-image: url('img/services24.png') !important;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover; 
-                    height: 277px;
-                    width: 100%;
-                    min-width: 376px;
-                    max-width: 376px;
-                    background-color: #000000;
-                    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
-                    border-radius: 20px;">
+                        <div class="card three-cards  service-24">
 
 
-                            <div class="card-body" style="
-                    height: 212px;
-                    box-sizing: border-box;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                    ">
+                            <div class="card-body">
 
                             </div>
 
-                            <div class="card-end" style="
-                            background-color: rgba(0, 0, 0, 0.6);
-                            backdrop-filter: blur(5px);
-                            border-radius: 0px 0px 20px 20px;
-                            box-sizing: border-box;
-                            padding: 0 20px;
-                            padding-bottom: 10px;
-                        ">
-                                <h5 style="
-                         
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-    
-                    color: #FFFFFF;
-    
-                    box-sizing: border-box;
-    
-                    ">Озонація</h5>
+                            <div class="card-end">
+                                <h5>Озонація</h5>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <p class="" style="
-                            padding: 7px 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: normal;
-    
-                            color: #D41F26;">
-                                            <small style="font-size: 14px;">від
+                                        <p class="">
+                                            <small>від
 
                                             </small>
                                             1000
-                                            <small style="font-size: 14px;">
+                                            <small>
                                                 грн
                                             </small>
                                         </p>
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="#" class="btn" style="
-                            font-family: 'Roboto Condensed';
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: normal;
-                            background-color: transparent;
-                            border: #D41F26 1px solid;
-    
-                            color: #FFFFFF;
-                            padding: 8px 14px;
-                            ">
+                                        <a href="#" class="btn">
                                             Читати більше
                                         </a>
                                     </div>

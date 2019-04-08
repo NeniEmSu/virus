@@ -164,21 +164,46 @@
                 </div>
             </div>
 
-            <div class="container" style="margin: 40px;">
+            <div class="container">
                 <div class="row">
 
                     <div class="filter-sidebar col-md-2">
-                        <form action="#">
-                            <div class="form-group">
-                                <label hidden for="typeOfWork">Оберіть тип робіт</label>
-                                <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
-                                    <option>Оберіть тип робіт</option>
-                                    <option>Оберіть тип робіт</option>
-                                    <option>Оберіть тип робіт</option>
-                                    <option>Оберіть тип робіт</option>
-                                </select>
-                            </div>
-                        </form>
+                        <button class="accordion">Засоби догляду</button>
+                        <div class="panel">
+                            <a href="#">-Фібри</a>
+                            <a href="#">-Шампунь</a>
+                            <a href="#">-Віск</a>
+                            <a href="#">-Пахнючки</a>
+                            <a href="#">-Засіб для чорніння резини</a>
+                        </div>
+
+                        <button class="accordion">Захисні покриття</button>
+                        <div class="panel">
+                            <a href="#">-Кераміка</a>
+                            <a href="#">-Рідке скло</a>
+                            <a href="#">-Кераміка для тканини</a>
+                            <a href="#">-Кераміка для шкіри</a>
+                            <a href="#">-Кераміка диски</a>
+                            <a href="#">-Кераміка резина</a>
+                            <a href="#">-Віск Soft 99</a>
+                        </div>
+
+                        <button class="accordion">Хімія</button>
+                        <div class="panel">
+                            <a href="#">-Хімія</a>
+                            <a href="#">-Хімія</a>
+                            <a href="#">-Хімія</a>
+                        </div>
+
+                        <button class="accordion">Подарункові набори</button>
+                        <div class="panel">
+                            <a href="#">-Подарункові набори</a>
+                            <a href="#">-Подарункові набори</a>
+                            <a href="#">-Подарункові набори</a>
+
+                        </div>
+
+
                     </div>
 
                     <div class="sales-cards col-md-9">
@@ -238,6 +263,26 @@
                         <img src="img/cart.png" alt="Cart icon">
                     </div>
                 </div>
+            </div>
+
+            <div class="container basket text-center">
+                <h3>Корзина</h3>
+
+                <div class="cart-item">
+                    <img src="img/86.png" alt="Koch Chemie Fresh UP">
+                    <h5>Koch Chemie Fresh UP</h5>
+                    <div class="toggle-quantity">
+                        <p>- 1 +</p>
+                    </div>
+                    <div class="cost">
+                        <p> 2900 грн</p>
+                    </div>
+                    <div class="remove-from-chart">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+
+
             </div>
 
 
@@ -311,33 +356,23 @@
                 $("nav ul").toggleClass("showing");
             });
         });
+    </script>
 
-        // owlCarousel
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
 
-                },
-                768: {
-                    items: 2,
-                    margin: 0
-                },
-                1200: {
-                    items: 3,
-                    margin: 10,
-                    loop: true
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("open");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
                 }
-
-            },
-            margin: 20,
-            autoplay: true,
-            autoplayHoverPause: true
-        });
+            });
+        };
     </script>
 
     <script src="js/jquery.fancybox.min.js" type="74bf624512b1c6414329bcb4-text/javascript"></script>

@@ -1,6 +1,7 @@
 .shop-heading-image {
     margin-top: -53px;
-    background: #000000;
+    margin-bottom: 40px;
+    background: $darkColor;
     background-image: url(../img/shopPageHeadImg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -249,5 +250,76 @@
         &.see-more {
             margin-top: 40px;
         }
+    }
+}
+
+
+.accordion {
+    border: 1.48094px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: 20px auto;
+    background-color: $lightColor;
+
+    width: 180px;
+    height: 38px;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+
+    color: $darkColor;
+
+    outline: none;
+    transition: 400ms;
+}
+
+.open,
+.accordion:hover {
+    background-color: #E5E5E5;
+}
+
+.panel {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #8B8B8B;
+
+    display: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.panel a {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #8B8B8B;
+
+    display: block;
+}
+
+.basket {
+
+    display: flex;
+
+    h3 {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: normal;
+
+        color: $darkColor;
+
     }
 }
