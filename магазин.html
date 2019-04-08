@@ -265,23 +265,50 @@
                 </div>
             </div>
 
-            <div class="container basket text-center">
-                <h3>Корзина</h3>
 
-                <div class="cart-item">
-                    <img src="img/86.png" alt="Koch Chemie Fresh UP">
-                    <h5>Koch Chemie Fresh UP</h5>
-                    <div class="toggle-quantity">
-                        <p>- 1 +</p>
+
+            <div class="container basket text-center">
+                <h3 class="">Корзина</h3>
+                <div class="basket-content col-12">
+
+                    <div class="cart-item row">
+                        <img src="img/86.png" alt="Koch Chemie Fresh UP">
+                        <h5>Koch Chemie Fresh UP</h5>
+                        <div class="toggle-quantity">
+                            <p>- 1 +</p>
+                        </div>
+                        <div class="cost">
+                            <p> 2900 грн</p>
+                        </div>
+                        <div class="remove-from-chart">
+                            <p>+</p>
+                        </div>
                     </div>
-                    <div class="cost">
-                        <p> 2900 грн</p>
-                    </div>
-                    <div class="remove-from-chart">
-                        <i class="fa fa-times"></i>
-                    </div>
+
+
+                </div>
+                <div class="sum-total col-12 text-right">
+                    <p>Всього: 5800 грн</p>
                 </div>
 
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label hidden for="name">Ім’я</label>
+                            <input type="text" id="name" name="name" class="form-control" aria-describedby="name"
+                                placeholder="Ім’я*">
+                        </div>
+                        <div class="form-group col-6">
+                            <label hidden for="phone">Телефон</label>
+                            <input type="number" id="phone" aria-describedby="phone" name="phone" class="form-control"
+                                placeholder="Телефон*">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Повернутися</button>
+
+                    <button type="submit" class="btn">Замовити</button>
+                </form>
 
             </div>
 

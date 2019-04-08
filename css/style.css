@@ -1557,7 +1557,7 @@ form.choose-brand p {
   display: block; }
 
 .basket {
-  display: flex; }
+  margin-top: 140px; }
   .basket h3 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -1565,6 +1565,34 @@ form.choose-brand p {
     font-size: 20px;
     line-height: normal;
     color: #000000; }
+  .basket .basket-content {
+    display: flex; }
+    .basket .basket-content img {
+      width: 60px;
+      height: 60px;
+      object-fit: scale-down; }
+    .basket .basket-content .cost p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: normal;
+      color: #000000; }
+    .basket .basket-content .remove-from-chart p {
+      font-weight: bold;
+      font-size: 28px;
+      transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+      -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+      -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+      -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+      -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0); }
+    .basket .basket-content .sum-total p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: normal;
+      color: #000000; }
 
 .contact-heading-image {
   margin-top: -53.5px;
