@@ -31,11 +31,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topText.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62479125-9"
         type="74bf624512b1c6414329bcb4-text/javascript"></script>
@@ -359,45 +355,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+    <!-- Javascript for use on all page -->
     <script src="js/main.js"></script>
-
-    <script src="dist/owl.carousel.min.js"></script>
-
-    <script>
-        // Dropdown Menu
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
-            });
-        });
-
-        // owlCarousel
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1
-
-                },
-                768: {
-                    items: 2,
-                    margin: 0
-                },
-                1200: {
-                    items: 3,
-                    margin: 10,
-                    loop: true
-                }
-
-            },
-            margin: 20,
-            autoplay: true,
-            autoplayHoverPause: true
-        });
-    </script>
 
     <!-- google map Api call -->
     <script async defer
@@ -422,37 +381,6 @@
         }
     </script>
 
-    <script src="js/jquery.fancybox.min.js" type="74bf624512b1c6414329bcb4-text/javascript"></script>
-    <script type="74bf624512b1c6414329bcb4-text/javascript">
-        function openGallery(galID) {
-            $.ajax({
-                type: 'GET',
-                url: '/portfolio.php?id=' + galID,
-                dataType: 'json',
-                success: function (data) {
-                    $.fancybox.open(data, {
-                        margin: [44, 0, 22, 0],
-                        thumbs: {
-                            autoStart: true, // Display thumbnails on opening
-                            hideOnClose: true, // Hide thumbnail grid when closing animation starts
-                            // parentEl: ".fancybox-container", // Container is injected into this element
-                            axis: "x" // Vertical (y) or horizontal (x) scrolling
-                        },
-                        buttons: [
-                            "zoom",
-                            // "share",
-                            "slideShow",
-                            "fullScreen",
-                            // "download",
-                            "thumbs",
-                            "close"
-                        ],
-                    });
-                }
-            });
-            console.log(galID);
-        }
-    </script>
     <script type="74bf624512b1c6414329bcb4-text/javascript">
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);

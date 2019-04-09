@@ -31,11 +31,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topText.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62479125-9"
         type="74bf624512b1c6414329bcb4-text/javascript"></script>
@@ -85,7 +81,7 @@
                         </li>
                         <li>
                             <a href="tel:+380673334040"> <span class="hide-sm">+38 (067) 333-40-40</span>
-                                <i style="transform:rotate(90deg);" class='fa fa-phone faa-ring animated px-2'></i>
+                                <i class='fa fa-phone faa-ring animated px-2'></i>
                             </a>
                         </li>
                         <li>
@@ -228,7 +224,7 @@
                 <div class="container services-container">
 
 
-                    <!-- Полірування Without images -->
+                    <!-- Полірування -->
                     <h2 class="text-center fab-header">Полірування</h2>
                     <div class="card-deck m-0 p-0">
                         <div class="card four-cards  service-one">
@@ -361,7 +357,7 @@
                     </div>
 
 
-                    <!-- Хімчистка Without images -->
+                    <!-- Хімчистка -->
                     <h2 class="text-center fab-header">Хімчистка</h2>
                     <div class="card-deck">
                         <div class="card four-cards  service-four">
@@ -500,7 +496,7 @@
                         </div>
                     </div>
 
-                    <!-- Воскове покриття Without images -->
+                    <!-- Воскове покриття -->
                     <h2 class="text-center fab-header">Воскове покриття</h2>
                     <div class="card-deck">
                         <div class="card two-cards  service-nine">
@@ -570,9 +566,8 @@
 
                     <div class="card-deck">
 
-
                         <div class="row">
-                            <!-- Керамічне покриття Without images -->
+                            <!-- Керамічне покриття -->
                             <div class="col-xl-6 mx-auto p-0">
                                 <h2 class="text-center card-heading ">Керамічне покриття</h2>
                                 <div class="card two-cards  service-eleven">
@@ -627,7 +622,7 @@
 
                             </div>
 
-                            <!-- Передпродажна підготовка Without images -->
+                            <!-- Передпродажна підготовка -->
                             <div class="col-xl-6 mx-auto px-3">
                                 <h2 class="text-center card-heading">Передпродажна підготовка</h2>
                                 <div class="card two-cards  service-twelve">
@@ -1094,7 +1089,7 @@
                     </div>
 
                 </div>
-                <!-- end of container without images -->
+                <!-- end of container -->
 
 
                 <div class=" container mx-auto contact" style="margin-top: 140px;">
@@ -1243,77 +1238,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+    <!-- Javascript for use on all page -->
     <script src="js/main.js"></script>
 
-    <script src="dist/owl.carousel.min.js"></script>
 
-    <script>
-        // Dropdown Menu
-        $(document).ready(function () {
-            $(".menu-icon").on("click", function () {
-                $("nav ul").toggleClass("showing");
-            });
-        });
-
-        // owlCarousel
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop: true,
-            nav: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1
-
-                },
-                768: {
-                    items: 2,
-                    margin: 0
-                },
-                1200: {
-                    items: 3,
-                    margin: 10,
-                    loop: true
-                }
-
-            },
-            margin: 20,
-            autoplay: true,
-            autoplayHoverPause: true
-        });
-    </script>
-
-    <script src="js/jquery.fancybox.min.js" type="74bf624512b1c6414329bcb4-text/javascript"></script>
-    <script type="74bf624512b1c6414329bcb4-text/javascript">
-        function openGallery(galID) {
-            $.ajax({
-                type: 'GET',
-                url: '/portfolio.php?id=' + galID,
-                dataType: 'json',
-                success: function (data) {
-                    $.fancybox.open(data, {
-                        margin: [44, 0, 22, 0],
-                        thumbs: {
-                            autoStart: true, // Display thumbnails on opening
-                            hideOnClose: true, // Hide thumbnail grid when closing animation starts
-                            // parentEl: ".fancybox-container", // Container is injected into this element
-                            axis: "x" // Vertical (y) or horizontal (x) scrolling
-                        },
-                        buttons: [
-                            "zoom",
-                            // "share",
-                            "slideShow",
-                            "fullScreen",
-                            // "download",
-                            "thumbs",
-                            "close"
-                        ],
-                    });
-                }
-            });
-            console.log(galID);
-        }
-    </script>
     <script type="74bf624512b1c6414329bcb4-text/javascript">
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
@@ -1349,7 +1277,6 @@
                 }, 1500);
             });
         });
-
 
 
         //
