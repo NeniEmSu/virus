@@ -1,7 +1,7 @@
 #services-page {
 
     .btn {
-        padding: 8px 23px !important;
+        padding: 8px 23px;
         background-color: $lightColor;
         border-radius: 50px;
         font-family: $secondaryFont;
@@ -51,7 +51,7 @@
     }
 
     button.btn {
-        padding: 10px 37px !important;
+        padding: 10px 37px;
         background-color: $redColor;
         border-radius: 50px;
         font-family: $secondaryFont;
@@ -107,11 +107,11 @@
 
     select.brand,
     select.model {
-        height: 48px !important;
+        height: 48px;
         margin-top: 20px;
-        border: 2px solid #E5E5E5 !important;
-        box-sizing: border-box !important;
-        border-radius: 50px !important;
+        border: 2px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 50px;
     }
 
     form.choose-brand {
@@ -132,13 +132,13 @@
 
     .card-heading,
     .fab-header {
-        font-family: $mainFont !important;
-        font-style: normal !important;
-        font-weight: bold !important;
-        font-size: 40px !important;
-        line-height: normal !important;
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: normal;
 
-        color: $darkColor !important;
+        color: $darkColor;
 
         display: flex;
         width: 100%;

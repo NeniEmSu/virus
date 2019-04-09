@@ -969,7 +969,7 @@ footer {
         margin-left: 20px; }
 
 #services-page .btn {
-  padding: 8px 23px !important;
+  padding: 8px 23px;
   background-color: #FFFFFF;
   border-radius: 50px;
   font-family: "Roboto Condensed", sans-serif;
@@ -1012,7 +1012,7 @@ footer {
   color: #D41F26; }
 
 #services-page button.btn {
-  padding: 10px 37px !important;
+  padding: 10px 37px;
   background-color: #D41F26;
   border-radius: 50px;
   font-family: "Roboto Condensed", sans-serif;
@@ -1063,11 +1063,11 @@ footer {
 
 #services-page select.brand,
 #services-page select.model {
-  height: 48px !important;
+  height: 48px;
   margin-top: 20px;
-  border: 2px solid #E5E5E5 !important;
-  box-sizing: border-box !important;
-  border-radius: 50px !important; }
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 50px; }
 
 #services-page form.choose-brand {
   margin-top: 100px;
@@ -1084,12 +1084,12 @@ footer {
 
 #services-page .card-heading,
 #services-page .fab-header {
-  font-family: "Roboto", sans-serif !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 40px !important;
-  line-height: normal !important;
-  color: #000000 !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+  color: #000000;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -1404,7 +1404,20 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-.shop-heading-image {
+#shop .cart-icon {
+  transition: transform 500ms;
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  -o-transition: transform 500ms; }
+  #shop .cart-icon:hover, #shop .cart-icon:focus {
+    transform: scale3d(1.01, 1.01, 1);
+    -webkit-transform: scale3d(1.01, 1.01, 1);
+    -moz-transform: scale3d(1.01, 1.01, 1);
+    -ms-transform: scale3d(1.01, 1.01, 1);
+    -o-transform: scale3d(1.01, 1.01, 1); }
+
+#shop .shop-heading-image {
   margin-top: -53px;
   margin-bottom: 40px;
   background: #000000;
@@ -1414,14 +1427,14 @@ footer {
   background-size: cover;
   width: 100%;
   height: 150px; }
-  .shop-heading-image h1 {
+  #shop .shop-heading-image h1 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 150px;
     color: #FFFFFF; }
-    .shop-heading-image h1 span {
+    #shop .shop-heading-image h1 span {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -1429,14 +1442,14 @@ footer {
       line-height: 150px;
       color: #D41F26; }
 
-.sales-cards .btn {
+#shop .sales-cards .btn {
   text-decoration: none;
   transition: ease-in-out 300ms;
   -webkit-transition: ease-in-out 300ms;
   -moz-transition: ease-in-out 300ms;
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
-  .sales-cards .btn:hover {
+  #shop .sales-cards .btn:hover {
     color: #D41F26;
     background: #FFFFFF;
     transform: scale(1.1);
@@ -1445,7 +1458,7 @@ footer {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1); }
 
-.sales-cards h2 {
+#shop .sales-cards h2 {
   color: #8B8B8B;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -1455,37 +1468,39 @@ footer {
   letter-spacing: -0.05em;
   margin-bottom: 40px; }
 
-.sales-cards .card-deck .card {
+#shop .sales-cards .card-deck .card {
   width: 100%;
+  min-width: 300px;
   height: 343px;
   background: #FFFFFF;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
-  margin-bottom: 40px; }
-  .sales-cards .card-deck .card img {
+  margin: 0 auto 40px;
+  padding: 0; }
+  #shop .sales-cards .card-deck .card img {
     align-self: center;
     width: 100%;
     height: auto;
     min-height: 200px;
     object-fit: scale-down; }
-    .sales-cards .card-deck .card img.small-img {
+    #shop .sales-cards .card-deck .card img.small-img {
       width: 100%;
       height: auto;
       min-height: 200px;
       object-fit: scale-down; }
-  .sales-cards .card-deck .card hr {
+  #shop .sales-cards .card-deck .card hr {
     width: 90%;
     align-self: center;
     margin: 0;
     border: 1px solid #C4C4C4; }
-  .sales-cards .card-deck .card .card-title {
+  #shop .sales-cards .card-deck .card .card-title {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: normal;
     color: #000000; }
-  .sales-cards .card-deck .card small s {
+  #shop .sales-cards .card-deck .card small s {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1494,7 +1509,7 @@ footer {
     text-align: center;
     text-decoration-line: line-through;
     color: #D41F26; }
-  .sales-cards .card-deck .card .card-text {
+  #shop .sales-cards .card-deck .card .card-text {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1502,14 +1517,14 @@ footer {
     line-height: 28px;
     letter-spacing: -0.05em;
     color: #8B8B8B; }
-    .sales-cards .card-deck .card .card-text span {
+    #shop .sales-cards .card-deck .card .card-text span {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
       line-height: 10px;
       text-align: center; }
-  .sales-cards .card-deck .card .discount {
+  #shop .sales-cards .card-deck .card .discount {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1517,7 +1532,7 @@ footer {
     line-height: normal;
     color: #239A0F;
     margin-right: 22px; }
-  .sales-cards .card-deck .card .btn {
+  #shop .sales-cards .card-deck .card .btn {
     padding: 10px 26px;
     background: #D41F26;
     border-radius: 50px;
@@ -1534,7 +1549,7 @@ footer {
     -moz-transition: ease-in-out 300ms;
     -ms-transition: ease-in-out 300ms;
     -o-transition: ease-in-out 300ms; }
-    .sales-cards .card-deck .card .btn:hover {
+    #shop .sales-cards .card-deck .card .btn:hover {
       color: #D41F26;
       background: #FFFFFF;
       transform: scale(1.1);
@@ -1543,13 +1558,13 @@ footer {
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1); }
 
-.sales-cards .card-deck .card__hover {
+#shop .sales-cards .card-deck .card__hover {
   transition: transform 500ms;
   -webkit-transition: transform 500ms;
   -moz-transition: transform 500ms;
   -ms-transition: transform 500ms;
   -o-transition: transform 500ms; }
-  .sales-cards .card-deck .card__hover::after {
+  #shop .sales-cards .card-deck .card__hover::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -1565,16 +1580,16 @@ footer {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px; }
-  .sales-cards .card-deck .card__hover:hover, .sales-cards .card-deck .card__hover:focus {
+  #shop .sales-cards .card-deck .card__hover:hover, #shop .sales-cards .card-deck .card__hover:focus {
     transform: scale3d(1.01, 1.01, 1);
     -webkit-transform: scale3d(1.01, 1.01, 1);
     -moz-transform: scale3d(1.01, 1.01, 1);
     -ms-transform: scale3d(1.01, 1.01, 1);
     -o-transform: scale3d(1.01, 1.01, 1); }
-    .sales-cards .card-deck .card__hover:hover::after, .sales-cards .card-deck .card__hover:focus::after {
+    #shop .sales-cards .card-deck .card__hover:hover::after, #shop .sales-cards .card-deck .card__hover:focus::after {
       opacity: 1; }
 
-.sales-cards .btn {
+#shop .sales-cards .btn {
   padding: 10px 32px;
   background: #D41F26;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -1593,7 +1608,7 @@ footer {
   -moz-transition: ease-in-out 300ms;
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
-  .sales-cards .btn:hover {
+  #shop .sales-cards .btn:hover {
     color: #D41F26;
     background: #FFFFFF;
     transform: scale(1.1);
@@ -1601,10 +1616,10 @@ footer {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1); }
-  .sales-cards .btn.see-more {
+  #shop .sales-cards .btn.see-more {
     margin-top: 40px; }
 
-.accordion {
+#shop .accordion {
   display: inline;
   border: 1.48094px solid #C4C4C4;
   box-sizing: border-box;
@@ -1623,7 +1638,7 @@ footer {
   outline: none;
   transition: 400ms; }
 
-.accordion:after {
+#shop .accordion:after {
   color: #8B8B8B;
   float: right;
   font-size: 14px;
@@ -1632,7 +1647,7 @@ footer {
   content: "\f0d7";
   margin-right: 10px; }
 
-.accordion.open:after {
+#shop .accordion.open:after {
   color: #8B8B8B;
   float: right;
   font-size: 14px;
@@ -1641,12 +1656,12 @@ footer {
   content: "\f0d8";
   margin-right: 10px; }
 
-.open,
-.accordion:hover {
+#shop .open,
+#shop .accordion:hover {
   background-color: #E5E5E5;
   outline: none; }
 
-.panel {
+#shop .panel {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1657,52 +1672,159 @@ footer {
   overflow: hidden;
   outline: none; }
 
-.panel a {
+#shop .panel a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #8B8B8B;
-  display: block; }
+  display: block;
+  text-decoration: none; }
 
-.basket {
+#shop .basket {
   margin-top: 140px; }
-  .basket h3 {
+  #shop .basket h3 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: normal;
     color: #000000; }
-  .basket .basket-content {
+  #shop .basket .basket-content {
     display: flex; }
-    .basket .basket-content img {
+    #shop .basket .basket-content .cart-item {
+      border-top: 1px solid #E5E5E5; }
+    #shop .basket .basket-content img {
       width: 60px;
       height: 60px;
       object-fit: scale-down; }
-    .basket .basket-content .cost p {
+    #shop .basket .basket-content .cost p {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: normal;
-      color: #000000; }
-    .basket .basket-content .remove-from-chart p {
+      color: #000000;
+      margin: auto; }
+    #shop .basket .basket-content .toggle-quantity {
+      border: 1px solid #E5E5E5;
+      box-sizing: border-box;
+      border-radius: 50px;
+      display: flex;
+      justify-content: space-between; }
+      #shop .basket .basket-content .toggle-quantity p,
+      #shop .basket .basket-content .toggle-quantity a {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+        margin: auto 2px;
+        text-decoration: none; }
+    #shop .basket .basket-content .remove-from-chart a {
       font-weight: bold;
       font-size: 28px;
+      line-height: 28px;
       transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
       -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
       -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
       -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0); }
-    .basket .basket-content .sum-total p {
+      -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+      margin: auto;
+      color: #000000;
+      text-decoration: none; }
+    #shop .basket .basket-content .sum-total p {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
       line-height: normal;
       color: #000000; }
+  #shop .basket .checkOut {
+    margin-bottom: 60px; }
+    #shop .basket .checkOut input {
+      height: 48px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 2px solid #E5E5E5;
+      box-sizing: border-box;
+      border-radius: 50px; }
+    #shop .basket .checkOut .btn {
+      padding: 10px 32px;
+      background: #D41F26;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+      text-decoration: none;
+      transition: ease-in-out 300ms;
+      -webkit-transition: ease-in-out 300ms;
+      -moz-transition: ease-in-out 300ms;
+      -ms-transition: ease-in-out 300ms;
+      -o-transition: ease-in-out 300ms; }
+      #shop .basket .checkOut .btn.go-back {
+        background: #E5E5E5;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000; }
+      #shop .basket .checkOut .btn:hover {
+        color: #D41F26;
+        background: #FFFFFF;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1); }
+    #shop .basket .checkOut .order.btn:after {
+      color: #FFFFFF;
+      float: right;
+      font-size: 20px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f054";
+      margin-left: 20px;
+      margin-right: -20px;
+      transition: ease-in-out 300ms;
+      -webkit-transition: ease-in-out 300ms;
+      -moz-transition: ease-in-out 300ms;
+      -ms-transition: ease-in-out 300ms;
+      -o-transition: ease-in-out 300ms; }
+    #shop .basket .checkOut .order.btn:hover:after {
+      color: #D41F26;
+      background: transparent;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1); }
+    #shop .basket .checkOut .go-back.btn:before {
+      color: #000000;
+      float: left;
+      font-size: 20px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f053";
+      margin-left: -20px;
+      margin-right: 20px;
+      transition: ease-in-out 300ms;
+      -webkit-transition: ease-in-out 300ms;
+      -moz-transition: ease-in-out 300ms;
+      -ms-transition: ease-in-out 300ms;
+      -o-transition: ease-in-out 300ms; }
 
 .aboutUs-heading-image {
   margin-top: -53.5px;

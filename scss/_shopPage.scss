@@ -1,167 +1,506 @@
-.shop-heading-image {
-    margin-top: -53px;
-    margin-bottom: 40px;
-    background: $darkColor;
-    background-image: url(../img/shopPageHeadImg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 150px;
+#shop {
 
-    h1 {
-        font-family: $mainFont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 150px;
-
-        color: $lightColor;
+    .cart-icon {
+        transition: transform 500ms;
+        -webkit-transition: transform 500ms;
+        -moz-transition: transform 500ms;
+        -ms-transition: transform 500ms;
+        -o-transition: transform 500ms;
 
 
-        span {
+        &:hover,
+        &:focus {
+            transform: scale3d(1.01, 1.01, 1);
+            -webkit-transform: scale3d(1.01, 1.01, 1);
+            -moz-transform: scale3d(1.01, 1.01, 1);
+            -ms-transform: scale3d(1.01, 1.01, 1);
+            -o-transform: scale3d(1.01, 1.01, 1);
+
+
+
+        }
+    }
+
+    .shop-heading-image {
+        margin-top: -53px;
+        margin-bottom: 40px;
+        background: $darkColor;
+        background-image: url(../img/shopPageHeadImg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+
+        h1 {
             font-family: $mainFont;
             font-style: normal;
             font-weight: bold;
-            font-size: 80px;
+            font-size: 40px;
             line-height: 150px;
 
-            color: $redColor;
-        }
-    }
-}
+            color: $lightColor;
 
-.sales-cards {
-    .btn {
-        text-decoration: none;
-        transition: ease-in-out 300ms;
-        -webkit-transition: ease-in-out 300ms;
-        -moz-transition: ease-in-out 300ms;
-        -ms-transition: ease-in-out 300ms;
-        -o-transition: ease-in-out 300ms;
 
-        &:hover {
-            color: $redColor;
-            background: $lightColor;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
+            span {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 80px;
+                line-height: 150px;
+
+                color: $redColor;
+            }
         }
     }
 
-    h2 {
-        color: $headingsFontColor;
-        font-family: $secondaryFont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 50px;
-        line-height: 47px;
-        letter-spacing: -0.05em;
-        margin-bottom: 40px;
-    }
+    .sales-cards {
+        .btn {
+            text-decoration: none;
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
 
-    .card-deck {
+            &:hover {
+                color: $redColor;
+                background: $lightColor;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
 
-        .card {
-            width: 100%;
-            height: 343px;
-            background: $lightColor;
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
-            border-radius: 20px;
+        h2 {
+            color: $headingsFontColor;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 47px;
+            letter-spacing: -0.05em;
             margin-bottom: 40px;
+        }
 
-            img {
-                align-self: center;
+        .card-deck {
+
+            .card {
                 width: 100%;
-                height: auto;
-                min-height: 200px;
-                object-fit: scale-down;
+                min-width: 300px;
+                height: 343px;
+                background: $lightColor;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+                border-radius: 20px;
+                margin: 0 auto 40px;
+                padding: 0;
 
-                &.small-img {
+                img {
+                    align-self: center;
                     width: 100%;
                     height: auto;
                     min-height: 200px;
                     object-fit: scale-down;
+
+                    &.small-img {
+                        width: 100%;
+                        height: auto;
+                        min-height: 200px;
+                        object-fit: scale-down;
+                    }
                 }
-            }
 
-            hr {
-                width: 90%;
-                align-self: center;
-                margin: 0;
-                border: 1px solid #C4C4C4;
-            }
+                hr {
+                    width: 90%;
+                    align-self: center;
+                    margin: 0;
+                    border: 1px solid #C4C4C4;
+                }
 
-            .card-title {
-                font-family: $mainFont;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: normal;
-                color: $darkColor;
-            }
-
-            small {
-                s {
+                .card-title {
                     font-family: $mainFont;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 12px;
+                    font-size: 16px;
+                    line-height: normal;
+                    color: $darkColor;
+                }
+
+                small {
+                    s {
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: normal;
+                        text-align: center;
+                        text-decoration-line: line-through;
+                        color: $redColor;
+                    }
+                }
+
+                .card-text {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 28px;
+                    letter-spacing: -0.05em;
+                    color: $headingsFontColor;
+
+                    span {
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 10px;
+                        text-align: center;
+                    }
+                }
+
+                .discount {
+                    font-family: $secondaryFont;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: normal;
+                    color: #239A0F;
+                    margin-right: 22px;
+                }
+
+                .btn {
+                    padding: 10px 26px;
+                    background: $redColor;
+                    border-radius: 50px;
+                    font-family: $secondaryFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
                     line-height: normal;
                     text-align: center;
-                    text-decoration-line: line-through;
-                    color: $redColor;
+                    color: $lightColor;
+                    text-decoration: none;
+                    transition: ease-in-out 300ms;
+                    -webkit-transition: ease-in-out 300ms;
+                    -moz-transition: ease-in-out 300ms;
+                    -ms-transition: ease-in-out 300ms;
+                    -o-transition: ease-in-out 300ms;
+
+                    &:hover {
+                        color: $redColor;
+                        background: $lightColor;
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
                 }
             }
 
-            .card-text {
+            .card__hover {
+                transition: transform 500ms;
+                -webkit-transition: transform 500ms;
+                -moz-transition: transform 500ms;
+                -ms-transition: transform 500ms;
+                -o-transition: transform 500ms;
+
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+                    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+                    content: '';
+                    opacity: 0;
+                    z-index: -1;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                }
+
+                &:hover,
+                &:focus {
+                    transform: scale3d(1.01, 1.01, 1);
+                    -webkit-transform: scale3d(1.01, 1.01, 1);
+                    -moz-transform: scale3d(1.01, 1.01, 1);
+                    -ms-transform: scale3d(1.01, 1.01, 1);
+                    -o-transform: scale3d(1.01, 1.01, 1);
+
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            padding: 10px 32px;
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+            text-align: center;
+            color: $lightColor;
+            border: none;
+            text-decoration: none;
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
+
+            &:hover {
+                color: $redColor;
+                background: $lightColor;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+
+            &.see-more {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+    .accordion {
+        display: inline;
+        border: 1.48094px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 50px;
+        margin: 10px auto;
+        background-color: $lightColor;
+
+        width: 180px;
+        height: 38px;
+
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+
+        color: $darkColor;
+
+        outline: none;
+        transition: 400ms;
+    }
+
+    .accordion:after {
+        color: $headingsFontColor;
+        float: right;
+        font-size: 14px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0d7";
+        margin-right: 10px;
+    }
+
+    .accordion.open:after {
+        color: $headingsFontColor;
+        float: right;
+        font-size: 14px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0d8";
+        margin-right: 10px;
+    }
+
+    .open,
+    .accordion:hover {
+        background-color: #E5E5E5;
+        outline: none;
+    }
+
+    .panel {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #8B8B8B;
+
+        display: none;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .panel a {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #8B8B8B;
+
+        display: block;
+        text-decoration: none;
+    }
+
+    .basket {
+        margin-top: 140px;
+
+
+        h3 {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+
+            color: $darkColor;
+
+        }
+
+        .basket-content {
+            display: flex;
+
+            .cart-item {
+                border-top: 1px solid #E5E5E5;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: scale-down;
+            }
+
+
+            .cost p {
                 font-family: $mainFont;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 30px;
-                line-height: 28px;
-                letter-spacing: -0.05em;
-                color: $headingsFontColor;
-
-                span {
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 12px;
-                    line-height: 10px;
-                    text-align: center;
-                }
-            }
-
-            .discount {
-                font-family: $secondaryFont;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
                 line-height: normal;
-                color: #239A0F;
-                margin-right: 22px;
+
+                color: $darkColor;
+
+                margin: auto;
+            }
+
+            .toggle-quantity {
+                border: 1px solid #E5E5E5;
+                box-sizing: border-box;
+                border-radius: 50px;
+
+                display: flex;
+                justify-content: space-between;
+
+
+                p,
+                a {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 26px;
+
+                    color: $darkColor;
+
+                    margin: auto 2px;
+                    text-decoration: none;
+                }
+            }
+
+
+            .remove-from-chart {
+                a {
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 28px;
+                    transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+                    -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+                    -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+                    -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+                    -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+
+                    margin: auto;
+                    color: $darkColor;
+                    text-decoration: none;
+                }
+            }
+
+            .sum-total p {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: normal;
+
+                color: #000000;
+
+            }
+        }
+
+        .checkOut {
+            margin-bottom: 60px;
+
+
+            input {
+                height: 48px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 2px solid #E5E5E5;
+                box-sizing: border-box;
+                border-radius: 50px;
             }
 
             .btn {
-                padding: 10px 26px;
+                padding: 10px 32px;
                 background: $redColor;
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
                 border-radius: 50px;
                 font-family: $secondaryFont;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 20px;
-                line-height: normal;
+                line-height: 20px;
                 text-align: center;
                 color: $lightColor;
+                border: none;
                 text-decoration: none;
                 transition: ease-in-out 300ms;
                 -webkit-transition: ease-in-out 300ms;
                 -moz-transition: ease-in-out 300ms;
                 -ms-transition: ease-in-out 300ms;
                 -o-transition: ease-in-out 300ms;
+
+
+
+                &.go-back {
+                    background: #E5E5E5;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 50px;
+
+                    font-family: $secondaryFont;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-align: center;
+
+                    color: $darkColor;
+
+                }
 
                 &:hover {
                     color: $redColor;
@@ -173,218 +512,52 @@
                     -o-transform: scale(1.1);
                 }
             }
-        }
 
-        .card__hover {
-            transition: transform 500ms;
-            -webkit-transition: transform 500ms;
-            -moz-transition: transform 500ms;
-            -ms-transition: transform 500ms;
-            -o-transition: transform 500ms;
+            .order.btn:after {
+                color: $lightColor;
+                float: right;
+                font-size: 20px;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f054";
+                margin-left: 20px;
+                margin-right: -20px;
+                transition: ease-in-out 300ms;
+                -webkit-transition: ease-in-out 300ms;
+                -moz-transition: ease-in-out 300ms;
+                -ms-transition: ease-in-out 300ms;
+                -o-transition: ease-in-out 300ms;
 
 
-            &::after {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
-                box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
-                content: '';
-                opacity: 0;
-                z-index: -1;
-                border-radius: 20px;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                -ms-border-radius: 20px;
-                -o-border-radius: 20px;
             }
 
-            &:hover,
-            &:focus {
-                transform: scale3d(1.01, 1.01, 1);
-                -webkit-transform: scale3d(1.01, 1.01, 1);
-                -moz-transform: scale3d(1.01, 1.01, 1);
-                -ms-transform: scale3d(1.01, 1.01, 1);
-                -o-transform: scale3d(1.01, 1.01, 1);
+            .order.btn:hover:after {
+                color: $redColor;
+                background: transparent;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
 
-
-                &::after {
-                    opacity: 1;
-                }
+            .go-back.btn:before {
+                color: $darkColor;
+                float: left;
+                font-size: 20px;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f053";
+                margin-left: -20px;
+                margin-right: 20px;
+                transition: ease-in-out 300ms;
+                -webkit-transition: ease-in-out 300ms;
+                -moz-transition: ease-in-out 300ms;
+                -ms-transition: ease-in-out 300ms;
+                -o-transition: ease-in-out 300ms;
             }
         }
-    }
-
-    .btn {
-        padding: 10px 32px;
-        background: $redColor;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-        border-radius: 50px;
-        font-family: $secondaryFont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: normal;
-        text-align: center;
-        color: $lightColor;
-        border: none;
-        text-decoration: none;
-        transition: ease-in-out 300ms;
-        -webkit-transition: ease-in-out 300ms;
-        -moz-transition: ease-in-out 300ms;
-        -ms-transition: ease-in-out 300ms;
-        -o-transition: ease-in-out 300ms;
-
-        &:hover {
-            color: $redColor;
-            background: $lightColor;
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-
-        &.see-more {
-            margin-top: 40px;
-        }
-    }
-}
 
 
-.accordion {
-    display: inline;
-    border: 1.48094px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin: 10px auto;
-    background-color: $lightColor;
-
-    width: 180px;
-    height: 38px;
-
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: normal;
-    text-align: center;
-
-    color: $darkColor;
-
-    outline: none;
-    transition: 400ms;
-}
-
-.accordion:after {
-    color: $headingsFontColor;
-    float: right;
-    font-size: 14px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0d7";
-    margin-right: 10px;
-}
-
-.accordion.open:after {
-    color: $headingsFontColor;
-    float: right;
-    font-size: 14px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0d8";
-    margin-right: 10px;
-}
-
-.open,
-.accordion:hover {
-    background-color: #E5E5E5;
-    outline: none;
-}
-
-.panel {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-
-    color: #8B8B8B;
-
-    display: none;
-    overflow: hidden;
-    outline: none;
-}
-
-.panel a {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-
-    color: #8B8B8B;
-
-    display: block;
-}
-
-.basket {
-    margin-top: 140px;
-
-
-    h3 {
-        font-family: $mainFont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: normal;
-
-        color: $darkColor;
-
-    }
-
-    .basket-content {
-        display: flex;
-
-        img {
-            width: 60px;
-            height: 60px;
-            object-fit: scale-down;
-        }
-
-
-        .cost p {
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: normal;
-
-            color: $darkColor;
-        }
-
-
-        .remove-from-chart p {
-            font-weight: bold;
-            font-size: 28px;
-            transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-            -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-            -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-            -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-            -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-        }
-
-        .sum-total p {
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: normal;
-
-            color: #000000;
-
-        }
     }
 }
