@@ -1,456 +1,464 @@
-.btn {
-    padding: 8px 23px !important;
-    background-color: $lightColor;
-    border-radius: 50px;
-    font-family: $secondaryFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: normal;
+#services-page {
 
-    color: #000000;
-    line-height: normal;
-    text-align: center;
-    border: 1px solid $redColor;
-    box-sizing: border-box;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: ease-in-out 300ms;
-    -webkit-transition: ease-in-out 300ms;
-    -moz-transition: ease-in-out 300ms;
-    -ms-transition: ease-in-out 300ms;
-    -o-transition: ease-in-out 300ms;
-}
+    .btn {
+        padding: 8px 23px !important;
+        background-color: $lightColor;
+        border-radius: 50px;
+        font-family: $secondaryFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: normal;
 
-.btn:hover {
-    color: $lightColor;
-    background-color: $redColor;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-.car-toggle {
-    margin-top: 48px;
-}
-
-.red {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: normal;
-    text-align: center;
-
-    color: $redColor;
-
-}
-
-button.btn {
-    padding: 10px 37px !important;
-    background-color: $redColor;
-    border-radius: 50px;
-    font-family: $secondaryFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: normal;
-
-    text-align: center;
-    color: $lightColor;
-    text-decoration: none;
-    transition: ease-in-out 300ms;
-    -webkit-transition: ease-in-out 300ms;
-    -moz-transition: ease-in-out 300ms;
-    -ms-transition: ease-in-out 300ms;
-    -o-transition: ease-in-out 300ms;
-}
-
-button.btn:hover {
-    color: $redColor;
-    background-color: $lightColor;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-button.btn:hover:after {
-    color: $redColor;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-button.btn:after {
-    color: $lightColor;
-    float: right;
-    font-size: 20px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f054";
-    margin-left: 20px;
-    margin-right: -20px;
-    transition: ease-in-out 300ms;
-    -webkit-transition: ease-in-out 300ms;
-    -moz-transition: ease-in-out 300ms;
-    -ms-transition: ease-in-out 300ms;
-    -o-transition: ease-in-out 300ms;
-}
-
-select.brand,
-select.model {
-    height: 48px !important;
-    margin-top: 20px;
-    border: 2px solid #E5E5E5 !important;
-    box-sizing: border-box !important;
-    border-radius: 50px !important;
-}
-
-form.choose-brand {
-    margin-top: 100px;
-    margin-bottom: 127px;
-}
-
-form.choose-brand p {
-    font-family: '$mainFont';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: normal;
-    text-align: center;
-
-    color: $darkColor;
-}
-
-.card-heading,
-.fab-header {
-    font-family: $mainFont !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 40px !important;
-    line-height: normal !important;
-
-    color: $darkColor !important;
-
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.fab-header:before,
-.fab-header:after {
-    content: '';
-    border: 1px solid $darkColor;
-    margin: 0 20px 0 0;
-    flex: 1 0 40px;
-}
-
-.fab-header:after {
-    margin: 0 0 0 20px;
-}
-
-.jumbotron.services {
-    margin: 0;
-    padding: 0;
-
-    .services-container {
-        padding: 10px 0 0 0;
+        color: #000000;
+        line-height: normal;
+        text-align: center;
+        border: 1px solid $redColor;
+        box-sizing: border-box;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
     }
 
-    h2 {
-        margin: 30px auto;
+    .btn:hover {
+        color: $lightColor;
+        background-color: $redColor;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
     }
 
-    .card-deck {
+    .car-toggle {
+        margin-top: 48px;
+    }
+
+    .red {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: normal;
+        text-align: center;
+
+        color: $redColor;
+
+    }
+
+    button.btn {
+        padding: 10px 37px !important;
+        background-color: $redColor;
+        border-radius: 50px;
+        font-family: $secondaryFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: normal;
+
+        text-align: center;
+        color: $lightColor;
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+    }
+
+    button.btn:hover {
+        color: $redColor;
+        background-color: $lightColor;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    button.btn:hover:after {
+        color: $redColor;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    button.btn:after {
+        color: $lightColor;
+        float: right;
+        font-size: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+        margin-left: 20px;
+        margin-right: -20px;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+    }
+
+    select.brand,
+    select.model {
+        height: 48px !important;
+        margin-top: 20px;
+        border: 2px solid #E5E5E5 !important;
+        box-sizing: border-box !important;
+        border-radius: 50px !important;
+    }
+
+    form.choose-brand {
+        margin-top: 100px;
+        margin-bottom: 127px;
+    }
+
+    form.choose-brand p {
+        font-family: '$mainFont';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+
+        color: $darkColor;
+    }
+
+    .card-heading,
+    .fab-header {
+        font-family: $mainFont !important;
+        font-style: normal !important;
+        font-weight: bold !important;
+        font-size: 40px !important;
+        line-height: normal !important;
+
+        color: $darkColor !important;
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .fab-header:before,
+    .fab-header:after {
+        content: '';
+        border: 1px solid $darkColor;
+        margin: 0 20px 0 0;
+        flex: 1 0 40px;
+    }
+
+    .fab-header:after {
+        margin: 0 0 0 20px;
+    }
+
+    .jumbotron.services {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
 
-        .card {
-            background-color: $darkColor;
-            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+        .services-container {
+            padding: 10px 0 0 0;
+        }
 
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
+        h2 {
+            margin: 30px auto;
+        }
+
+        .card-deck {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            .card {
+                background-color: $darkColor;
+                box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
 
 
-            margin: 10px auto;
+                margin: 10px auto;
 
-            &.four-cards {
-                height: 277px;
-                width: 100%;
-                min-width: 277px;
-                max-width: 277px;
-            }
-
-            &.two-cards {
-                height: 277px;
-                width: 100%;
-                min-width: 555px;
-                max-width: 555px;
-
-                hr {
+                &.four-cards {
+                    height: 277px;
                     width: 100%;
-                    border: 0.75px solid $lightColor;
-                    margin: 0;
+                    min-width: 277px;
+                    max-width: 277px;
                 }
 
-                .subtext {
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 12px;
-                    line-height: normal;
+                &.two-cards {
+                    height: 277px;
+                    width: 100%;
+                    min-width: 555px;
+                    max-width: 555px;
 
-                    color: $lightColor;
+                    hr {
+                        width: 100%;
+                        border: 0.75px solid $lightColor;
+                        margin: 0;
+                    }
 
-                    padding: 0;
-                }
-            }
+                    .subtext {
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: normal;
 
-            &.three-cards {
-                height: 277px;
-                width: 100%;
-                min-width: 368px;
-                max-width: 368px;
-            }
+                        color: $lightColor;
 
-            &.service-one {
-                background-image: url('../img/services1.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-two {
-                background-image: url('../img/services2.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-three {
-                background-image: url('../img/services3.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-four {
-                background-image: url('../img/services4.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-
-            &.service-five {
-                background-image: url('../img/services5.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-six {
-                background-image: url('../img/services6.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-seven {
-                background-image: url('../img/services7.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-eight {
-                background-image: url('../img/services8.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-nine {
-                background-image: url('../img/services9.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-ten {
-                background-image: url('../img/services10.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-eleven {
-                background-image: url('../img/services11.png');
-                background-repeat: no-repeat;
-                background-position: top center;
-                background-size: scale-down;
-            }
-
-            &.service-twelve {
-                background-image: url('../img/services12.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-13 {
-                background-image: url('../img/services13.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-14 {
-                background-image: url('../img/services14.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-15 {
-                background-image: url('../img/services15.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-16 {
-                background-image: url('../img/services16.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-17 {
-                background-image: url('../img/services17.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-18 {
-                background-image: url('../img/services18.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-19 {
-                background-image: url('../img/services19.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-20 {
-                background-image: url('../img/services20.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-21 {
-                background-image: url('../img/services21.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-22 {
-                background-image: url('../img/services22.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-23 {
-                background-image: url('../img/services23.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            &.service-24 {
-                background-image: url('../img/services24.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-
-            .card-body {
-                height: 212px;
-                box-sizing: border-box;
-                padding: 20px;
-                margin-bottom: 10px;
-            }
-
-            .card-end {
-                background-color: rgba(0, 0, 0, 0.6);
-                backdrop-filter: blur(5px);
-                border-radius: 0px 0px 20px 20px;
-                box-sizing: border-box;
-                padding: 0 20px;
-                padding-bottom: 10px;
-
-                h5 {
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: normal;
-
-                    color: $lightColor;
-
-                    box-sizing: border-box;
-                }
-
-                p {
-                    padding: 7px 0;
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 18px;
-                    line-height: normal;
-
-                    color: $redColor;
-
-                    small {
-                        font-size: 14px;
+                        padding: 0;
                     }
                 }
 
-                .btn {
-                    font-family: 'Roboto Condensed';
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: normal;
-                    background-color: transparent;
-                    border: $redColor 1px solid;
+                &.three-cards {
+                    height: 277px;
+                    width: 100%;
+                    min-width: 368px;
+                    max-width: 368px;
+                }
 
-                    color: $lightColor;
-                    padding: 8px 14px;
+                &.service-one {
+                    background-image: url('../img/services1.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-two {
+                    background-image: url('../img/services2.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-three {
+                    background-image: url('../img/services3.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-four {
+                    background-image: url('../img/services4.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+                &.service-five {
+                    background-image: url('../img/services5.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-six {
+                    background-image: url('../img/services6.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-seven {
+                    background-image: url('../img/services7.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-eight {
+                    background-image: url('../img/services8.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-nine {
+                    background-image: url('../img/services9.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-ten {
+                    background-image: url('../img/services10.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-eleven {
+                    background-image: url('../img/services11.png');
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: scale-down;
+                }
+
+                &.service-twelve {
+                    background-image: url('../img/services12.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-13 {
+                    background-image: url('../img/services13.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-14 {
+                    background-image: url('../img/services14.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-15 {
+                    background-image: url('../img/services15.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-16 {
+                    background-image: url('../img/services16.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-17 {
+                    background-image: url('../img/services17.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-18 {
+                    background-image: url('../img/services18.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-19 {
+                    background-image: url('../img/services19.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-20 {
+                    background-image: url('../img/services20.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-21 {
+                    background-image: url('../img/services21.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-22 {
+                    background-image: url('../img/services22.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-23 {
+                    background-image: url('../img/services23.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.service-24 {
+                    background-image: url('../img/services24.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .card-body {
+                    height: 212px;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .card-end {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    backdrop-filter: blur(5px);
+                    border-radius: 0px 0px 20px 20px;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    padding-bottom: 10px;
+
+                    h5 {
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: normal;
+
+                        color: $lightColor;
+
+                        box-sizing: border-box;
+                    }
+
+                    p {
+                        padding: 7px 0;
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: normal;
+
+                        color: $redColor;
+
+                        small {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btn {
+                        font-family: $secondaryFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: normal;
+                        background-color: transparent;
+                        border: $redColor 1px solid;
+
+                        color: $lightColor;
+                        padding: 8px 14px;
+                    }
                 }
             }
         }
     }
+
+
+
+
+
 }

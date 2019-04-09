@@ -968,7 +968,7 @@ footer {
       footer .bottom-contact ul li a.instagram, footer .bottom-contact ul li a.facebook {
         margin-left: 20px; }
 
-.btn {
+#services-page .btn {
   padding: 8px 23px !important;
   background-color: #FFFFFF;
   border-radius: 50px;
@@ -990,7 +990,7 @@ footer {
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
 
-.btn:hover {
+#services-page .btn:hover {
   color: #FFFFFF;
   background-color: #D41F26;
   transform: scale(1.1);
@@ -999,10 +999,10 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-.car-toggle {
+#services-page .car-toggle {
   margin-top: 48px; }
 
-.red {
+#services-page .red {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1011,7 +1011,7 @@ footer {
   text-align: center;
   color: #D41F26; }
 
-button.btn {
+#services-page button.btn {
   padding: 10px 37px !important;
   background-color: #D41F26;
   border-radius: 50px;
@@ -1029,7 +1029,7 @@ button.btn {
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
 
-button.btn:hover {
+#services-page button.btn:hover {
   color: #D41F26;
   background-color: #FFFFFF;
   transform: scale(1.1);
@@ -1038,7 +1038,7 @@ button.btn:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-button.btn:hover:after {
+#services-page button.btn:hover:after {
   color: #D41F26;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -1046,7 +1046,7 @@ button.btn:hover:after {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-button.btn:after {
+#services-page button.btn:after {
   color: #FFFFFF;
   float: right;
   font-size: 20px;
@@ -1061,19 +1061,19 @@ button.btn:after {
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
 
-select.brand,
-select.model {
+#services-page select.brand,
+#services-page select.model {
   height: 48px !important;
   margin-top: 20px;
   border: 2px solid #E5E5E5 !important;
   box-sizing: border-box !important;
   border-radius: 50px !important; }
 
-form.choose-brand {
+#services-page form.choose-brand {
   margin-top: 100px;
   margin-bottom: 127px; }
 
-form.choose-brand p {
+#services-page form.choose-brand p {
   font-family: '$mainFont';
   font-style: normal;
   font-weight: normal;
@@ -1082,8 +1082,8 @@ form.choose-brand p {
   text-align: center;
   color: #000000; }
 
-.card-heading,
-.fab-header {
+#services-page .card-heading,
+#services-page .fab-header {
   font-family: "Roboto", sans-serif !important;
   font-style: normal !important;
   font-weight: bold !important;
@@ -1096,28 +1096,28 @@ form.choose-brand p {
   align-items: center;
   text-align: center; }
 
-.fab-header:before,
-.fab-header:after {
+#services-page .fab-header:before,
+#services-page .fab-header:after {
   content: '';
   border: 1px solid #000000;
   margin: 0 20px 0 0;
   flex: 1 0 40px; }
 
-.fab-header:after {
+#services-page .fab-header:after {
   margin: 0 0 0 20px; }
 
-.jumbotron.services {
+#services-page .jumbotron.services {
   margin: 0;
   padding: 0; }
-  .jumbotron.services .services-container {
+  #services-page .jumbotron.services .services-container {
     padding: 10px 0 0 0; }
-  .jumbotron.services h2 {
+  #services-page .jumbotron.services h2 {
     margin: 30px auto; }
-  .jumbotron.services .card-deck {
+  #services-page .jumbotron.services .card-deck {
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-    .jumbotron.services .card-deck .card {
+    #services-page .jumbotron.services .card-deck .card {
       background-color: #000000;
       box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
       border-radius: 20px;
@@ -1126,21 +1126,21 @@ form.choose-brand p {
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
       margin: 10px auto; }
-      .jumbotron.services .card-deck .card.four-cards {
+      #services-page .jumbotron.services .card-deck .card.four-cards {
         height: 277px;
         width: 100%;
         min-width: 277px;
         max-width: 277px; }
-      .jumbotron.services .card-deck .card.two-cards {
+      #services-page .jumbotron.services .card-deck .card.two-cards {
         height: 277px;
         width: 100%;
         min-width: 555px;
         max-width: 555px; }
-        .jumbotron.services .card-deck .card.two-cards hr {
+        #services-page .jumbotron.services .card-deck .card.two-cards hr {
           width: 100%;
           border: 0.75px solid #FFFFFF;
           margin: 0; }
-        .jumbotron.services .card-deck .card.two-cards .subtext {
+        #services-page .jumbotron.services .card-deck .card.two-cards .subtext {
           font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: normal;
@@ -1148,144 +1148,144 @@ form.choose-brand p {
           line-height: normal;
           color: #FFFFFF;
           padding: 0; }
-      .jumbotron.services .card-deck .card.three-cards {
+      #services-page .jumbotron.services .card-deck .card.three-cards {
         height: 277px;
         width: 100%;
         min-width: 368px;
         max-width: 368px; }
-      .jumbotron.services .card-deck .card.service-one {
+      #services-page .jumbotron.services .card-deck .card.service-one {
         background-image: url("../img/services1.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-two {
+      #services-page .jumbotron.services .card-deck .card.service-two {
         background-image: url("../img/services2.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-three {
+      #services-page .jumbotron.services .card-deck .card.service-three {
         background-image: url("../img/services3.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-four {
+      #services-page .jumbotron.services .card-deck .card.service-four {
         background-image: url("../img/services4.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-five {
+      #services-page .jumbotron.services .card-deck .card.service-five {
         background-image: url("../img/services5.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-six {
+      #services-page .jumbotron.services .card-deck .card.service-six {
         background-image: url("../img/services6.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-seven {
+      #services-page .jumbotron.services .card-deck .card.service-seven {
         background-image: url("../img/services7.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-eight {
+      #services-page .jumbotron.services .card-deck .card.service-eight {
         background-image: url("../img/services8.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-nine {
+      #services-page .jumbotron.services .card-deck .card.service-nine {
         background-image: url("../img/services9.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-ten {
+      #services-page .jumbotron.services .card-deck .card.service-ten {
         background-image: url("../img/services10.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-eleven {
+      #services-page .jumbotron.services .card-deck .card.service-eleven {
         background-image: url("../img/services11.png");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: scale-down; }
-      .jumbotron.services .card-deck .card.service-twelve {
+      #services-page .jumbotron.services .card-deck .card.service-twelve {
         background-image: url("../img/services12.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-13 {
+      #services-page .jumbotron.services .card-deck .card.service-13 {
         background-image: url("../img/services13.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-14 {
+      #services-page .jumbotron.services .card-deck .card.service-14 {
         background-image: url("../img/services14.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-15 {
+      #services-page .jumbotron.services .card-deck .card.service-15 {
         background-image: url("../img/services15.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-16 {
+      #services-page .jumbotron.services .card-deck .card.service-16 {
         background-image: url("../img/services16.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-17 {
+      #services-page .jumbotron.services .card-deck .card.service-17 {
         background-image: url("../img/services17.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-18 {
+      #services-page .jumbotron.services .card-deck .card.service-18 {
         background-image: url("../img/services18.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-19 {
+      #services-page .jumbotron.services .card-deck .card.service-19 {
         background-image: url("../img/services19.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-20 {
+      #services-page .jumbotron.services .card-deck .card.service-20 {
         background-image: url("../img/services20.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-21 {
+      #services-page .jumbotron.services .card-deck .card.service-21 {
         background-image: url("../img/services21.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-22 {
+      #services-page .jumbotron.services .card-deck .card.service-22 {
         background-image: url("../img/services22.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-23 {
+      #services-page .jumbotron.services .card-deck .card.service-23 {
         background-image: url("../img/services23.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card.service-24 {
+      #services-page .jumbotron.services .card-deck .card.service-24 {
         background-image: url("../img/services24.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      .jumbotron.services .card-deck .card .card-body {
+      #services-page .jumbotron.services .card-deck .card .card-body {
         height: 212px;
         box-sizing: border-box;
         padding: 20px;
         margin-bottom: 10px; }
-      .jumbotron.services .card-deck .card .card-end {
+      #services-page .jumbotron.services .card-deck .card .card-end {
         background-color: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(5px);
         border-radius: 0px 0px 20px 20px;
         box-sizing: border-box;
         padding: 0 20px;
         padding-bottom: 10px; }
-        .jumbotron.services .card-deck .card .card-end h5 {
+        #services-page .jumbotron.services .card-deck .card .card-end h5 {
           font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: normal;
@@ -1293,7 +1293,7 @@ form.choose-brand p {
           line-height: normal;
           color: #FFFFFF;
           box-sizing: border-box; }
-        .jumbotron.services .card-deck .card .card-end p {
+        #services-page .jumbotron.services .card-deck .card .card-end p {
           padding: 7px 0;
           font-family: "Roboto", sans-serif;
           font-style: normal;
@@ -1301,10 +1301,10 @@ form.choose-brand p {
           font-size: 18px;
           line-height: normal;
           color: #D41F26; }
-          .jumbotron.services .card-deck .card .card-end p small {
+          #services-page .jumbotron.services .card-deck .card .card-end p small {
             font-size: 14px; }
-        .jumbotron.services .card-deck .card .card-end .btn {
-          font-family: 'Roboto Condensed';
+        #services-page .jumbotron.services .card-deck .card .card-end .btn {
+          font-family: "Roboto Condensed", sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -1313,6 +1313,96 @@ form.choose-brand p {
           border: #D41F26 1px solid;
           color: #FFFFFF;
           padding: 8px 14px; }
+
+#promotions-page h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 40px !important;
+  line-height: 33px !important;
+  letter-spacing: 0 !important;
+  color: #000000 !important;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#promotions-page h1:before,
+#promotions-page h1:after {
+  content: '';
+  border: 1px solid #000000;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px; }
+
+#promotions-page h1:after {
+  margin: 0 0 0 20px; }
+
+#promotions-page .heading {
+  margin: 33px auto; }
+
+#promotions-page .top-separator {
+  margin: 0;
+  border: 3px solid #000000; }
+
+#promotions-page .displays {
+  margin-top: 0; }
+
+#promotions-page .displays p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  margin-top: 20px;
+  color: #FFFFFF; }
+
+#promotions-page .block-one {
+  background-image: url("img/акції1.png") !important; }
+
+#promotions-page .block-two {
+  background-image: url("img/акції2.png") !important; }
+
+#promotions-page .block-three {
+  background-image: url("img/акції3.png") !important; }
+
+#promotions-page .display {
+  height: 300px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 0 !important;
+  background-color: #000000 !important;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+#promotions-page h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #FFFFFF !important; }
+
+#promotions-page .separator {
+  margin: 0;
+  opacity: 0.6;
+  border: 1px solid #000000; }
+
+#promotions-page .btn {
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms; }
+
+#promotions-page .btn:hover {
+  color: #D41F26;
+  background-color: #FFFFFF;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1); }
 
 .shop-heading-image {
   margin-top: -53px;
