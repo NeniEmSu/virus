@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  outline: none; }
+  outline: none !important; }
 
 html {
   overflow-x: hidden;
@@ -1605,10 +1605,11 @@ footer {
     margin-top: 40px; }
 
 .accordion {
+  display: inline;
   border: 1.48094px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 50px;
-  margin: 20px auto;
+  margin: 10px auto;
   background-color: #FFFFFF;
   width: 180px;
   height: 38px;
@@ -1622,9 +1623,28 @@ footer {
   outline: none;
   transition: 400ms; }
 
+.accordion:after {
+  color: #8B8B8B;
+  float: right;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+  margin-right: 10px; }
+
+.accordion.open:after {
+  color: #8B8B8B;
+  float: right;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d8";
+  margin-right: 10px; }
+
 .open,
 .accordion:hover {
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  outline: none; }
 
 .panel {
   font-family: "Roboto", sans-serif;

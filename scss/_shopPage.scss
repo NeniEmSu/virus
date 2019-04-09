@@ -255,10 +255,11 @@
 
 
 .accordion {
+    display: inline;
     border: 1.48094px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 50px;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: $lightColor;
 
     width: 180px;
@@ -277,9 +278,30 @@
     transition: 400ms;
 }
 
+.accordion:after {
+    color: $headingsFontColor;
+    float: right;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+    margin-right: 10px;
+}
+
+.accordion.open:after {
+    color: $headingsFontColor;
+    float: right;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d8";
+    margin-right: 10px;
+}
+
 .open,
 .accordion:hover {
     background-color: #E5E5E5;
+    outline: none;
 }
 
 .panel {
