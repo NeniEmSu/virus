@@ -1,7 +1,7 @@
 #services-page {
 
     .btn {
-        padding: 8px 23px;
+        padding: 7px 23px;
         background-color: $lightColor;
         border-radius: 50px;
         font-family: $secondaryFont;
@@ -172,7 +172,9 @@
             margin: 30px auto;
         }
 
-        .card-deck {
+        .card-deck,
+        .cards-grouppings-3,
+        .testing {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -200,7 +202,7 @@
                 &.two-cards {
                     height: 277px;
                     width: 100%;
-                    min-width: 555px;
+
                     max-width: 555px;
 
                     hr {
@@ -225,8 +227,9 @@
                 &.three-cards {
                     height: 277px;
                     width: 100%;
-                    min-width: 368px;
+                    min-width: 260px;
                     max-width: 368px;
+
                 }
 
                 &.service-one {
@@ -450,7 +453,7 @@
                         border: $redColor 1px solid;
 
                         color: $lightColor;
-                        padding: 8px 14px;
+                        padding: 8px 10px;
                     }
                 }
             }
