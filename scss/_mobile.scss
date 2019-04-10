@@ -1275,6 +1275,38 @@
             }
         }
     }
+
+    #services-page {
+        .jumbotron.services {
+
+            .card-deck,
+            .cards-grouppings-3,
+            .testing {
+
+
+                .card {
+
+                    .card-end {
+
+
+
+                        .btn {
+                            font-family: $secondaryFont;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 15px;
+                            line-height: normal;
+                            background-color: transparent;
+                            border: $redColor 1px solid;
+
+                            color: $lightColor;
+                            padding: 6px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include mediaLandscape {}
