@@ -478,6 +478,9 @@ main {
     margin: 0;
     padding: 0; }
 
+.jumbotron {
+  margin: 0; }
+
 .jumbotron.recomendations {
   background: #F2F2F2;
   padding: 40px 0;
@@ -1172,70 +1175,70 @@ footer {
       #services-page .jumbotron.services .testing .card.service-one {
         background-image: url("../img/services1.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-two,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-two,
       #services-page .jumbotron.services .testing .card.service-two {
         background-image: url("../img/services2.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-three,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-three,
       #services-page .jumbotron.services .testing .card.service-three {
         background-image: url("../img/services3.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-four,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-four,
       #services-page .jumbotron.services .testing .card.service-four {
         background-image: url("../img/services4.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-five,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-five,
       #services-page .jumbotron.services .testing .card.service-five {
         background-image: url("../img/services5.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-six,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-six,
       #services-page .jumbotron.services .testing .card.service-six {
         background-image: url("../img/services6.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-seven,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-seven,
       #services-page .jumbotron.services .testing .card.service-seven {
         background-image: url("../img/services7.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-eight,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-eight,
       #services-page .jumbotron.services .testing .card.service-eight {
         background-image: url("../img/services8.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-nine,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-nine,
       #services-page .jumbotron.services .testing .card.service-nine {
         background-image: url("../img/services9.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-ten,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-ten,
       #services-page .jumbotron.services .testing .card.service-ten {
         background-image: url("../img/services10.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-eleven,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-eleven,
@@ -1249,91 +1252,91 @@ footer {
       #services-page .jumbotron.services .testing .card.service-twelve {
         background-image: url("../img/services12.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-13,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-13,
       #services-page .jumbotron.services .testing .card.service-13 {
         background-image: url("../img/services13.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-14,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-14,
       #services-page .jumbotron.services .testing .card.service-14 {
         background-image: url("../img/services14.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-15,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-15,
       #services-page .jumbotron.services .testing .card.service-15 {
         background-image: url("../img/services15.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-16,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-16,
       #services-page .jumbotron.services .testing .card.service-16 {
         background-image: url("../img/services16.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-17,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-17,
       #services-page .jumbotron.services .testing .card.service-17 {
         background-image: url("../img/services17.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-18,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-18,
       #services-page .jumbotron.services .testing .card.service-18 {
         background-image: url("../img/services18.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-19,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-19,
       #services-page .jumbotron.services .testing .card.service-19 {
         background-image: url("../img/services19.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-20,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-20,
       #services-page .jumbotron.services .testing .card.service-20 {
         background-image: url("../img/services20.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-21,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-21,
       #services-page .jumbotron.services .testing .card.service-21 {
         background-image: url("../img/services21.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-22,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-22,
       #services-page .jumbotron.services .testing .card.service-22 {
         background-image: url("../img/services22.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-23,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-23,
       #services-page .jumbotron.services .testing .card.service-23 {
         background-image: url("../img/services23.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card.service-24,
       #services-page .jumbotron.services .cards-grouppings-3 .card.service-24,
       #services-page .jumbotron.services .testing .card.service-24 {
         background-image: url("../img/services24.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         background-size: cover; }
       #services-page .jumbotron.services .card-deck .card .card-body,
       #services-page .jumbotron.services .cards-grouppings-3 .card .card-body,
@@ -1480,8 +1483,26 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-#shop .cart-icon .fixed-left {
-  position: fixed; }
+#shop .cart-icon #show-total {
+  width: 35px;
+  height: 35px;
+  background-color: #D41F26;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 17px auto 0;
+  justify-content: center; }
+  #shop .cart-icon #show-total span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto; }
 
 #shop .shop-heading-image {
   margin-top: -53px;
@@ -1815,10 +1836,17 @@ footer {
       margin: auto;
       color: #000000;
       text-decoration: none; }
-    #shop .basket .basket-content .sum-total p {
+  #shop .basket .sum-total span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    color: #000000; }
+    #shop .basket .sum-total span .cart-items-value {
       font-family: "Roboto", sans-serif;
       font-style: normal;
-      font-weight: bold;
+      font-weight: normal;
       font-size: 20px;
       line-height: normal;
       color: #000000; }
@@ -1849,7 +1877,8 @@ footer {
       -webkit-transition: ease-in-out 300ms;
       -moz-transition: ease-in-out 300ms;
       -ms-transition: ease-in-out 300ms;
-      -o-transition: ease-in-out 300ms; }
+      -o-transition: ease-in-out 300ms;
+      border-radius: 50px !important; }
       #shop .basket .checkOut .btn.go-back {
         background: #E5E5E5;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
@@ -1905,6 +1934,82 @@ footer {
       -moz-transition: ease-in-out 300ms;
       -ms-transition: ease-in-out 300ms;
       -o-transition: ease-in-out 300ms; }
+
+#blog h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 33px;
+  letter-spacing: 0;
+  color: #000000;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#blog h1:before,
+#blog h1:after {
+  content: '';
+  border: 1px solid #000000;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px; }
+
+#blog h1:after {
+  margin: 0 0 0 20px; }
+
+#blog .heading {
+  margin: 33px auto; }
+
+#blog .top-separator {
+  margin: 0;
+  border: 3px solid #000000; }
+
+#blog .displays {
+  margin-top: 0; }
+
+#blog .block-one {
+  background-image: url("../img/Блог1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+#blog .block-two {
+  background-image: url("../img/Блог2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+#blog .block-three {
+  background-image: url("../img/Блог3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+#blog a .btn {
+  padding: 12px 66px; }
+
+#blog .display {
+  height: 300px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 0;
+  background-color: #000000;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+#blog h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+  color: #FFFFFF; }
+
+#blog .separator {
+  margin: 0;
+  opacity: 0.6;
+  border: 1px solid #000000; }
 
 .aboutUs-heading-image {
   margin-top: -53.5px;

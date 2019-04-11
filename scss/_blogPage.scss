@@ -1,0 +1,97 @@
+#blog {
+
+    h1 {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 33px;
+        letter-spacing: 0;
+
+        color: $darkColor;
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1:before,
+    h1:after {
+        content: '';
+        border: 1px solid $darkColor;
+        margin: 0 20px 0 0;
+        flex: 1 0 20px;
+    }
+
+    h1:after {
+        margin: 0 0 0 20px;
+    }
+
+
+    .heading {
+        margin: 33px auto;
+    }
+
+    .top-separator {
+        margin: 0;
+        border: 3px solid $darkColor;
+    }
+
+    .displays {
+        margin-top: 0;
+    }
+
+    .block-one {
+        background-image: url("../img/Блог1.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .block-two {
+        background-image: url("../img/Блог2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .block-three {
+        background-image: url("../img/Блог3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    a .btn {
+        padding: 12px 66px;
+    }
+
+    .display {
+        height: 300px;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 0;
+        background-color: $darkColor;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-family: $mainFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: normal;
+
+        color: $lightColor;
+    }
+
+    .separator {
+        margin: 0;
+        opacity: 0.6;
+        border: 1px solid $darkColor;
+    }
+
+
+}

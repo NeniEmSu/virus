@@ -2,9 +2,34 @@
 
     .cart-icon {
 
-        .fixed-left {
-            position: fixed;
+        #show-total {
+            width: 35px;
+            height: 35px;
 
+            background-color: $redColor;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+
+            margin: 17px auto 0;
+
+            justify-content: center;
+
+
+            span {
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 35px;
+
+                color: $lightColor;
+                text-align: center;
+                margin: auto;
+            }
         }
     }
 
@@ -451,16 +476,30 @@
                 }
             }
 
-            .sum-total p {
+
+        }
+
+        .sum-total span {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+
+            color: $darkColor;
+
+            .cart-items-value {
                 font-family: $mainFont;
                 font-style: normal;
-                font-weight: bold;
+                font-weight: normal;
                 font-size: 20px;
                 line-height: normal;
 
                 color: #000000;
-
             }
+
+
+
         }
 
         .checkOut {
@@ -495,6 +534,7 @@
                 -moz-transition: ease-in-out 300ms;
                 -ms-transition: ease-in-out 300ms;
                 -o-transition: ease-in-out 300ms;
+                border-radius: 50px !important;
 
 
 
