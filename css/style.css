@@ -1519,7 +1519,7 @@ footer {
   border-radius: 50px;
   margin: 10px auto;
   background-color: #FFFFFF;
-  width: 170px;
+  width: 180px;
   height: 38px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1574,12 +1574,18 @@ footer {
     display: block;
     text-decoration: none;
     text-align: left;
-    padding: 3px 0px 3px 10px; }
+    padding: 3px 0px 3px 10px;
+    margin: 5px auto;
+    outline: none;
+    box-shadow: none;
+    border-radius: 20px; }
   #shop .filter-sidebar .panel .filter-btn:hover,
   #shop .filter-sidebar .panel .filter-btn.active {
     color: #000000;
     background: #E5E5E5;
-    border-radius: 20px; }
+    border-radius: 20px;
+    padding: 3px 0px 3px 10px;
+    margin: 5px auto; }
 
 #shop .sales-cards .btn {
   text-decoration: none;
@@ -1797,7 +1803,7 @@ footer {
         color: #000000;
         margin: auto 2px;
         text-decoration: none; }
-    #shop .basket .basket-content .remove-from-chart a {
+    #shop .basket .basket-content .remove-from-chart a p.close {
       font-weight: bold;
       font-size: 28px;
       line-height: 28px;
