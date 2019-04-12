@@ -1,5 +1,4 @@
 #services-page {
-
     .btn {
         padding: 7px 23px;
         background-color: $lightColor;
@@ -198,9 +197,35 @@
                     width: 100%;
                     min-width: 277px;
                     max-width: 277px;
+
                 }
 
                 &.two-cards {
+                    height: 277px;
+                    width: 100%;
+
+                    max-width: 555px;
+
+                    hr {
+                        width: 100%;
+                        border: 0.75px solid $lightColor;
+                        margin: 0;
+                    }
+
+                    .subtext {
+                        font-family: $mainFont;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: normal;
+
+                        color: $lightColor;
+
+                        padding: 0;
+                    }
+                }
+
+                &.two-cards-seprate-titles {
                     height: 277px;
                     width: 100%;
 
@@ -237,28 +262,28 @@
                     background-image: url('../img/services1.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-two {
                     background-image: url('../img/services2.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-three {
                     background-image: url('../img/services3.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-four {
                     background-image: url('../img/services4.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
 
@@ -266,42 +291,42 @@
                     background-image: url('../img/services5.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-six {
                     background-image: url('../img/services6.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-seven {
                     background-image: url('../img/services7.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-eight {
                     background-image: url('../img/services8.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-nine {
                     background-image: url('../img/services9.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-ten {
                     background-image: url('../img/services10.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-eleven {
@@ -315,91 +340,91 @@
                     background-image: url('../img/services12.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-13 {
                     background-image: url('../img/services13.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-14 {
                     background-image: url('../img/services14.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-15 {
                     background-image: url('../img/services15.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-16 {
                     background-image: url('../img/services16.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-17 {
                     background-image: url('../img/services17.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-18 {
                     background-image: url('../img/services18.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-19 {
                     background-image: url('../img/services19.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-20 {
                     background-image: url('../img/services20.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-21 {
                     background-image: url('../img/services21.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-22 {
                     background-image: url('../img/services22.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-23 {
                     background-image: url('../img/services23.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 &.service-24 {
                     background-image: url('../img/services24.png');
                     background-repeat: no-repeat;
                     background-position: center center;
-                    background-size: cover;
+                    background-size: scale-down;
                 }
 
                 .card-body {
@@ -414,8 +439,7 @@
                     backdrop-filter: blur(5px);
                     border-radius: 0px 0px 20px 20px;
                     box-sizing: border-box;
-                    padding: 0 20px;
-                    padding-bottom: 10px;
+                    padding: 0 10px;
 
                     h5 {
                         font-family: $mainFont;
@@ -437,6 +461,7 @@
                         font-weight: bold;
                         font-size: 18px;
                         line-height: normal;
+                        margin-bottom: 7px;
 
                         color: $redColor;
 
