@@ -1994,19 +1994,19 @@ footer {
   background-image: url("../img/Блог1.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: scale-down; }
 
 #blog .block-two {
   background-image: url("../img/Блог2.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: scale-down; }
 
 #blog .block-three {
   background-image: url("../img/Блог3.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: scale-down; }
 
 #blog a .btn {
   padding: 12px 66px; }
@@ -2159,6 +2159,25 @@ footer {
   #promotions-page .display p {
     text-align: center; }
   #promotions-page h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px !important;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #FFFFFF !important; }
+  #blog .display {
+    height: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0 !important;
+    background-color: #000000 !important;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #blog .display p {
+    text-align: center; }
+  #blog h2 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -2949,6 +2968,25 @@ footer {
   #promotions-page .display p {
     text-align: center; }
   #promotions-page h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px !important;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #FFFFFF !important; }
+  #blog .display {
+    height: 100%;
+    min-height: 300px;
+    max-height: 420px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0 !important;
+    background-color: #000000 !important;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #blog .display p {
+    text-align: center; }
+  #blog h2 {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
