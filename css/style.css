@@ -1415,7 +1415,7 @@ footer {
           padding: 8px 10px; }
 
 #promotions-page h1 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold !important;
   font-size: 40px !important;
@@ -1448,8 +1448,8 @@ footer {
 #promotions-page .displays {
   margin-top: 0; }
 
-#promotions-page .displays p {
-  font-family: Roboto;
+#promotions-page .display p {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1475,7 +1475,7 @@ footer {
   margin-bottom: 40px; }
 
 #promotions-page h2 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -2052,6 +2052,11 @@ footer {
   width: 100%;
   height: 280px; }
 
+.map-separator {
+  margin: 40px 0;
+  opacity: 0.6;
+  border: 1px solid #000000; }
+
 #map {
   margin: 40px auto;
   height: 685px;
@@ -2072,7 +2077,7 @@ footer {
   -o-transform: scale(1.005); }
 
 .offset:before {
-  height: 8rem;
+  height: -8rem;
   margin-top: -8rem;
   content: "";
   display: block; }
@@ -2141,7 +2146,26 @@ footer {
     letter-spacing: -0.05em;
     color: #8B8B8B;
     margin: 40px 0;
-    text-align: center; } }
+    text-align: center; }
+  #promotions-page .display {
+    height: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0 !important;
+    background-color: #000000 !important;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #promotions-page .display p {
+    text-align: center; }
+  #promotions-page h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px !important;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #FFFFFF !important; } }
 
 @media screen and (min-width: 991px) and (max-width: 1199.9px) {
   .hide {
@@ -2912,7 +2936,26 @@ footer {
       color: #8B8B8B;
       margin: 40px 0; }
   footer .logo img {
-    margin-left: calc(100vw - 75vw); } }
+    margin-left: calc(100vw - 75vw); }
+  #promotions-page .display {
+    height: 100%;
+    min-height: 300px;
+    max-height: 420px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0 !important;
+    background-color: #000000 !important;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  #promotions-page .display p {
+    text-align: center; }
+  #promotions-page h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px !important;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #FFFFFF !important; } }
 
 @media screen and (max-width: 360px) {
   .jumbotron {

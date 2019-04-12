@@ -9,6 +9,12 @@
     height: 280px;
 }
 
+.map-separator {
+    margin: 40px 0;
+    opacity: 0.6;
+    border: 1px solid #000000;
+}
+
 #map {
     margin: 40px auto;
     height: 685px;
@@ -31,7 +37,7 @@
 }
 
 .offset:before {
-    height: 8rem;
+    height: -8rem;
     margin-top: -8rem;
     content: "";
     display: block;

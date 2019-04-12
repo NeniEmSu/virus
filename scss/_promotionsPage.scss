@@ -1,13 +1,13 @@
 #promotions-page {
     h1 {
-        font-family: Roboto;
+        font-family: $mainFont;
         font-style: normal;
         font-weight: bold !important;
         font-size: 40px !important;
         line-height: 33px !important;
         letter-spacing: 0 !important;
 
-        color: #000000 !important;
+        color: $darkColor !important;
 
         display: flex;
         width: 100%;
@@ -19,7 +19,7 @@
     h1:before,
     h1:after {
         content: '';
-        border: 1px solid #000000;
+        border: 1px solid $darkColor;
         margin: 0 20px 0 0;
         flex: 1 0 20px;
     }
@@ -34,22 +34,23 @@
 
     .top-separator {
         margin: 0;
-        border: 3px solid #000000;
+        border: 3px solid $darkColor;
     }
 
     .displays {
         margin-top: 0;
     }
 
-    .displays p {
-        font-family: Roboto;
+    .display p {
+        font-family: $mainFont;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: normal;
         margin-top: 20px;
 
-        color: #FFFFFF;
+
+        color: $lightColor;
     }
 
     .block-one {
@@ -66,28 +67,29 @@
 
     .display {
         height: 300px;
+
         box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
         border-radius: 0 !important;
-        background-color: #000000 !important;
+        background-color: $darkColor !important;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
     h2 {
-        font-family: Roboto;
+        font-family: $mainFont;
         font-style: normal;
         font-weight: bold;
         font-size: 40px;
         line-height: normal;
         letter-spacing: 0;
 
-        color: #FFFFFF !important;
+        color: $lightColor !important;
     }
 
     .separator {
         margin: 0;
         opacity: 0.6;
-        border: 1px solid #000000;
+        border: 1px solid $darkColor;
     }
 
     .btn {

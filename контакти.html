@@ -73,7 +73,7 @@
                 <div class="container">
                     <ul>
                         <li>
-                            <a href="контакти#map">
+                            <a href="контакти#map-top">
                                 <span class="hide">Україна, м. Тернопіль, вул. Приміська 15А</span>
 
                                 <i class="fa fa-map-marker-alt bounce px-2"></i>
@@ -187,14 +187,11 @@
                 </div>
 
                 <div class="container text-center">
-                    <hr style="
-                    margin: 40px 0;
-                    opacity: 0.6;
-                    border: 1px solid #000000;">
+                    <hr class="map-separator offset" id="map-top">
 
                     <img src="img/icons8-marker-100.png" alt="Location marker icon">
 
-                    <div id="map" class="offset">
+                    <div id="map">
                     </div>
                     <div class="contact-page-socials">
 
@@ -207,93 +204,92 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="jumbotron">
+                <div class=" container mx-auto contact">
+                    <div class="card p-5">
+                        <form class="text-right" method="POST" action="includes/contactForm.inc.php">
+                            <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
+                                    ДЕТЕЙЛІНГА</span><br>
+                                ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
+
+                            <div class="row">
+                                <div class="col-md-6">
 
 
-                <div class="jumbotron">
-                    <div class=" container mx-auto contact">
-                        <div class="card p-5">
-                            <form class="text-right" method="POST" action="includes/contactForm.inc.php">
-                                <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
-                                        ДЕТЕЙЛІНГА</span><br>
-                                    ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-
-
-                                        <div class="form-group">
-                                            <label hidden for="carModel">Введіть модель авто</label>
-                                            <input type="text" id="carModel" name="carModel" class="form-control"
-                                                aria-describedby="carModel" placeholder="Введіть модель авто">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="typeOfWork">Оберіть тип робіт</label>
-                                            <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                                <option>Оберіть тип робіт</option>
-                                            </select>
-                                        </div>
+                                    <div class="form-group">
+                                        <label hidden for="carModel">Введіть модель авто</label>
+                                        <input type="text" id="carModel" name="carModel" class="form-control"
+                                            aria-describedby="carModel" placeholder="Введіть модель авто">
                                     </div>
-
-                                    <div class="col-md-6">
-
-
-                                        <div class="form-group">
-                                            <label hidden for="name">Ім’я</label>
-                                            <input type="text" id="name" name="name" class="form-control"
-                                                aria-describedby="name" placeholder="Ім’я*">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="phone">Телефон</label>
-                                            <input type="number" id="phone" aria-describedby="phone" name="phone"
-                                                class="form-control" placeholder="Телефон*">
-                                        </div>
-
-
-                                        <button type="submit" name="submit" class="btn">ВІДПРАВИТИ</button>
+                                    <div class="form-group">
+                                        <label hidden for="typeOfWork">Оберіть тип робіт</label>
+                                        <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                            <option>Оберіть тип робіт</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <p class="text-left col-12">Відправте запит, і наш менеджер
-                                    зв’яжеться з вами
-                                    найближчим
-                                    часом</p>
 
-                            </form>
+                                <div class="col-md-6">
 
-                        </div>
+
+                                    <div class="form-group">
+                                        <label hidden for="name">Ім’я</label>
+                                        <input type="text" id="name" name="name" class="form-control"
+                                            aria-describedby="name" placeholder="Ім’я*">
+                                    </div>
+                                    <div class="form-group">
+                                        <label hidden for="phone">Телефон</label>
+                                        <input type="number" id="phone" aria-describedby="phone" name="phone"
+                                            class="form-control" placeholder="Телефон*">
+                                    </div>
+
+
+                                    <button type="submit" name="submit" class="btn">ВІДПРАВИТИ</button>
+                                </div>
+                            </div>
+                            <p class="text-left col-12">Відправте запит, і наш менеджер
+                                зв’яжеться з вами
+                                найближчим
+                                часом</p>
+
+                        </form>
+
                     </div>
+                </div>
 
 
-                    <div class="container text-center process">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
-                                <div>
-                                    <h6>Великий спектр послуг</h6>
-                                </div>
+                <div class="container text-center process">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
+                            <div>
+                                <h6>Великий спектр послуг</h6>
                             </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-service-filled-100.png" alt="icons service filled">
-                                <div>
-                                    <h6>Персонал та сервіс</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
-                                <div>
-                                    <h6>Лояльність</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
-                                <div>
-                                    <h6>Ексклюзивні пропозиції</h6>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-service-filled-100.png" alt="icons service filled">
+                            <div>
+                                <h6>Персонал та сервіс</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
+                            <div>
+                                <h6>Лояльність</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
+                            <div>
+                                <h6>Ексклюзивні пропозиції</h6>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -325,7 +321,7 @@
                     </li>
 
                     <li>
-                        <a href="контакти#map">Україна,
+                        <a href="контакти#map-top">Україна,
                             м. Тернопіль, вул. Приміська 15А
 
                             <i class="fa fa-map-marker-alt pl-2"></i>
