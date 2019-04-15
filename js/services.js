@@ -25,7 +25,7 @@ var app = new Vue({
         cart: 0
     },
     methods: {
-        updateProduct(variantImage) {
+        changeCars(variantImage) {
             this.image = variantImage
         }
     }

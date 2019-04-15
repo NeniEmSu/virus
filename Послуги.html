@@ -169,35 +169,19 @@
 
                 <div id="app">
 
-                    <img class="col-10  m-auto img-fluid" :src="image" :alt="description"
-                        style="width:auto; max-height:300px" />
+                    <img class="col-12  m-auto img-fluid" :src="image" :alt="description" />
 
-                    <div v-for=" variant in variants" :key="variant.variantId" class="row car-toggle">
+                    <div class="row car-toggle">
 
-                        <div class="col-md-4  m-auto">
+                        <div class="col-md-4 m-auto" v-for=" variant in variants" :key="variant.variantId">
                             <a href="#" class="btn"
-                                @mouseover="updateProduct(variant.variantImage)">{{ variant.variantTitle }}</a>
+                                @click="changeCars(variant.variantImage)">{{ variant.variantTitle }}</a>
                             <p>{{ variant.variantDescription }}</p>
                         </div>
 
-                        <!-- <div class="col-md-4  m-auto">
-                            <a href="#" class="btn">&#8545; категорія</a>
-                            <p>середній кросовер
-                                позашляховик</p>
-                        </div>
-
-                        <div class="col-md-4  m-auto">
-                            <a href="#" class="btn">&#8546; категорія</a>
-                            <p>повнорозмірний кросовер
-                                позашляховик</p>
-                        </div> -->
                     </div>
 
                 </div>
-
-
-
-
 
                 <form class="choose-brand">
                     <h3 class="col-12 red">Оберіть категорію автомобіля</h3>
