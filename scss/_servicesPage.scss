@@ -60,7 +60,7 @@
     }
 
     button.btn {
-        padding: 10px 37px;
+        padding: 12px 37px;
         background-color: $redColor;
         border-radius: 50px;
         font-family: $secondaryFont;
@@ -89,7 +89,7 @@
         -o-transform: scale(1.1);
     }
 
-    button.btn:hover:after {
+    .choose-brand button.btn:hover:after {
         color: $redColor;
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -98,7 +98,7 @@
         -o-transform: scale(1.1);
     }
 
-    button.btn:after {
+    .choose-brand button.btn:after {
         color: $lightColor;
         float: right;
         font-size: 20px;

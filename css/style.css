@@ -1024,7 +1024,7 @@ footer {
   color: #D41F26; }
 
 #services-page button.btn {
-  padding: 10px 37px;
+  padding: 12px 37px;
   background-color: #D41F26;
   border-radius: 50px;
   font-family: "Roboto Condensed", sans-serif;
@@ -1050,7 +1050,7 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-#services-page button.btn:hover:after {
+#services-page .choose-brand button.btn:hover:after {
   color: #D41F26;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -1058,7 +1058,7 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-#services-page button.btn:after {
+#services-page .choose-brand button.btn:after {
   color: #FFFFFF;
   float: right;
   font-size: 20px;
@@ -1814,156 +1814,159 @@ footer {
   #shop .sales-cards .btn.see-more {
     margin-top: 40px; }
 
-#shop .basket {
-  margin-top: 140px; }
-  #shop .basket h3 {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: normal;
-    color: #000000; }
-  #shop .basket .basket-content {
-    display: flex; }
-    #shop .basket .basket-content .cart-item {
-      border-top: 1px solid #E5E5E5; }
-    #shop .basket .basket-content img {
-      width: 60px;
-      height: 60px;
-      object-fit: scale-down; }
-    #shop .basket .basket-content .cost p {
+#shop .modal-content {
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 25px; }
+  #shop .modal-content .basket {
+    margin-top: 140px; }
+    #shop .modal-content .basket h3 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: normal;
-      color: #000000;
-      margin: auto; }
-    #shop .basket .basket-content .toggle-quantity {
-      border: 1px solid #E5E5E5;
-      box-sizing: border-box;
-      border-radius: 50px;
-      display: flex;
-      justify-content: space-between; }
-      #shop .basket .basket-content .toggle-quantity p,
-      #shop .basket .basket-content .toggle-quantity a {
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 26px;
-        color: #000000;
-        margin: auto 2px;
-        text-decoration: none; }
-    #shop .basket .basket-content .remove-from-chart a p.close {
       font-weight: bold;
-      font-size: 28px;
-      line-height: 28px;
-      transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
-      margin: auto;
-      color: #000000;
-      text-decoration: none; }
-  #shop .basket .sum-total span {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: normal;
-    color: #000000; }
-    #shop .basket .sum-total span .cart-items-value {
-      font-family: "Roboto", sans-serif;
-      font-style: normal;
-      font-weight: normal;
       font-size: 20px;
       line-height: normal;
       color: #000000; }
-  #shop .basket .checkOut {
-    margin-bottom: 60px; }
-    #shop .basket .checkOut input {
-      height: 48px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border: 2px solid #E5E5E5;
-      box-sizing: border-box;
-      border-radius: 50px; }
-    #shop .basket .checkOut .btn {
-      padding: 10px 32px;
-      background: #D41F26;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-      border-radius: 50px;
-      font-family: "Roboto Condensed", sans-serif;
+    #shop .modal-content .basket .basket-content {
+      display: flex; }
+      #shop .modal-content .basket .basket-content .cart-item {
+        border-top: 1px solid #E5E5E5; }
+      #shop .modal-content .basket .basket-content img {
+        width: 60px;
+        height: 60px;
+        object-fit: scale-down; }
+      #shop .modal-content .basket .basket-content .cost p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+        color: #000000;
+        margin: auto; }
+      #shop .modal-content .basket .basket-content .toggle-quantity {
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between; }
+        #shop .modal-content .basket .basket-content .toggle-quantity p,
+        #shop .modal-content .basket .basket-content .toggle-quantity a {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 26px;
+          color: #000000;
+          margin: auto 2px;
+          text-decoration: none; }
+      #shop .modal-content .basket .basket-content .remove-from-chart a p.close {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+        -webkit-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+        -moz-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+        -ms-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+        -o-transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+        margin: auto;
+        color: #000000;
+        text-decoration: none; }
+    #shop .modal-content .basket .sum-total span {
+      font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
-      line-height: 20px;
-      text-align: center;
-      color: #FFFFFF;
-      border: none;
-      text-decoration: none;
-      transition: ease-in-out 300ms;
-      -webkit-transition: ease-in-out 300ms;
-      -moz-transition: ease-in-out 300ms;
-      -ms-transition: ease-in-out 300ms;
-      -o-transition: ease-in-out 300ms; }
-      #shop .basket .checkOut .btn.go-back {
-        background: #E5E5E5;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        font-family: "Roboto Condensed", sans-serif;
+      line-height: normal;
+      color: #000000; }
+      #shop .modal-content .basket .sum-total span .cart-items-value {
+        font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
+        line-height: normal;
+        color: #000000; }
+    #shop .modal-content .basket .checkOut {
+      margin-bottom: 60px; }
+      #shop .modal-content .basket .checkOut input {
+        height: 48px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 50px; }
+      #shop .modal-content .basket .checkOut .btn {
+        padding: 10px 33px;
+        background: #D41F26;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+        border-radius: 50px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
         line-height: 20px;
         text-align: center;
-        color: #000000; }
-      #shop .basket .checkOut .btn:hover {
+        color: #FFFFFF;
+        border: none;
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms; }
+        #shop .modal-content .basket .checkOut .btn.go-back {
+          background: #E5E5E5;
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+          border-radius: 50px;
+          font-family: "Roboto Condensed", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000; }
+        #shop .modal-content .basket .checkOut .btn:hover {
+          color: #D41F26;
+          background: #FFFFFF;
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1); }
+      #shop .modal-content .basket .checkOut .order.btn:after {
+        color: #FFFFFF;
+        float: right;
+        font-size: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+        margin-left: 20px;
+        margin-right: -20px;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms; }
+      #shop .modal-content .basket .checkOut .order.btn:hover:after {
         color: #D41F26;
-        background: #FFFFFF;
+        background: transparent;
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1); }
-    #shop .basket .checkOut .order.btn:after {
-      color: #FFFFFF;
-      float: right;
-      font-size: 20px;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f054";
-      margin-left: 20px;
-      margin-right: -20px;
-      transition: ease-in-out 300ms;
-      -webkit-transition: ease-in-out 300ms;
-      -moz-transition: ease-in-out 300ms;
-      -ms-transition: ease-in-out 300ms;
-      -o-transition: ease-in-out 300ms; }
-    #shop .basket .checkOut .order.btn:hover:after {
-      color: #D41F26;
-      background: transparent;
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1); }
-    #shop .basket .checkOut .go-back.btn:before {
-      color: #000000;
-      float: left;
-      font-size: 20px;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f053";
-      margin-left: -20px;
-      margin-right: 20px;
-      transition: ease-in-out 300ms;
-      -webkit-transition: ease-in-out 300ms;
-      -moz-transition: ease-in-out 300ms;
-      -ms-transition: ease-in-out 300ms;
-      -o-transition: ease-in-out 300ms; }
+      #shop .modal-content .basket .checkOut .go-back.btn:before {
+        color: #000000;
+        float: left;
+        font-size: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f053";
+        margin-left: -20px;
+        margin-right: 20px;
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms; }
 
 #blog h1 {
   font-family: "Roboto", sans-serif;
