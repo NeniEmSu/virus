@@ -5,7 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  outline: none !important; }
+  outline: none !important;
+  font-family: "Roboto", sans-serif; }
 
 html {
   overflow-x: hidden;
@@ -17,7 +18,8 @@ body {
   width: 100%;
   height: 100%;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif; }
 
 button {
   cursor: pointer; }
@@ -970,6 +972,9 @@ footer {
         -o-transform: scale(1.1); }
       footer .bottom-contact ul li a.instagram, footer .bottom-contact ul li a.facebook {
         margin-left: 20px; }
+
+#services-page .choose-brand .choose-brand-desc {
+  font-family: "Roboto", sans-serif; }
 
 #services-page .btn {
   padding: 7px 23px;
