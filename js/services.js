@@ -1,4 +1,4 @@
-var app = new Vue({
+let app = new Vue({
     el: '#app',
     data: {
         image: './img/services-car-goup-all.png',
