@@ -1002,6 +1002,15 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
+#services-page .activeBtn {
+  color: #FFFFFF;
+  background-color: #D41F26;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1); }
+
 #services-page .car-toggle {
   margin-top: 48px; }
 

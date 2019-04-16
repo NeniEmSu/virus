@@ -33,6 +33,16 @@
         -o-transform: scale(1.1);
     }
 
+    .activeBtn {
+        color: $lightColor;
+        background-color: $redColor;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
     .car-toggle {
         margin-top: 48px;
     }
