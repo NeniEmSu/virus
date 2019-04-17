@@ -1016,6 +1016,9 @@ footer {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
+#services-page .hideMe {
+  display: none; }
+
 #services-page .car-toggle {
   margin-top: 48px; }
 
@@ -1409,7 +1412,7 @@ footer {
           font-weight: bold;
           font-size: 18px;
           line-height: normal;
-          margin-bottom: 7px;
+          margin-bottom: 12px;
           color: #D41F26; }
           #services-page .jumbotron.services .card-deck .card .card-end p small,
           #services-page .jumbotron.services .cards-grouppings-3 .card .card-end p small,

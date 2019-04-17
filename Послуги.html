@@ -31,6 +31,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62479125-9"
@@ -153,10 +154,11 @@
         </header>
 
         <main>
+            <div id="app">
 
-            <div class="container text-center p-0">
+                <div class="container text-center p-0">
 
-                <!-- <img class="col-3  m-auto img-fluid" src="img/mercedes-png-white-m.png"
+                    <!-- <img class="col-3  m-auto img-fluid" src="img/mercedes-png-white-m.png"
                     alt="white mercedes: середній бізнес спорт купе" title="white mercedes: середній бізнес спорт купе">
                 <img class="col-3  m-auto img-fluid"
                     src="img/png-hd-of-car-jeep-grand-cherokee-srt-white-car-png-image-car-hd-png-1550.png"
@@ -167,13 +169,23 @@
                     title="Black Range Rover Piano: повнорозмірний кросовер позашляховик">
                  -->
 
-                <div id="app">
 
-                    <img class="col-12  m-auto img-fluid" :src="image" :alt="description" />
+
+                    <img class="col-12  m-auto img-fluid animated zoomIn delay-2s" :src="image" :alt="description" />
 
                     <div class="row car-toggle">
 
-                        <div class="col-md-4 m-auto" v-for=" variant in variants" :key="variant.variantId">
+                        <div class="col-md-4 m-auto" v-for=" variant in variant1" :key="variant.variantId">
+                            <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
+                                :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
+                            <p>{{ variant.variantDescription }}</p>
+                        </div>
+                        <div class="col-md-4 m-auto" v-for=" variant in variant2" :key="variant.variantId">
+                            <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
+                                :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
+                            <p>{{ variant.variantDescription }}</p>
+                        </div>
+                        <div class="col-md-4 m-auto" v-for=" variant in variant3" :key="variant.variantId">
                             <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
                                 :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
                             <p>{{ variant.variantDescription }}</p>
@@ -181,1013 +193,1019 @@
 
                     </div>
 
-                </div>
 
-                <form class="choose-brand">
-                    <h3 class="col-12 red">Оберіть категорію автомобіля</h3>
-                    <p class="col-12 choose-brand-desc">Введіть можель свого авто для визначення категорії
-                    </p>
 
-                    <div class="form-group w-50 mx-auto">
-                        <label hidden for="brand">Марка</label>
-                        <select id="brand" aria-describedby="brand" class="form-control brand">
-                            <option>Марка</option>
-                            <option>Марка</option>
-                            <option>Марка</option>
-                            <option>Марка</option>
-                        </select>
-                    </div>
-
-
-                    <div class="form-group w-50 mx-auto">
-                        <label hidden for="model">Модель</label>
-                        <select id="model" aria-describedby="model" class="form-control model">
-                            <option>Модель</option>
-                            <option>Модель</option>
-                            <option>Модель</option>
-                            <option>Модель</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn">Вибрати </i></button>
-
-                </form>
-            </div>
-
-
-            <div class="jumbotron services">
-                <div class="container services-container">
-
-
-                    <!-- Полірування -->
-                    <h2 class="text-center fab-header">Полірування</h2>
-                    <div class="card-deck m-0 p-0">
-                        <div class="card four-cards  service-one">
-                            <div class="card-body"></div>
-                            <div class="card-end">
-                                <h5>Полірування автомобіля</h5>
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-                                            </small>
-                                            5999
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-two">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Полірування фар</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            600
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-three">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Полірування
-                                    вставок салону</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            500
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-four">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Полірування
-                                    центральних стійок</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            800
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Хімчистка -->
-                    <h2 class="text-center fab-header">Хімчистка</h2>
-                    <div class="card-deck">
-                        <div class="card four-cards  service-four">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Хімчистка</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            1999
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-six">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Хімчистка колесних арок,
-                                    підвіски, дисків</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            800
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-seven">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Хімчистка
-                                    передніх сидінь</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            275
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="card four-cards  service-eight">
-
-
-                            <div class="card-body">
-
-                            </div>
-
-                            <div class="card-end">
-                                <h5>Хімчистка
-                                    задніх сидінь</h5>
-
-                                <div class="row">
-                                    <div class="col-6 pr-0">
-                                        <p class="">
-                                            <small>від
-
-                                            </small>
-                                            495
-                                            <small>
-                                                грн
-                                            </small>
-                                        </p>
-                                    </div>
-                                    <div class="col-6 m-0 p-0">
-                                        <a href="#" class="btn">
-                                            Читати більше
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <!-- Воскове покриття -->
-                    <h2 class="text-center fab-header">Воскове покриття</h2>
-                    <div class="testing">
-                        <div class="row">
-
-                            <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
-                                <div class="card two-cards  service-nine">
-
-
-                                    <div class="card-body">
-
-                                    </div>
-
-                                    <div class="card-end">
-                                        <h5>Покриття твердим універсальним воском Soft 99</h5>
-
-                                        <div class="row">
-                                            <div class="col-6  col-md-8">
-                                                <p class="text-lg-right">
-                                                    <small>від
-
-                                                    </small>
-                                                    1200
-                                                    <small>
-                                                        грн
-                                                    </small>
-                                                </p>
-                                            </div>
-                                            <div class="col-6 col-md-4 text-right">
-                                                <a href="#" class="btn">
-                                                    Читати більше
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
-                                <div class="card two-cards  service-ten">
-
-                                    <div class="card-body">
-                                    </div>
-
-                                    <div class="card-end">
-                                        <h5>Покриття твердим воском Dark Soft 99</h5>
-
-                                        <div class="row">
-                                            <div class="col-6  col-md-8">
-                                                <p class="text-lg-right">
-                                                    <small>від
-
-                                                    </small>
-                                                    1200
-                                                    <small>
-                                                        грн
-                                                    </small>
-                                                </p>
-                                            </div>
-                                            <div class="col-6 col-md-4 text-right">
-                                                <a href="#" class="btn">
-                                                    Читати більше
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="testing">
-
-                        <div class="row">
-                            <!-- Керамічне покриття -->
-                            <!-- <div class="col-xl-6 mx-auto p-0"> -->
-                            <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
-                                <h2 class="text-center card-heading ">Керамічне покриття</h2>
-                                <div class="card two-cards-seprate-titles  service-eleven">
-
-
-                                    <div class="card-body"> </div>
-
-
-                                    <div class="card-end">
-                                        <h5 class="col-12 px-0">Керамічне покриття кузова</h5>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-md-3 mt-2 text-left  mx-md-auto">
-                                                <p class="subtext">Двухфазна мийка</p>
-                                            </div>
-                                            <div class="col-md-3  mt-2 text-left  mx-md-auto">
-                                                <p class="subtext">Очищення кузова
-                                                    від бітуму</p>
-                                            </div>
-                                            <div class="col-md-3  mt-2 text-left  mx-md-auto">
-                                                <p class="subtext">Легке вілновлююче
-                                                    полірування</p>
-                                            </div>
-                                            <div class="col-md-3  mt-2 text-left mx-md-auto">
-                                                <p class="subtext">Керамічне покриття
-                                                    окремих деталей</p>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-6  col-md-8">
-                                                <p class="text-lg-right">
-                                                    <small>від
-
-                                                    </small>
-                                                    12999
-                                                    <small>
-                                                        грн
-                                                    </small>
-                                                </p>
-                                            </div>
-                                            <div class="col-6 col-md-4 text-right">
-                                                <a href="#" class="btn">
-                                                    Читати більше
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <!-- Передпродажна підготовка -->
-                            <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
-                                <h2 class="text-center card-heading">Передпродажна підготовка</h2>
-                                <div class="card two-cards-seprate-titles  service-twelve">
-
-
-                                    <div class="card-body">
-
-                                    </div>
-
-                                    <div class="card-end">
-                                        <h5 class="col-12 px-0">Комплекс</h5>
-                                        <hr style="width: 100%;">
-                                        <div class="row">
-                                            <div class="col-md-4 mt-2 text-left mx-md-auto">
-                                                <p class="subtext">Трьохфазна мийка авто
-                                                    + Чистка ковроліну підлоги</p>
-                                            </div>
-                                            <div class="col-md-4 mt-2 text-left mx-md-auto">
-                                                <p class="subtext">Чистка дверних карт
-                                                    + Чистка панелі</p>
-                                            </div>
-                                            <div class="col-md-4 mt-2 text-left mx-md-auto">
-                                                <p class="subtext">Чистка воздуховодів
-                                                    + Чистка сидінь і стелі
-                                                    + Ароматизація салону</p>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-6  col-md-8">
-                                                <p class="text-lg-right">
-                                                    <small>від
-
-                                                    </small>
-                                                    1100
-                                                    <small>
-                                                        грн
-                                                    </small>
-                                                </p>
-                                            </div>
-                                            <div class="col-6 col-md-4 text-right">
-                                                <a href="#" class="btn">
-                                                    Читати більше
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
+                    <form class="choose-brand" :class="{hideMe: isActive}">
+                        <h3 class="col-12 red">Оберіть категорію автомобіля</h3>
+                        <p class="col-12 choose-brand-desc">Введіть можель свого авто для визначення категорії
+                        </p>
+
+                        <div class="form-group w-50 mx-auto">
+                            <label hidden for="brand">Марка</label>
+                            <select id="brand" aria-describedby="brand" class="form-control brand">
+                                <option>Марка</option>
+                                <option>Марка</option>
+                                <option>Марка</option>
+                                <option>Марка</option>
+                            </select>
                         </div>
 
 
-                    </div>
-
-                    <h2 class="text-center fab-header">Додаткові послуги</h2>
-                    <div class="row cards-grouppings-3">
-                        <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto  p-0 p-lg-2 ">
-
-                            <div class="card three-cards  service-13">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Реставнація подряпин на кузові</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                130
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto  store-item p-0 p-lg-2 ">
-                            <div class="card three-cards  service-14">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Перешиття шкіряних деталей салону</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                500
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-15">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end" s>
-                                    <h5>Антидощ</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                600
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
+                        <div class="form-group w-50 mx-auto">
+                            <label hidden for="model">Модель</label>
+                            <select id="model" aria-describedby="model" class="form-control model">
+                                <option>Модель</option>
+                                <option>Модель</option>
+                                <option>Модель</option>
+                                <option>Модель</option>
+                            </select>
                         </div>
 
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-16">
+                        <button type="submit" class="btn">Вибрати </i></button>
 
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Мийка мотору парою</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                500
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-17">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Шумоізоляція</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-
-                                                330
-                                                <small>
-                                                    $
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-18">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Видалення запахів
-                                        <br>Бактерецидна обробка</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                500
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-19">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Видалення вмятин без покраски PDR</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                0
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-20">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Озонація</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                1000
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-21">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Очистка кондиціонера</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                1200
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-22">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Чистка дисків</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-
-                                                250
-                                                <small>
-                                                    грн / шт
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
-                            <div class="card three-cards  service-23">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Керамічне покриття сидінь</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-
-                                                500
-                                                <small>
-                                                    грн / шт
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right  pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2">
-                            <div class="card three-cards  service-24">
-
-
-                                <div class="card-body">
-
-                                </div>
-
-                                <div class="card-end">
-                                    <h5>Озонація</h5>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="">
-                                                <small>від
-
-                                                </small>
-                                                1000
-                                                <small>
-                                                    грн
-                                                </small>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 text-right pl-0">
-                                            <a href="#" class="btn">
-                                                Читати більше
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
+                    </form>
 
                 </div>
-                <!-- end of container -->
+                <div :class="{hideMe: !isActive}">
+                    <div class="jumbotron services">
+                        <div class="container services-container">
 
 
-                <div class=" container mx-auto contact" style="margin-top: 140px;">
-                    <div class="card p-5">
-                        <form class="text-right" method="POST" action="includes/contactForm.inc.php">
-                            <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
-                                    ДЕТЕЙЛІНГА</span><br>
-                                ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
+                            <!-- Полірування -->
+                            <h2 class="text-center fab-header">Полірування</h2>
+                            <div class="card-deck m-0 p-0">
+                                <div class="card four-cards  service-one">
+                                    <div class="card-body"></div>
+                                    <div class="card-end">
+                                        <h5>Полірування автомобіля</h5>
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+                                                    </small>
+                                                    5999
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
+
+                                </div>
+
+                                <div class="card four-cards  service-two">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Полірування фар</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    600
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card four-cards  service-three">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Полірування
+                                            вставок салону</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    500
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card four-cards  service-four">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Полірування
+                                            центральних стійок</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    800
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Хімчистка -->
+                            <h2 class="text-center fab-header">Хімчистка</h2>
+                            <div class="card-deck">
+                                <div class="card four-cards  service-four">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Хімчистка</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    1999
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card four-cards  service-six">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Хімчистка колесних арок,
+                                            підвіски, дисків</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    800
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card four-cards  service-seven">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Хімчистка
+                                            передніх сидінь</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    275
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card four-cards  service-eight">
+
+
+                                    <div class="card-body">
+
+                                    </div>
+
+                                    <div class="card-end">
+                                        <h5>Хімчистка
+                                            задніх сидінь</h5>
+
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+
+                                                    </small>
+                                                    495
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- Воскове покриття -->
+                            <h2 class="text-center fab-header">Воскове покриття</h2>
+                            <div class="testing">
+                                <div class="row">
+
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                        <div class="card two-cards  service-nine">
+
+
+                                            <div class="card-body">
+
+                                            </div>
+
+                                            <div class="card-end">
+                                                <h5>Покриття твердим універсальним воском Soft 99</h5>
+
+                                                <div class="row">
+                                                    <div class="col-6  col-md-8">
+                                                        <p class="text-lg-right">
+                                                            <small>від
+
+                                                            </small>
+                                                            1200
+                                                            <small>
+                                                                грн
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 text-right">
+                                                        <a href="#" class="btn">
+                                                            Читати більше
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                        <div class="card two-cards  service-ten">
+
+                                            <div class="card-body">
+                                            </div>
+
+                                            <div class="card-end">
+                                                <h5>Покриття твердим воском Dark Soft 99</h5>
+
+                                                <div class="row">
+                                                    <div class="col-6  col-md-8">
+                                                        <p class="text-lg-right">
+                                                            <small>від
+
+                                                            </small>
+                                                            1200
+                                                            <small>
+                                                                грн
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 text-right">
+                                                        <a href="#" class="btn">
+                                                            Читати більше
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="testing">
+
+                                <div class="row">
+                                    <!-- Керамічне покриття -->
+                                    <!-- <div class="col-xl-6 mx-auto p-0"> -->
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                        <h2 class="text-center card-heading ">Керамічне покриття</h2>
+                                        <div class="card two-cards-seprate-titles  service-eleven">
+
+
+                                            <div class="card-body"> </div>
+
+
+                                            <div class="card-end">
+                                                <h5 class="col-12 px-0">Керамічне покриття кузова</h5>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-md-3 mt-2 text-left  mx-md-auto">
+                                                        <p class="subtext">Двухфазна мийка</p>
+                                                    </div>
+                                                    <div class="col-md-3  mt-2 text-left  mx-md-auto">
+                                                        <p class="subtext">Очищення кузова
+                                                            від бітуму</p>
+                                                    </div>
+                                                    <div class="col-md-3  mt-2 text-left  mx-md-auto">
+                                                        <p class="subtext">Легке вілновлююче
+                                                            полірування</p>
+                                                    </div>
+                                                    <div class="col-md-3  mt-2 text-left mx-md-auto">
+                                                        <p class="subtext">Керамічне покриття
+                                                            окремих деталей</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-6  col-md-8">
+                                                        <p class="text-lg-right">
+                                                            <small>від
+
+                                                            </small>
+                                                            12999
+                                                            <small>
+                                                                грн
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 text-right">
+                                                        <a href="#" class="btn">
+                                                            Читати більше
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- Передпродажна підготовка -->
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                        <h2 class="text-center card-heading">Передпродажна підготовка</h2>
+                                        <div class="card two-cards-seprate-titles  service-twelve">
+
+
+                                            <div class="card-body">
+
+                                            </div>
+
+                                            <div class="card-end">
+                                                <h5 class="col-12 px-0">Комплекс</h5>
+                                                <hr style="width: 100%;">
+                                                <div class="row">
+                                                    <div class="col-md-4 mt-2 text-left mx-md-auto">
+                                                        <p class="subtext">Трьохфазна мийка авто
+                                                            + Чистка ковроліну підлоги</p>
+                                                    </div>
+                                                    <div class="col-md-4 mt-2 text-left mx-md-auto">
+                                                        <p class="subtext">Чистка дверних карт
+                                                            + Чистка панелі</p>
+                                                    </div>
+                                                    <div class="col-md-4 mt-2 text-left mx-md-auto">
+                                                        <p class="subtext">Чистка воздуховодів
+                                                            + Чистка сидінь і стелі
+                                                            + Ароматизація салону</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-6  col-md-8">
+                                                        <p class="text-lg-right">
+                                                            <small>від
+
+                                                            </small>
+                                                            1100
+                                                            <small>
+                                                                грн
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 text-right">
+                                                        <a href="#" class="btn">
+                                                            Читати більше
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <h2 class="text-center fab-header">Додаткові послуги</h2>
+                            <div class="row cards-grouppings-3">
+                                <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto  p-0 p-lg-2 ">
+
+                                    <div class="card three-cards  service-13">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Реставнація подряпин на кузові</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        130
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto  store-item p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-14">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Перешиття шкіряних деталей салону</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        500
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-15">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end" s>
+                                            <h5>Антидощ</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        600
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-16">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Мийка мотору парою</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        500
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-17">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Шумоізоляція</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+
+                                                        330
+                                                        <small>
+                                                            $
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-18">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Видалення запахів
+                                                <br>Бактерецидна обробка</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        500
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-19">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Видалення вмятин без покраски PDR</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        0
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-20">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Озонація</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        1000
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-21">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Очистка кондиціонера</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        1200
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-22">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Чистка дисків</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+
+                                                        250
+                                                        <small>
+                                                            грн / шт
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2 ">
+                                    <div class="card three-cards  service-23">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Керамічне покриття сидінь</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+
+                                                        500
+                                                        <small>
+                                                            грн / шт
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto p-0 p-lg-2">
+                                    <div class="card three-cards  service-24">
+
+
+                                        <div class="card-body">
+
+                                        </div>
+
+                                        <div class="card-end">
+                                            <h5>Озонація</h5>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="">
+                                                        <small>від
+
+                                                        </small>
+                                                        1000
+                                                        <small>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end of container -->
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class=" container mx-auto contact" style="margin-top: 140px;">
+                            <div class="card p-5">
+                                <form class="text-right" method="POST" action="includes/contactForm.inc.php">
+                                    <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
+                                            ДЕТЕЙЛІНГА</span><br>
+                                        ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+
+                                            <div class="form-group">
+                                                <label hidden for="carModel">Введіть модель авто</label>
+                                                <input type="text" id="carModel" name="carModel" class="form-control"
+                                                    aria-describedby="carModel" placeholder="Введіть модель авто">
+                                            </div>
+                                            <div class="form-group">
+                                                <label hidden for="typeOfWork">Оберіть тип робіт</label>
+                                                <select id="typeOfWork" aria-describedby="typeOfWork"
+                                                    class="form-control">
+                                                    <option>Оберіть тип робіт</option>
+                                                    <option>Оберіть тип робіт</option>
+                                                    <option>Оберіть тип робіт</option>
+                                                    <option>Оберіть тип робіт</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+
+
+                                            <div class="form-group">
+                                                <label hidden for="name">Ім’я</label>
+                                                <input type="text" id="name" name="name" class="form-control"
+                                                    aria-describedby="name" placeholder="Ім’я*">
+                                            </div>
+                                            <div class="form-group">
+                                                <label hidden for="phone">Телефон</label>
+                                                <input type="number" id="phone" aria-describedby="phone" name="phone"
+                                                    class="form-control" placeholder="Телефон*">
+                                            </div>
+
+
+                                            <button type="submit" name="submit" class="btn">ВІДПРАВИТИ</button>
+                                        </div>
+                                    </div>
+                                    <p class="text-left col-12">Відправте запит, і наш менеджер
+                                        зв’яжеться з вами
+                                        найближчим
+                                        часом</p>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div class="container text-center process">
                             <div class="row">
-                                <div class="col-md-6">
-
-
-                                    <div class="form-group">
-                                        <label hidden for="carModel">Введіть модель авто</label>
-                                        <input type="text" id="carModel" name="carModel" class="form-control"
-                                            aria-describedby="carModel" placeholder="Введіть модель авто">
+                                <div class="col-md-3">
+                                    <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
+                                    <div>
+                                        <h6>Великий спектр послуг</h6>
                                     </div>
-                                    <div class="form-group">
-                                        <label hidden for="typeOfWork">Оберіть тип робіт</label>
-                                        <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
-                                            <option>Оберіть тип робіт</option>
-                                            <option>Оберіть тип робіт</option>
-                                            <option>Оберіть тип робіт</option>
-                                            <option>Оберіть тип робіт</option>
-                                        </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/icons8-service-filled-100.png" alt="icons service filled">
+                                    <div>
+                                        <h6>Персонал та сервіс</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
+                                    <div>
+                                        <h6>Лояльність</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
+                                    <div>
+                                        <h6>Ексклюзивні пропозиції</h6>
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
-
-
-                                    <div class="form-group">
-                                        <label hidden for="name">Ім’я</label>
-                                        <input type="text" id="name" name="name" class="form-control"
-                                            aria-describedby="name" placeholder="Ім’я*">
-                                    </div>
-                                    <div class="form-group">
-                                        <label hidden for="phone">Телефон</label>
-                                        <input type="number" id="phone" aria-describedby="phone" name="phone"
-                                            class="form-control" placeholder="Телефон*">
-                                    </div>
-
-
-                                    <button type="submit" name="submit" class="btn">ВІДПРАВИТИ</button>
-                                </div>
                             </div>
-                            <p class="text-left col-12">Відправте запит, і наш менеджер
-                                зв’яжеться з вами
-                                найближчим
-                                часом</p>
-
-                        </form>
-
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="container text-center process">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="img/icons8-paint-palette-96.png" alt="icons paint palette">
-                            <div>
-                                <h6>Великий спектр послуг</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="img/icons8-service-filled-100.png" alt="icons service filled">
-                            <div>
-                                <h6>Персонал та сервіс</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="img/icons8-discount-filled-100.png" alt="icons discount filled">
-                            <div>
-                                <h6>Лояльність</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="img/icons8-gift-filled-100(1).png" alt="icons gift filled">
-                            <div>
-                                <h6>Ексклюзивні пропозиції</h6>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
 

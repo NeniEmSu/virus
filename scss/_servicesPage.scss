@@ -50,6 +50,10 @@
         -o-transform: scale(1.1);
     }
 
+    .hideMe {
+        display: none;
+    }
+
     .car-toggle {
         margin-top: 48px;
     }
@@ -478,7 +482,7 @@
                         font-weight: bold;
                         font-size: 18px;
                         line-height: normal;
-                        margin-bottom: 7px;
+                        margin-bottom: 12px;
 
                         color: $redColor;
 

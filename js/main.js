@@ -44,55 +44,55 @@ $(document).ready(function () {
 
 // show cart
 
-(function () {
+// (function () {
 
-    const cartInfo = document.querySelector("cart-info");
+//     const cartInfo = document.querySelector("cart-info");
 
-    const cart = document.querySelector("cart");
+//     const cart = document.querySelector("cart");
 
-    cartInfo.addEventListener("onmouseover", function () {
-        cart.classList.toggle("show-cart");
-    });
+//     cartInfo.addEventListener("onmouseover", function () {
+//         cart.classList.toggle("show-cart");
+//     });
 
-})();
+// })();
 
 // Working on the cart
 
-(function () {
-    const cartBtn = document.querySelectorAll("store-item-button");
+// (function () {
+//     const cartBtn = document.querySelectorAll("store-item-button");
 
 
-    cartBtn.forEach(function (btn) {
-        btn.addEventListener("click", function (event) {
-            event.preventDefault();
+//     cartBtn.forEach(function (btn) {
+//         btn.addEventListener("click", function (event) {
+//             event.preventDefault();
 
-            if (event.target.parentElement.classList.contains("store-item-button")) {
-
-
-                let fullPath = event.target.parentElement.previousElementSibling.src;
-
-                let pos = fullPath.idexOf("img") + 3;
+//             if (event.target.parentElement.classList.contains("store-item-button")) {
 
 
-                let partPath = fullPath.slice(pos);
+//                 let fullPath = event.target.parentElement.previousElementSibling.src;
 
-                const item = {};
-                item.img = "img-cart${partPath}";
-                let name = event.target.parentElement.parentElement.nextElement.children[0].textContent;
-
-                let finalPrice = price.slice(1).trim();
+//                 let pos = fullPath.idexOf("img") + 3;
 
 
-                item.price = finalPrice;
+//                 let partPath = fullPath.slice(pos);
 
-                const cartItem = document.createElement("div");
+//                 const item = {};
+//                 item.img = "img-cart${partPath}";
+//                 let name = event.target.parentElement.parentElement.nextElement.children[0].textContent;
+
+//                 let finalPrice = price.slice(1).trim();
+
+
+//                 item.price = finalPrice;
+
+//                 const cartItem = document.createElement("div");
 
 
 
 
-            }
+//             }
 
-        });
+//         });
 
-    });
-})();
+//     });
+// })();
