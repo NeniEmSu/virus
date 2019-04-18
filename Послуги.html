@@ -227,13 +227,15 @@
                             <div class="card-deck m-0 p-0">
                                 <div class="card four-cards" v-for=" polish in polishing" :key="polish.polishingId"
                                     :class="polish.polishingClass">
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                    </div>
                                     <div class="card-end">
                                         <h5>{{ polish.polishingTitle }}</h5>
                                         <div class="row">
                                             <div class="col-6 pr-0">
                                                 <p class="">
                                                     <small>від
+
                                                     </small>
                                                     {{ polish.polishingCost }}
                                                     <small>
@@ -387,6 +389,33 @@
                             <!-- Хімчистка -->
                             <h2 class="text-center fab-header">Хімчистка</h2>
                             <div class="card-deck">
+                                <div class="card four-cards" v-for=" cleaner in  cleaners" :key="cleaner.cleanersId"
+                                    :class="cleaner.cleanersClass">
+                                    <div class="card-body"></div>
+                                    <div class="card-end">
+                                        <h5>{{ cleaner.cleanersTitle }}</h5>
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+                                                    </small>
+                                                    {{ cleaner.cleanersCost }}
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="card-deck">
                                 <div class="card four-cards  service-four">
                                     <div class="card-body">
                                     </div>
@@ -516,11 +545,47 @@
 
 
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- Воскове покриття -->
                             <h2 class="text-center fab-header">Воскове покриття</h2>
                             <div class="testing">
+                                <div class="row">
+
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 "
+                                        v-for=" WaxCover in  WaxCovers" :key="WaxCover.WaxCoversId">
+                                        <div class="card two-cards" :class="WaxCover.WaxCoversClass">
+
+                                            <div class="card-body">
+                                            </div>
+                                            <div class="card-end">
+                                                <h5>{{ WaxCover.WaxCoversTitle }}</h5>
+                                                <div class="row">
+                                                    <div class="col-6  col-md-8">
+                                                        <p class="text-lg-right">
+                                                            <small>від
+
+                                                            </small>
+                                                            {{ WaxCover.WaxCoversCost }}
+                                                            <small>
+                                                                грн
+                                                            </small>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 text-right">
+                                                        <a href="#" class="btn">
+                                                            Читати більше
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- <div class="testing">
                                 <div class="row">
 
                                     <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
@@ -589,7 +654,7 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
 
 
                             <div class="testing">
@@ -597,7 +662,7 @@
                                 <div class="row">
                                     <!-- Керамічне покриття -->
                                     <!-- <div class="col-xl-6 mx-auto p-0"> -->
-                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 ">
                                         <h2 class="text-center card-heading ">Керамічне покриття</h2>
                                         <div class="card two-cards-seprate-titles  service-eleven">
 
@@ -652,7 +717,7 @@
                                     </div>
 
                                     <!-- Передпродажна підготовка -->
-                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto  store-item p-0 p-lg-2 ">
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 ">
                                         <h2 class="text-center card-heading">Передпродажна підготовка</h2>
                                         <div class="card two-cards-seprate-titles  service-twelve">
 
@@ -710,7 +775,50 @@
                             </div>
 
                             <h2 class="text-center fab-header">Додаткові послуги</h2>
+
                             <div class="row cards-grouppings-3">
+
+                                <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto p-0 p-lg-2"
+                                    v-for=" addition in  additional" :key="addition.additionalId">
+                                    <div class="card three-cards " :class="addition.additionalClass">
+
+                                        <div class="card-body">
+                                        </div>
+                                        <div class="card-end">
+                                            <h5>{{ addition.additionalTitle }}</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p>
+                                                        <small v-show="!addition.perItem">
+                                                            від
+                                                        </small>
+                                                        {{ addition.additionalCost }}
+                                                        <small v-if="addition.dollar">
+                                                            $
+                                                        </small>
+                                                        <small v-else-if="addition.perItem">
+                                                            грн / шт
+                                                        </small>
+                                                        <small v-else>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-right  pl-0">
+                                                    <a href="#" class="btn">
+                                                        Читати більше
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="row cards-grouppings-3">
                                 <div class="col-10 col-sm-12 col-md-5 col-lg-4 mx-auto  p-0 p-lg-2 ">
 
                                     <div class="card three-cards  service-13">
@@ -1124,7 +1232,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- end of container -->
