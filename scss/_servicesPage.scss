@@ -6,6 +6,7 @@
         }
     }
 
+
     .btn {
         padding: 7px 23px;
         background-color: $lightColor;
@@ -70,7 +71,7 @@
 
     }
 
-    button.btn {
+    .choose-brand button.btn {
         padding: 12px 37px;
         background-color: $redColor;
         border-radius: 50px;
@@ -90,7 +91,7 @@
         -o-transition: ease-in-out 300ms;
     }
 
-    button.btn:hover {
+    .choose-brand button.btn:hover {
         color: $redColor;
         background-color: $lightColor;
         transform: scale(1.1);

@@ -91,13 +91,6 @@ let app = new Vue({
             }
 
         ],
-        CeramicCoating: [{
-            CeramicCoatingId: 11,
-            CeramicCoatingTitle: 'Керамічне покриття',
-            CeramicCoatingTitle: 'Покриття твердим універсальним воском Soft 99',
-            CeramicCoatingCost: 1200,
-            CeramicCoatingClass: 'service-eleven'
-        }],
 
         additional: [{
                 additionalId: 13,

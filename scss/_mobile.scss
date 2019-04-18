@@ -235,7 +235,7 @@
             color: $darkColor;
         }
 
-        .btn {
+        .contact-btn {
             padding: 10px 35px;
             background: $redColor;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -441,7 +441,7 @@
             color: $darkColor;
         }
 
-        .btn {
+        .contact-btn {
             padding: 10px 35px;
             background: $redColor;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -650,7 +650,7 @@
             color: $darkColor;
         }
 
-        .btn {
+        .contact-btn {
             padding: 10px 35px;
             background: $redColor;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -1135,7 +1135,7 @@
         }
 
         p {
-            margin-top: -100px;
+            margin-top: -80px;
             font-family: $mainFont;
             font-style: normal;
             font-weight: bold;
@@ -1144,8 +1144,8 @@
             color: $darkColor;
         }
 
-        .btn {
-            padding: 10px 35px;
+        .contact-btn {
+            padding: 8px 30px;
             background: $redColor;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
             border-radius: 50px;
@@ -1157,7 +1157,7 @@
             text-align: center;
             color: $lightColor;
             border: none;
-            margin-top: 50px;
+            margin-top: 40px;
         }
     }
 

@@ -882,7 +882,7 @@ main {
   line-height: normal;
   color: #000000; }
 
-.contact .btn {
+.contact .contact-btn {
   padding: 12px 45px;
   background: #D41F26;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -1031,7 +1031,7 @@ footer {
   text-align: center;
   color: #D41F26; }
 
-#services-page button.btn {
+#services-page .choose-brand button.btn {
   padding: 12px 37px;
   background-color: #D41F26;
   border-radius: 50px;
@@ -1049,7 +1049,7 @@ footer {
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
 
-#services-page button.btn:hover {
+#services-page .choose-brand button.btn:hover {
   color: #D41F26;
   background-color: #FFFFFF;
   transform: scale(1.1);
@@ -2260,7 +2260,7 @@ footer {
     font-size: 12px;
     line-height: normal;
     color: #000000; }
-  .contact .btn {
+  .contact .contact-btn {
     padding: 10px 35px;
     background: #D41F26;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -2401,7 +2401,7 @@ footer {
     font-size: 12px;
     line-height: normal;
     color: #000000; }
-  .contact .btn {
+  .contact .contact-btn {
     padding: 10px 35px;
     background: #D41F26;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -2543,7 +2543,7 @@ footer {
     font-size: 14px;
     line-height: normal;
     color: #000000; }
-  .contact .btn {
+  .contact .contact-btn {
     padding: 10px 35px;
     background: #D41F26;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
@@ -2867,15 +2867,15 @@ footer {
     line-height: normal;
     color: #000000; }
   .contact p {
-    margin-top: -100px;
+    margin-top: -80px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: normal;
     color: #000000; }
-  .contact .btn {
-    padding: 10px 35px;
+  .contact .contact-btn {
+    padding: 8px 30px;
     background: #D41F26;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
     border-radius: 50px;
@@ -2887,7 +2887,7 @@ footer {
     text-align: center;
     color: #FFFFFF;
     border: none;
-    margin-top: 50px; }
+    margin-top: 40px; }
   .cars-card {
     margin-bottom: 40px; }
     .cars-card h2 {
