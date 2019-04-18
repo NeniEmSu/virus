@@ -175,21 +175,12 @@
 
                     <div class="row car-toggle">
 
-                        <div class="col-md-4 m-auto" v-for=" variant in variant1" :key="variant.variantId">
+                        <div class="col-md-4 m-auto" v-for=" variant in variants" :key="variant.variantId">
                             <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
-                                :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
+                                :class="{activeBtn:variant.variantId == isActive}">{{ variant.variantTitle }}</a>
                             <p>{{ variant.variantDescription }}</p>
                         </div>
-                        <div class="col-md-4 m-auto" v-for=" variant in variant2" :key="variant.variantId">
-                            <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
-                                :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
-                            <p>{{ variant.variantDescription }}</p>
-                        </div>
-                        <div class="col-md-4 m-auto" v-for=" variant in variant3" :key="variant.variantId">
-                            <a href="#" class="btn" @click.prevent="changeCars(variant.variantImage)"
-                                :class="{activeBtn: isActive}">{{ variant.variantTitle }}</a>
-                            <p>{{ variant.variantDescription }}</p>
-                        </div>
+
 
                     </div>
 
@@ -234,6 +225,35 @@
                             <!-- Полірування -->
                             <h2 class="text-center fab-header">Полірування</h2>
                             <div class="card-deck m-0 p-0">
+                                <div class="card four-cards" v-for=" polish in polishing" :key="polish.polishingId"
+                                    :class="polish.polishingClass">
+                                    <div class="card-body"></div>
+                                    <div class="card-end">
+                                        <h5>{{ polish.polishingTitle }}</h5>
+                                        <div class="row">
+                                            <div class="col-6 pr-0">
+                                                <p class="">
+                                                    <small>від
+                                                    </small>
+                                                    {{ polish.polishingCost }}
+                                                    <small>
+                                                        грн
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-0 p-0">
+                                                <a href="#" class="btn">
+                                                    Читати більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <div class="card-deck m-0 p-0">
                                 <div class="card four-cards  service-one">
                                     <div class="card-body"></div>
                                     <div class="card-end">
@@ -361,22 +381,17 @@
 
                                 </div>
 
-                            </div>
+                            </div> -->
 
 
                             <!-- Хімчистка -->
                             <h2 class="text-center fab-header">Хімчистка</h2>
                             <div class="card-deck">
                                 <div class="card four-cards  service-four">
-
-
                                     <div class="card-body">
-
                                     </div>
-
                                     <div class="card-end">
                                         <h5>Хімчистка</h5>
-
                                         <div class="row">
                                             <div class="col-6 pr-0">
                                                 <p class="">

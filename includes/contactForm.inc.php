@@ -8,9 +8,9 @@ if (isset($_POST['submit'])) {
     $typeOfWork = $_POST['typeOfWork'];
 
     $mailTo = 'deteylingvirus@gmail.com';
-    $headers = 'From: '.$mailFrom;
-    $txt = 'You received an email from '.$name.".\n\n".$typeOfWork;
+    $headers = 'From: ' . $mailFrom;
+    $txt = 'You received an email from ' . $name . ".\n\n" . $typeOfWork;
 
     mail($mailTo, $phone, $carModel, $txt, $headers);
-    header('Location: ../contact.php?MailSent');
+    header('Location: ../index.html?MailSent');
 }
