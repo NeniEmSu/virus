@@ -311,7 +311,8 @@
 
 
                                 <div class="row">
-                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 ">
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 "
+                                        v-for=" ceramicCoat in  ceramicCoating" :key="ceramicCoat.ceramicCoatingId">
                                         <h2 class="text-center card-heading ">Керамічне покриття</h2>
                                         <div class="card two-cards-seprate-titles  service-eleven">
 
@@ -347,7 +348,7 @@
                                                             <small>від
 
                                                             </small>
-                                                            12999
+                                                            {{ ceramicCoat.ceramicCoatingCost }}
                                                             <small>
                                                                 грн
                                                             </small>
@@ -366,7 +367,9 @@
                                     </div>
 
                                     <!-- Передпродажна підготовка -->
-                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 ">
+                                    <div class="col-10 col-sm-12 col-md-9 col-lg-6 mx-auto p-0 p-lg-2 "
+                                        v-for=" PreSalePrep in  PreSalePreparations"
+                                        :key="PreSalePrep.PreSalePreparationsId">
                                         <h2 class="text-center card-heading">Передпродажна підготовка</h2>
                                         <div class="card two-cards-seprate-titles  service-twelve">
 
@@ -401,7 +404,7 @@
                                                             <small>від
 
                                                             </small>
-                                                            1100
+                                                            {{ PreSalePrep.PreSalePreparationsCost }}
                                                             <small>
                                                                 грн
                                                             </small>
@@ -437,7 +440,7 @@
                                             <h5>{{ addition.additionalTitle }}</h5>
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <p>
+                                                    <p v-show="!addition.fixedRange">
                                                         <small v-show="!addition.perItem">
                                                             від
                                                         </small>
@@ -445,6 +448,26 @@
                                                         <small v-if="addition.dollar">
                                                             $
                                                         </small>
+                                                        <small v-else-if="addition.perItem">
+                                                            грн / шт
+                                                        </small>
+                                                        <small v-else>
+                                                            грн
+                                                        </small>
+                                                    </p>
+                                                    <p v-show="addition.fixedRange">
+                                                        <small v-show="!addition.perItem">
+                                                            від
+                                                        </small>
+                                                        {{ addition.additionalCost }}
+                                                        <small>
+                                                            До
+                                                        </small>
+                                                        {{ addition.additionalCostHigh }}
+                                                        <small v-if="addition.dollar">
+                                                            $
+                                                        </small>
+
                                                         <small v-else-if="addition.perItem">
                                                             грн / шт
                                                         </small>

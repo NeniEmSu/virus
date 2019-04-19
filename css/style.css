@@ -1430,7 +1430,11 @@ footer {
           #services-page .jumbotron.services .card-deck .card .card-end p small,
           #services-page .jumbotron.services .cards-grouppings-3 .card .card-end p small,
           #services-page .jumbotron.services .testing .card .card-end p small {
-            font-size: 14px; }
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal; }
         #services-page .jumbotron.services .card-deck .card .card-end .btn,
         #services-page .jumbotron.services .cards-grouppings-3 .card .card-end .btn,
         #services-page .jumbotron.services .testing .card .card-end .btn {
