@@ -1184,6 +1184,11 @@ main {
         -webkit-box-sizing: border-box;
 
         padding: 3rem !important;
+
+        form {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
     }
 
     h3 {

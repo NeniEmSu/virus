@@ -382,6 +382,12 @@
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
             border-radius: 20px;
             height: 350px;
+
+            form {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
         }
 
         h3 {
@@ -590,7 +596,15 @@
             background: $lightColor;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
             border-radius: 20px;
-            min-height: 325px;
+            height: 100%;
+            min-height: 330px;
+            padding-bottom: 5rem !important;
+
+            form {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
         }
 
         h3 {
@@ -1085,6 +1099,12 @@
             border-radius: 20px;
             padding: 10px !important;
             height: 480px;
+
+            form {
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
 
         h3 {
@@ -1437,6 +1457,16 @@
 }
 
 @include mediaXXSm {
+
+    .contact {
+        .card {
+            form {
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
 
 
     .jumbotron {
