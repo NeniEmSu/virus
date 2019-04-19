@@ -207,25 +207,25 @@
             </div>
 
             <div class="jumbotron">
-                <div class=" container mx-auto contact">
+                <div class=" container mx-auto contact" style="margin-top: 140px;">
                     <div class="card p-5">
                         <form class="text-right" method="POST" action="includes/contactForm.inc.php">
-                            <h3 class="text-left col-12"><span class="red"> ДІЗНАТИСЯ ВАРТІСТЬ
+                            <h3 class="text-left px-0"><span class="red">
+                                    ДІЗНАТИСЯ ВАРТІСТЬ
                                     ДЕТЕЙЛІНГА</span><br>
                                 ДЛЯ ВАШОГО АВТОМОБІЛЯ</h3>
 
                             <div class="row">
-                                <div class="col-md-6">
-
-
+                                <div class="col-md-6 ">
                                     <div class="form-group">
                                         <label hidden for="carModel">Введіть модель авто</label>
-                                        <input type="text" id="carModel" name="carModel" class="form-control"
+                                        <input type="text" id="carModel" name="carModel" class="form-control mx-auto"
                                             aria-describedby="carModel" placeholder="Введіть модель авто">
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group ">
                                         <label hidden for="typeOfWork">Оберіть тип робіт</label>
-                                        <select id="typeOfWork" aria-describedby="typeOfWork" class="form-control">
+                                        <select id="typeOfWork" aria-describedby="typeOfWork"
+                                            class="form-control mx-auto">
                                             <option>Оберіть тип робіт</option>
                                             <option>Оберіть тип робіт</option>
                                             <option>Оберіть тип робіт</option>
@@ -239,20 +239,21 @@
 
                                     <div class="form-group">
                                         <label hidden for="name">Ім’я</label>
-                                        <input type="text" id="name" name="name" class="form-control"
+                                        <input type="text" id="name" name="name" class="form-control  mx-auto"
                                             aria-describedby="name" placeholder="Ім’я*">
                                     </div>
                                     <div class="form-group">
                                         <label hidden for="phone">Телефон</label>
                                         <input type="number" id="phone" aria-describedby="phone" name="phone"
-                                            class="form-control" placeholder="Телефон*">
+                                            class="form-control mx-auto" placeholder="Телефон*">
                                     </div>
 
 
                                     <button type="submit" name="submit" class="contact-btn">ВІДПРАВИТИ</button>
                                 </div>
                             </div>
-                            <p class="text-left col-12">Відправте запит, і наш менеджер
+                            <p class="text-left col-12 w-md-50 px-0">Відправте запит, і наш
+                                менеджер
                                 зв’яжеться з вами
                                 найближчим
                                 часом</p>
@@ -261,8 +262,9 @@
 
                     </div>
                 </div>
+            </div>
 
-
+            <div class="jumbotron">
                 <div class="container text-center process">
                     <div class="row">
                         <div class="col-md-3">
@@ -296,51 +298,53 @@
 
         </main>
 
-        <footer>
+        <div class="jumbotron">
+            <footer>
 
-            <div class="bottom-contact container">
+                <div class="bottom-contact container">
 
-                <div class="logo">
-                    <a class="navbar-brand logo" href="index">
-                        <img src="img/virus-logo.svg" alt="virus logo">
-                    </a>
+                    <div class="logo">
+                        <a class="navbar-brand logo" href="index">
+                            <img src="img/virus-logo.svg" alt="virus logo">
+                        </a>
+                    </div>
+                    <ul>
+
+                        <li>
+                            <a href="mailto:deteylingvirus@gmail.com">deteylingvirus@gmail.com
+
+                                <i class="fa fa-envelope pl-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+380673334040">+38 (067) 333-40-40
+
+                                <i class="fa fa-phone pl-2"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="контакти#map-top">Україна,
+                                м. Тернопіль, вул. Приміська 15А
+
+                                <i class="fa fa-map-marker-alt pl-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="instagram" href="https://www.instagram.com/virusdetailing/">
+
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a target="_blank" class="facebook" href="https://www.facebook.com/virus.te.ua/">
+
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
-                <ul>
-
-                    <li>
-                        <a href="mailto:deteylingvirus@gmail.com">deteylingvirus@gmail.com
-
-                            <i class="fa fa-envelope pl-2"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+380673334040">+38 (067) 333-40-40
-
-                            <i class="fa fa-phone pl-2"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="контакти#map-top">Україна,
-                            м. Тернопіль, вул. Приміська 15А
-
-                            <i class="fa fa-map-marker-alt pl-2"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" class="instagram" href="https://www.instagram.com/virusdetailing/">
-
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a target="_blank" class="facebook" href="https://www.facebook.com/virus.te.ua/">
-
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js">

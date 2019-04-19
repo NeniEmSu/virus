@@ -704,6 +704,7 @@ main {
 
 .jumbotron {
     margin: 0;
+    padding: 20px 0 0px 0;
 }
 
 .jumbotron.recomendations {
@@ -1308,6 +1309,8 @@ main {
 }
 
 footer {
+    width: 100vw;
+    margin-top: 100px;
     background: $darkColor;
     color: $lightColor;
 
