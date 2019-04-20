@@ -174,7 +174,7 @@
 
 
 
-                    <form class="choose-brand" :class="{hideMe: isActive}">
+                    <form class="choose-brand" :class="{hideMe:selected  !== undefined}">
                         <h3 class="col-12 red">Оберіть категорію автомобіля</h3>
                         <p class="col-12 choose-brand-desc">Введіть можель свого авто для визначення категорії
                         </p>
@@ -205,7 +205,7 @@
                     </form>
 
                 </div>
-                <div :class="{hideMe: !isActive}">
+                <div :class="{hideMe:selected  == undefined}">
                     <div class="jumbotron services">
                         <div class="container services-container">
 

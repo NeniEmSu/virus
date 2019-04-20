@@ -1029,6 +1029,7 @@ footer {
 #services-page .activeBtn {
   color: #FFFFFF;
   background-color: #D41F26;
+  box-shadow: none;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -1107,6 +1108,10 @@ footer {
   border: 2px solid #E5E5E5;
   box-sizing: border-box;
   border-radius: 50px; }
+  #services-page select.brand.active, #services-page select.brand:focus,
+  #services-page select.model.active,
+  #services-page select.model:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35); }
 
 #services-page form.choose-brand {
   margin-top: 100px;

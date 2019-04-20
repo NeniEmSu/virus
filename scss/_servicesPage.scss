@@ -44,6 +44,7 @@
     .activeBtn {
         color: $lightColor;
         background-color: $redColor;
+        box-shadow: none;
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
@@ -133,6 +134,11 @@
         border: 2px solid #E5E5E5;
         box-sizing: border-box;
         border-radius: 50px;
+
+        &.active,
+        &:focus {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+        }
     }
 
     form.choose-brand {
@@ -507,6 +513,8 @@
 
                         color: $lightColor;
                         padding: 8px 10px;
+
+
                     }
                 }
             }

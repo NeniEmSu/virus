@@ -231,8 +231,8 @@ let app = new Vue({
     methods: {
         changeCars(variantImage) {
             this.image = variantImage;
-            this.isActive = !this.isActive;
-            setTimeout(() => this.selectedVariant = false, 500);
+            // this.isActive = !this.isActive;
+            // setTimeout(() => this.selectedVariant = false, 500);
         }
     }
 })
