@@ -1114,8 +1114,8 @@ footer {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35); }
 
 #services-page form.choose-brand {
-  margin-top: 100px;
-  margin-bottom: 127px; }
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 #services-page form.choose-brand p {
   font-family: '$mainFont';
