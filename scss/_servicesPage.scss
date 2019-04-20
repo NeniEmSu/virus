@@ -493,6 +493,10 @@
 
                         color: $redColor;
 
+                        &.subtext {
+                            margin-bottom: 5px;
+                        }
+
                         small {
                             font-size: 14px;
                             font-family: $mainFont;
