@@ -703,7 +703,7 @@ main {
 }
 
 .jumbotron {
-    margin: 0;
+    margin: 0 !important;
     padding: 20px 0 0px 0;
 }
 
@@ -1284,6 +1284,7 @@ main {
 
 .process {
     margin-top: 40px;
+    padding-bottom: 40px;
 
     h6 {
         margin-top: 30px;
@@ -1310,7 +1311,6 @@ main {
 
 footer {
     width: 100vw;
-    margin-top: 100px;
     background: $darkColor;
     color: $lightColor;
 
