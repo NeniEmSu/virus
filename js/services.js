@@ -6,21 +6,22 @@ let app = new Vue({
         isActive: false,
         selectedVariant: 0,
         polishingClass: 'service-one',
+        selected: undefined,
         variants: [{
-                variantId: 01,
+                variantId: 1,
                 variantTitle: 'Ⅰ категорія',
                 variantDescription: 'середній бізнес спорт купе',
                 variantImage: './img/services-car-goup-var-1.png'
 
             },
             {
-                variantId: 02,
+                variantId: 2,
                 variantTitle: 'ⅠⅠ категорія',
                 variantDescription: 'середній кросовер позашляховик',
                 variantImage: './img/services-car-goup-var-2.png'
             },
             {
-                variantId: 03,
+                variantId: 3,
                 variantTitle: 'ⅠⅠⅠ категорія',
                 variantDescription: 'повнорозмірний кросовер позашляховик',
                 variantImage: './img/services-car-goup-var-3.png'
@@ -153,12 +154,16 @@ let app = new Vue({
                 additionalId: 16,
                 additionalTitle: 'Мийка мотору парою',
                 additionalCost: 500,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-16'
             },
             {
                 additionalId: 17,
                 additionalTitle: 'Шумоізоляція',
                 additionalCost: 330,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 dollar: true,
                 additionalClass: 'service-17'
             },
@@ -166,30 +171,40 @@ let app = new Vue({
                 additionalId: 18,
                 additionalTitle: 'Видалення запахів Бактерецидна обробка',
                 additionalCost: 500,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-18'
             },
             {
                 additionalId: 19,
                 additionalTitle: 'Видалення вмятин без покраски PDR',
                 additionalCost: 0,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-19'
             },
             {
                 additionalId: 20,
                 additionalTitle: 'Озонація',
                 additionalCost: 1000,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-20'
             },
             {
                 additionalId: 21,
                 additionalTitle: 'Очистка кондиціонера',
                 additionalCost: 1200,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-21'
             },
             {
                 additionalId: 22,
                 additionalTitle: 'Чистка дисків',
                 additionalCost: 250,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 perItem: true,
                 additionalClass: 'service-22'
             },
@@ -197,6 +212,8 @@ let app = new Vue({
                 additionalId: 23,
                 additionalTitle: 'Керамічне покриття сидінь',
                 additionalCost: 500,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 perItem: true,
                 additionalClass: 'service-23'
             },
@@ -204,6 +221,8 @@ let app = new Vue({
                 additionalId: 24,
                 additionalTitle: 'Озонація',
                 additionalCost: 1000,
+                additionalCostVar1: 0,
+                additionalCostVar2: 0,
                 additionalClass: 'service-24'
             }
         ]
