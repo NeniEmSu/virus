@@ -173,12 +173,13 @@
 
 
 
-                <form class="choose-brand">
+                <form class="choose-brand" :class="{hideMe:selected  !== undefined}">
                     <h3 class="col-12 red">Оберіть категорію автомобіля</h3>
                     <p class="col-12 choose-brand-desc">Введіть можель свого авто для визначення категорії
                     </p>
 
-                    <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}">
+                    <div class="form-group w-50 mx-auto">
+                        <!-- <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}"> -->
                         <label hidden for="brand">Марка</label>
                         <select id="brand" aria-describedby="brand" class="form-control brand">
                             <option>Марка</option>
@@ -189,7 +190,8 @@
                     </div>
 
 
-                    <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}">
+                    <div class="form-group w-50 mx-auto">
+                        <!-- <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}"> -->
                         <label hidden for="model">Модель</label>
                         <select id="model" aria-describedby="model" class="form-control model">
                             <option>Модель</option>
@@ -199,10 +201,12 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn" :class="{hideMe:selected  !== undefined}">Вибрати
+                    <!-- <button type="submit" class="btn" :class="{hideMe:selected  !== undefined}">Вибрати
+                        </i></button> -->
+                    <button type="submit" class="btn">Вибрати
                         </i></button>
-                    <button type="submit" class="btn" @click.prevent="selected = undefined"
-                        :class="{hideMe:selected  == undefined}">Іншу категорія</i></button>
+                    <!-- <button type="submit" class="btn" @click.prevent="selected = undefined"
+                        :class="{hideMe:selected  == undefined}">Іншу категорія</i></button> -->
                 </form>
 
             </div>
