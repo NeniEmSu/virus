@@ -127,8 +127,21 @@
         -o-transition: ease-in-out 300ms;
     }
 
+
     select.brand,
     select.model {
+        -webkit-appearance: none;
+        -o-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+
+        background-image: url(../img/servicesSelect.png);
+        background-position: 95% center;
+        background-repeat: no-repeat;
+
+        cursor: pointer;
+
         height: 48px;
         margin-top: 20px;
         border: 2px solid #E5E5E5;

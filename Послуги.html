@@ -161,7 +161,7 @@
 
                 <div class="row car-toggle">
 
-                    <div class="col-md-4 m-auto" v-for=" variant in variants" :key="variant.variantId">
+                    <div class="col-md-2 m-auto" v-for=" variant in variants" :key="variant.variantId">
                         <a href="#" class="btn"
                             @click.prevent="changeCars(variant.variantImage), selected  = variant.variantId "
                             :class="{activeBtn:selected  == variant.variantId}">{{ variant.variantTitle }}</a>
@@ -178,7 +178,7 @@
                     <p class="col-12 choose-brand-desc">Введіть можель свого авто для визначення категорії
                     </p>
 
-                    <div class="form-group w-50 mx-auto">
+                    <div class="form-group w-25 mx-auto">
                         <!-- <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}"> -->
                         <label hidden for="brand">Марка</label>
                         <select id="brand" aria-describedby="brand" class="form-control brand">
@@ -190,7 +190,7 @@
                     </div>
 
 
-                    <div class="form-group w-50 mx-auto">
+                    <div class="form-group w-25 mx-auto">
                         <!-- <div class="form-group w-50 mx-auto" :class="{hideMe:selected  !== undefined}"> -->
                         <label hidden for="model">Модель</label>
                         <select id="model" aria-describedby="model" class="form-control model">
