@@ -230,11 +230,7 @@ let app = new Vue({
     },
     methods: {
         changeCars(variantImage) {
-            // if (selected = undefined) {
-            this.image = variantImage;
-            // } else {
-            //     this.image;
-            // }
+            setTimeout(() => this.image = variantImage, 500);
         }
     }
 })
