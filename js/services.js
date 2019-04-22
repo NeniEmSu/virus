@@ -230,11 +230,11 @@ let app = new Vue({
     },
     methods: {
         changeCars(variantImage) {
-            if (selected = undefined) {
-                this.image = variantImage;
-            } else {
-                this.image;
-            }
+            // if (selected = undefined) {
+            this.image = variantImage;
+            // } else {
+            //     this.image;
+            // }
         }
     }
 })
