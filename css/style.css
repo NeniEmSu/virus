@@ -1538,15 +1538,26 @@ footer {
   opacity: 0.6;
   border: 1px solid #000000; }
 
-#promotions-page .btn {
+#promotions-page .display .btn {
+  background: #D41F26;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 50px;
   transition: ease-in-out 300ms;
   -webkit-transition: ease-in-out 300ms;
   -moz-transition: ease-in-out 300ms;
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
 
-#promotions-page .btn:hover,
-#promotions-page .btn.active {
+#promotions-page .display .btn:hover,
+#promotions-page .display .btn.active {
   color: #D41F26;
   background-color: #FFFFFF;
   transform: scale(1.1);
@@ -2071,6 +2082,32 @@ footer {
   background-color: #000000;
   margin-top: 40px;
   margin-bottom: 40px; }
+  #blog .display .btn {
+    background: #D41F26;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 50px;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms; }
+  #blog .display .btn:hover,
+  #blog .display .btn.active {
+    color: #D41F26;
+    background-color: #FFFFFF;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1); }
 
 #blog h2 {
   font-family: "Roboto", sans-serif;

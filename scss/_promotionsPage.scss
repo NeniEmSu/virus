@@ -93,24 +93,40 @@
         border: 1px solid $darkColor;
     }
 
-    .btn {
-        transition: ease-in-out 300ms;
-        -webkit-transition: ease-in-out 300ms;
-        -moz-transition: ease-in-out 300ms;
-        -ms-transition: ease-in-out 300ms;
-        -o-transition: ease-in-out 300ms;
-    }
+    .display {
+        .btn {
+            background: $redColor;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+            border-radius: 50px;
+
+            font-family: $secondaryFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+            text-align: center;
+
+            color: $lightColor;
+            padding: 12px 50px;
+
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
+        }
 
 
-    .btn:hover,
-    .btn.active {
-        color: $redColor;
-        background-color: $lightColor;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
+        .btn:hover,
+        .btn.active {
+            color: $redColor;
+            background-color: $lightColor;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
     }
 
 }
