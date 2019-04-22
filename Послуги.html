@@ -271,7 +271,7 @@
                                     <div class="row">
 
                                         <div class="col-6 pr-0">
-                                            <p class="" v-if="selected == 1">
+                                            <p class="" v-show="selected == 1">
                                                 <small>від
 
                                                 </small>
@@ -280,7 +280,7 @@
                                                     грн
                                                 </small>
                                             </p>
-                                            <p class="" v-else-if="selected == 2">
+                                            <p class="" v-show="selected == 2">
                                                 <small>від
 
                                                 </small>
@@ -289,7 +289,7 @@
                                                     грн
                                                 </small>
                                             </p>
-                                            <p class="" v-else>
+                                            <p class="" v-show="selected == 3">
                                                 <small>від
 
                                                 </small>
@@ -325,7 +325,7 @@
                                             <h5>{{ WaxCover.WaxCoversTitle }}</h5>
                                             <div class="row">
                                                 <div class="col-6 pr-0">
-                                                    <p class="" v-if="selected == 1">
+                                                    <p class="" v-show="selected == 1">
                                                         <small>від
 
                                                         </small>
@@ -334,7 +334,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else-if="selected == 2">
+                                                    <p class="" v-show="selected == 2">
                                                         <small>від
 
                                                         </small>
@@ -343,7 +343,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else>
+                                                    <p class="" v-show="selected == 3">
                                                         <small>від
 
                                                         </small>
@@ -405,7 +405,7 @@
                                             <div class="row">
 
                                                 <div class="col-6 col-md-8 text-lg-right pr-0">
-                                                    <p class="" v-if="selected == 1">
+                                                    <p class="" v-show="selected == 1">
                                                         <small>від
 
                                                         </small>
@@ -414,7 +414,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else-if="selected == 2">
+                                                    <p class="" v-show="selected == 2">
                                                         <small>від
 
                                                         </small>
@@ -423,7 +423,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else>
+                                                    <p class="" v-show="selected == 3">
                                                         <small>від
 
                                                         </small>
@@ -480,7 +480,7 @@
                                             <div class="row">
 
                                                 <div class="col-6 col-md-8 text-lg-right pr-0">
-                                                    <p class="" v-if="selected == 1">
+                                                    <p class="" v-show="selected == 1">
                                                         <small>від
 
                                                         </small>
@@ -489,7 +489,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else-if="selected == 2">
+                                                    <p class="" v-show="selected == 2">
                                                         <small>від
 
                                                         </small>
@@ -498,7 +498,7 @@
                                                             грн
                                                         </small>
                                                     </p>
-                                                    <p class="" v-else>
+                                                    <p class="" v-show="selected == 3">
                                                         <small>від
 
                                                         </small>
@@ -537,7 +537,7 @@
                                     <div class="card-end">
                                         <h5>{{ addition.additionalTitle }}</h5>
                                         <div class="row">
-                                            <div class="col-6" v-if="selected == 1">
+                                            <div class="col-6" v-show="selected == 1">
                                                 <p v-show="!addition.fixedRange">
                                                     <small v-show="!addition.perItem">
                                                         від
@@ -574,7 +574,7 @@
                                                     </small>
                                                 </p>
                                             </div>
-                                            <div class="col-6" v-else-if="selected == 2">
+                                            <div class="col-6" v-show="selected == 2">
                                                 <p v-show="!addition.fixedRange">
                                                     <small v-show="!addition.perItem">
                                                         від
@@ -611,7 +611,7 @@
                                                     </small>
                                                 </p>
                                             </div>
-                                            <div class="col-6" v-else>
+                                            <div class="col-6" v-show="selected == 3">
                                                 <p v-show="!addition.fixedRange">
                                                     <small v-show="!addition.perItem">
                                                         від
