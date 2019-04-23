@@ -146,3 +146,24 @@ li {
     background-position: center;
     background-size: cover;
 }
+
+.video-placeholder-3 {
+    background-image: url(../img/services2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-placeholder-4 {
+    background-image: url(../img/services4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-placeholder-5 {
+    background-image: url(../img/Блог2-small..png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
