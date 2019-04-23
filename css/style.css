@@ -413,7 +413,7 @@ nav ul li a {
 
 main {
   position: relative;
-  margin-top: 183px; }
+  margin-top: 140px; }
   main .top-grid a h2 {
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -1622,7 +1622,7 @@ footer {
     margin: auto; }
 
 #shop .shop-heading-image {
-  margin-top: -53px;
+  margin-top: -10px;
   margin-bottom: 40px;
   background: #000000;
   background-image: url(../img/shopPageHeadImg.png);
@@ -2158,7 +2158,7 @@ footer {
   border: 1px solid #000000; }
 
 .aboutUs-heading-image {
-  margin-top: -53.5px;
+  margin-top: -10.5px;
   background: #FFFFFF;
   background-image: url(../img/aboutUsHead.png) !important;
   background-repeat: no-repeat;
@@ -2179,7 +2179,7 @@ video {
   padding-bottom: 40px; }
 
 .contact-heading-image {
-  margin-top: -53.5px;
+  margin-top: -10.5px;
   background: #000000;
   background-image: url(../img/contactPageHeadImg.png) !important;
   background-repeat: no-repeat;
