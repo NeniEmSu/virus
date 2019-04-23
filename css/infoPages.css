@@ -1,3 +1,13 @@
+h1.info-pages {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: normal;
+
+    color: #8B8B8B;
+}
+
 h2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -11,6 +21,26 @@ h2 {
 .red {
     text-align: center;
     color: #D41F26;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+
+    color: #000000;
+}
+
+li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000000;
 }
 
 .before,
@@ -111,7 +141,8 @@ h2 {
 }
 
 .video-placeholder-2 {
-    background-image: url(../img/Блог2-small.png);
+    background-image: url(../img/services3.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
