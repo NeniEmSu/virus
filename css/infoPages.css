@@ -1,0 +1,117 @@
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #8B8B8B;
+}
+
+.red {
+    text-align: center;
+    color: #D41F26;
+}
+
+.before,
+.after {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+
+    color: #F2F2F2;
+}
+
+.pricing {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: normal;
+
+    color: #8B8B8B;
+}
+
+.active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: normal;
+
+    color: #D41F26;
+}
+
+
+.btn.category-selector {
+    padding: 7px 23px;
+    background-color: transparent;
+    border-radius: 50px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+
+    color: #000000;
+    line-height: normal;
+    text-align: center;
+    border: 1px solid #D41F26;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+    -webkit-transition: ease-in-out 300ms;
+    -moz-transition: ease-in-out 300ms;
+    -ms-transition: ease-in-out 300ms;
+    -o-transition: ease-in-out 300ms;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn.category-selector.btn:hover {
+    color: #FFFFFF;
+    background-color: #D41F26;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.btn.category-selector.activeBtn {
+    color: #FFFFFF;
+    background-color: #D41F26;
+    box-shadow: none;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.service-time-image {
+    background: #000000;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+    height: 300px;
+}
+
+.service-time-image hr {
+    border: 1px solid #F2F2F2;
+    transform: rotate(90deg);
+}
+
+.video-placeholder-1 {
+    background-image: url(../img/Блог2-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-placeholder-2 {
+    background-image: url(../img/Блог2-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
