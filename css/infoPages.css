@@ -6,6 +6,7 @@ h1.info-pages {
     line-height: normal;
 
     color: #8B8B8B;
+    margin-top: 10px;
 }
 
 h2 {
@@ -132,6 +133,9 @@ li {
 .service-time-image hr {
     border: 1px solid #F2F2F2;
     transform: rotate(90deg);
+}
+video{
+    margin-bottom: 40px;
 }
 
 .video-placeholder-1 {
