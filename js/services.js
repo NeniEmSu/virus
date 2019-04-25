@@ -60,7 +60,7 @@ let app = new Vue({
                 polishingCost: 800,
                 polishingCostVar1: 900,
                 polishingCostVar2: 1000,
-                 polishingLink: 'Центральністійки',
+                polishingLink: 'Центральністійки',
                 polishingClass: 'service-four'
             }
         ],
@@ -70,7 +70,7 @@ let app = new Vue({
                 cleanersCost: 1999,
                 cleanersCostVar1: 2499,
                 cleanersCostVar2: 3199,
-               cleanersLink: 'Хімчистка',
+                cleanersLink: 'Хімчистка',
                 cleanersClass: 'service-five'
 
             },
@@ -80,7 +80,7 @@ let app = new Vue({
                 cleanersCost: 800,
                 cleanersCostVar1: 700,
                 cleanersCostVar2: 800,
-               cleanersLink: 'Колісніарки',
+                cleanersLink: 'Колісніарки',
                 cleanersClass: 'service-six'
             },
             {
@@ -89,7 +89,7 @@ let app = new Vue({
                 cleanersCost: 275,
                 cleanersCostVar1: 330,
                 cleanersCostVar2: 385,
-               cleanersLink: 'передніхсидінь',
+                cleanersLink: 'передніхсидінь',
                 cleanersClass: 'service-seven'
             }, {
                 cleanersId: 08,
@@ -97,7 +97,7 @@ let app = new Vue({
                 cleanersCost: 495,
                 cleanersCostVar1: 605,
                 cleanersCostVar2: 660,
-               cleanersLink: 'задніхсидінь',
+                cleanersLink: 'задніхсидінь',
                 cleanersClass: 'service-eight'
             }
         ],
@@ -117,7 +117,7 @@ let app = new Vue({
                 WaxCoversCost: 3000,
                 WaxCoversCostVar1: 0,
                 WaxCoversCostVar2: 0,
-               WaxCoversLink: 'Рідкескло',
+                WaxCoversLink: 'Рідкескло',
                 WaxCoversClass: 'service-ten'
             }
 
@@ -125,7 +125,7 @@ let app = new Vue({
         ceramicCoating: [{
             ceramicCoatingId: 11,
             ceramicCoatingCost: 12999,
-            ceramicCoatingCostVar1: 14499, 
+            ceramicCoatingCostVar1: 14499,
             ceramicCoatingCostVar2: 15999,
             ceramicCoatingLink: 'Керамічнепокриття'
         }],
@@ -152,7 +152,8 @@ let app = new Vue({
                 additionalTitle: 'Перешиття шкіряних деталей салону',
                 additionalCost: 500,
                 additionalCostHigh: 3000,
-                fixedRange: true,additionalLink: 'Перешиття ',
+                fixedRange: true,
+                additionalLink: 'Перешиття ',
                 additionalClass: 'service-14'
             },
             {
@@ -225,7 +226,8 @@ let app = new Vue({
                 additionalCost: 250,
                 additionalCostVar1: 0,
                 additionalCostVar2: 0,
-                perItem: true,additionalLink: 'ЧИСТКАДИСКІВ',
+                perItem: true,
+                additionalLink: 'ЧИСТКАДИСКІВ',
                 additionalClass: 'service-22'
             },
             {
@@ -234,7 +236,8 @@ let app = new Vue({
                 additionalCost: 500,
                 additionalCostVar1: 0,
                 additionalCostVar2: 0,
-                perItem: true,additionalLink: 'КЕРАМІЧНЕПОКРИТТЯСИДІНЬ',
+                perItem: true,
+                additionalLink: 'КЕРАМІЧНЕПОКРИТТЯСИДІНЬ',
                 additionalClass: 'service-23'
             },
             {
@@ -242,7 +245,8 @@ let app = new Vue({
                 additionalTitle: 'Озонація',
                 additionalCost: 1000,
                 additionalCostVar1: 0,
-                additionalCostVar2: 0,additionalLink: 'ОЗОНУВАННЯ',
+                additionalCostVar2: 0,
+                additionalLink: 'Озонація',
                 additionalClass: 'service-24'
             }
         ]
