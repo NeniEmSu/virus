@@ -78,8 +78,8 @@ let app = new Vue({
                 cleanersId: 06,
                 cleanersTitle: 'Хімчистка колесних арок, підвіски, дисків',
                 cleanersCost: 800,
-                cleanersCostVar1: 700,
-                cleanersCostVar2: 800,
+                cleanersCostVar1: 0,
+                cleanersCostVar2: 0,
                 cleanersLink: 'Колісніарки',
                 cleanersClass: 'service-six'
             },
