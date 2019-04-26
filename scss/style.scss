@@ -161,7 +161,8 @@ header {
             }
         }
 
-        ul li a {
+        ul li a,
+        img {
             padding: 0;
             margin: 0;
             text-decoration: none;
@@ -650,14 +651,14 @@ main {
 
 
             &:hover {
-                opacity: 0.9;
+                opacity: 0.99;
                 text-decoration: none;
                 color: $redColor;
-                transform: scale(1.02);
-                -webkit-transform: scale(1.02);
-                -moz-transform: scale(1.02);
-                -ms-transform: scale(1.02);
-                -o-transform: scale(1.02);
+                transform: scale(1.01);
+                -webkit-transform: scale(1.01);
+                -moz-transform: scale(1.01);
+                -ms-transform: scale(1.01);
+                -o-transform: scale(1.01);
                 color: $redColor;
             }
 
@@ -1370,7 +1371,8 @@ footer {
         line-height: 20px;
     }
 
-    a {
+    a,
+    img {
         text-decoration: none;
         transition: ease-in-out 300ms;
         -webkit-transition: ease-in-out 300ms;
