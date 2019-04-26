@@ -363,20 +363,10 @@ nav ul {
   overflow: hidden;
   padding: 0;
   text-align: right;
-  margin: 0;
-  transition: all ease-in-out 1000ms;
-  -webkit-transition: all ease-in-out 1000ms;
-  -moz-transition: all ease-in-out 1000ms;
-  -ms-transition: all ease-in-out 1000ms;
-  -o-transition: all ease-in-out 1000ms; }
+  margin: 0; }
 
 nav ul li {
-  display: inline-block;
-  transition: all ease-in-out 1000ms;
-  -webkit-transition: all ease-in-out 1000ms;
-  -moz-transition: all ease-in-out 1000ms;
-  -ms-transition: all ease-in-out 1000ms;
-  -o-transition: all ease-in-out 1000ms; }
+  display: inline-block; }
 
 nav ul li a {
   text-decoration: none;
@@ -2247,12 +2237,22 @@ video {
     position: absolute;
     margin-top: -35px; }
   nav ul {
-    max-height: 0px; }
+    max-height: 0px;
+    transition: linear 250ms;
+    -webkit-transition: linear 250ms;
+    -moz-transition: linear 250ms;
+    -ms-transition: linear 250ms;
+    -o-transition: linear 250ms; }
   .showing {
     position: relative;
     z-index: 99;
     max-height: 34em;
-    background: #000000; }
+    background: #000000;
+    transition: all ease-in-out 1000ms;
+    -webkit-transition: all ease-in-out 1000ms;
+    -moz-transition: all ease-in-out 1000ms;
+    -ms-transition: all ease-in-out 1000ms;
+    -o-transition: all ease-in-out 1000ms; }
   nav ul li {
     box-sizing: border-box;
     width: 100%;
