@@ -92,6 +92,11 @@ header {
     height: 40px;
     margin: 0;
     padding: 0; }
+    header .top-contacts i {
+      font-size: 20px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      line-height: 20px; }
     header .top-contacts ul {
       list-style: none;
       overflow: hidden;
@@ -403,7 +408,9 @@ nav ul li a {
 
 main {
   position: relative;
-  margin-top: 140px; }
+  margin-top: 140px;
+  min-height: 80vh;
+  height: 100%; }
   main .top-grid a h2 {
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -951,6 +958,11 @@ footer {
   width: 100vw;
   background: #000000;
   color: #FFFFFF; }
+  footer i {
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 20px; }
   footer a {
     text-decoration: none;
     transition: ease-in-out 300ms;
@@ -1742,7 +1754,10 @@ footer {
   margin-bottom: 40px; }
 
 #shop .sales-cards #store-items .card {
-  height: 343px;
+  height: 350px;
+  min-width: 250px;
+  max-width: 300px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
@@ -1752,12 +1767,12 @@ footer {
     align-self: center;
     width: 100%;
     height: auto;
-    min-height: 200px;
+    min-height: 150px;
     object-fit: scale-down; }
     #shop .sales-cards #store-items .card img.small-img {
       width: 100%;
       height: auto;
-      min-height: 200px;
+      min-height: 150px;
       object-fit: scale-down; }
   #shop .sales-cards #store-items .card hr {
     width: 90%;
@@ -1801,8 +1816,7 @@ footer {
     font-weight: normal;
     font-size: 14px;
     line-height: normal;
-    color: #239A0F;
-    margin-right: 22px; }
+    color: #239A0F; }
   #shop .sales-cards #store-items .card .btn {
     padding: 7px 24px;
     background: #D41F26;
@@ -2949,7 +2963,6 @@ video {
       margin-left: 18px; }
   .top-contacts ul li {
     display: inline-block;
-    padding: 11px 10px !important;
     margin: 0;
     line-height: 40px; }
   .contact .card {

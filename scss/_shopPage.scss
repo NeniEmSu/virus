@@ -205,7 +205,10 @@
         #store-items {
 
             .card {
-                height: 343px;
+                height: 350px;
+                min-width: 250px;
+                max-width: 300px;
+                width: 100%;
                 background: $lightColor;
                 box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
                 border-radius: 20px;
@@ -216,13 +219,13 @@
                     align-self: center;
                     width: 100%;
                     height: auto;
-                    min-height: 200px;
+                    min-height: 150px;
                     object-fit: scale-down;
 
                     &.small-img {
                         width: 100%;
                         height: auto;
-                        min-height: 200px;
+                        min-height: 150px;
                         object-fit: scale-down;
                     }
                 }
@@ -282,7 +285,6 @@
                     font-size: 14px;
                     line-height: normal;
                     color: #239A0F;
-                    margin-right: 22px;
                 }
 
                 .btn {

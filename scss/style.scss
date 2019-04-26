@@ -131,6 +131,13 @@ header {
         margin: 0;
         padding: 0;
 
+        i {
+            font-size: 20px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            line-height: 20px;
+        }
+
         ul {
             list-style: none;
             overflow: hidden;
@@ -605,6 +612,8 @@ nav ul li a {
 main {
     position: relative;
     margin-top: 140px;
+    min-height: 80vh;
+    height: 100%;
 
     .top-grid {
 
@@ -1353,6 +1362,13 @@ footer {
     width: 100vw;
     background: $darkColor;
     color: $lightColor;
+
+    i {
+        font-size: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        line-height: 20px;
+    }
 
     a {
         text-decoration: none;
