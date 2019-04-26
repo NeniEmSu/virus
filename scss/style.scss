@@ -617,8 +617,15 @@ main {
     height: 100%;
 
     .top-grid {
+        h2 a {
+            color: $lightColor;
+        }
 
-        a h2 {
+        a[rel="bookmark"]:hover+.meta * {
+            color: $redColor;
+        }
+
+        h2 a {
             transition: all ease-in-out 300ms;
             -webkit-transition: all ease-in-out 300ms;
             -moz-transition: all ease-in-out 300ms;
@@ -637,6 +644,14 @@ main {
                 -o-transform: scale(1.02);
                 color: $redColor;
             }
+        }
+
+        .top1 {
+            margin-left: -300px;
+        }
+
+        .top2 {
+            margin-left: -250px;
         }
 
         a img {
@@ -671,6 +686,8 @@ main {
                 -ms-border-radius: 20px 0 0 0;
                 -o-border-radius: 20px 0 0 0;
             }
+
+
 
             &.two {
                 width: 780.1px;
