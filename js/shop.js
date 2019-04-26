@@ -1,4 +1,4 @@
-let app = new Vue({
+var app = new Vue({
     el: '#app',
     data: {
         cart: 0
@@ -8,4 +8,4 @@ let app = new Vue({
             this.cart += 1;
         }
     }
-})
+});
