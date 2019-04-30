@@ -625,7 +625,7 @@ main {
             color: $redColor;
         }
 
-        h2 a {
+       a h2  {
             transition: all ease-in-out 300ms;
             -webkit-transition: all ease-in-out 300ms;
             -moz-transition: all ease-in-out 300ms;
@@ -644,14 +644,6 @@ main {
                 -o-transform: scale(1.02);
                 color: $redColor;
             }
-        }
-
-        .top1 {
-            margin-left: -300px;
-        }
-
-        .top2 {
-            margin-left: -250px;
         }
 
         a img {
