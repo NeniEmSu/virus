@@ -1903,6 +1903,7 @@ footer {
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
   #shop .sales-cards .btn:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
     color: #D41F26;
     background: #FFFFFF;
     transform: scale(1.1);

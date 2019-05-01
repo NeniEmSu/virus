@@ -380,6 +380,7 @@
             -o-transition: ease-in-out 300ms;
 
             &:hover {
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
                 color: $redColor;
                 background: $lightColor;
                 transform: scale(1.1);
