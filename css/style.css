@@ -1667,7 +1667,7 @@ footer {
   border-radius: 50px;
   margin: 10px auto;
   background-color: #FFFFFF;
-  width: 180px;
+  width: 90%;
   height: 38px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1708,6 +1708,7 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  width: 90%;
   color: #8B8B8B;
   display: none;
   overflow: hidden;
@@ -1723,7 +1724,7 @@ footer {
     text-decoration: none;
     text-align: left;
     padding: 3px 0px 3px 10px;
-    margin: 5px auto;
+    margin: 5px 0 5px 20px;
     outline: none;
     box-shadow: none;
     border-radius: 20px; }
@@ -1733,7 +1734,7 @@ footer {
     background: #E5E5E5;
     border-radius: 20px;
     padding: 3px 0px 3px 10px;
-    margin: 5px auto; }
+    margin: 5px 0 5px 20px; }
 
 #shop .sales-cards .btn {
   text-decoration: none;
@@ -1763,7 +1764,7 @@ footer {
 
 #shop .sales-cards #store-items .card {
   height: 350px;
-  min-width: 250px;
+  min-width: 240px;
   max-width: 300px;
   width: 100%;
   background: #FFFFFF;
