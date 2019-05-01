@@ -1043,6 +1043,31 @@
 
     }
 
+    #shop {
+
+        .shop-heading-image {
+
+
+            h1 {
+                font-size: 25px;
+                line-height: 150px;
+
+                color: $lightColor;
+
+
+                span {
+                    font-family: $mainFont;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 60px;
+                    line-height: 150px;
+
+                    color: $redColor;
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -1358,6 +1383,26 @@
         }
     }
 
+    #shop {
+
+        .shop-heading-image {
+            h1 {
+                font-size: 20px;
+                line-height: 150px;
+
+                color: $lightColor;
+
+
+                span {
+                    font-size: 60px;
+                    line-height: 150px;
+
+                    color: $redColor;
+                }
+            }
+        }
+    }
+
 }
 
 @include mediaXSm {
@@ -1473,6 +1518,26 @@
             color: $lightColor !important;
         }
 
+    }
+
+    #shop {
+
+        .shop-heading-image {
+            h1 {
+                font-size: 20px;
+                line-height: 150px;
+
+                color: $lightColor;
+
+
+                span {
+                    font-size: 40px;
+                    line-height: 150px;
+
+                    color: $redColor;
+                }
+            }
+        }
     }
 }
 
@@ -1658,6 +1723,26 @@
                             padding: 6px 8px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    #shop {
+
+        .shop-heading-image {
+            h1 {
+                font-size: 18px;
+                line-height: 150px;
+
+                color: $lightColor;
+
+
+                span {
+                    font-size: 35px;
+                    line-height: 150px;
+
+                    color: $redColor;
                 }
             }
         }

@@ -1639,7 +1639,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 150px; }
   #shop .shop-heading-image h1 {
     font-family: "Roboto", sans-serif;
@@ -2935,7 +2935,18 @@ video {
     color: #FFFFFF !important; }
   #blog .display-inner {
     background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(5px); } }
+    backdrop-filter: blur(5px); }
+  #shop .shop-heading-image h1 {
+    font-size: 25px;
+    line-height: 150px;
+    color: #FFFFFF; }
+    #shop .shop-heading-image h1 span {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 150px;
+      color: #D41F26; } }
 
 @media screen and (max-width: 500px) {
   .hide,
@@ -3151,7 +3162,15 @@ video {
     background-origin: padding-box;
     height: 100%; }
   footer .logo img {
-    margin-left: calc(100vw - 70vw); } }
+    margin-left: calc(100vw - 70vw); }
+  #shop .shop-heading-image h1 {
+    font-size: 20px;
+    line-height: 150px;
+    color: #FFFFFF; }
+    #shop .shop-heading-image h1 span {
+      font-size: 60px;
+      line-height: 150px;
+      color: #D41F26; } }
 
 @media screen and (max-width: 414px) {
   .jumbotron {
@@ -3222,7 +3241,15 @@ video {
     font-size: 28px !important;
     line-height: normal;
     letter-spacing: 0;
-    color: #FFFFFF !important; } }
+    color: #FFFFFF !important; }
+  #shop .shop-heading-image h1 {
+    font-size: 20px;
+    line-height: 150px;
+    color: #FFFFFF; }
+    #shop .shop-heading-image h1 span {
+      font-size: 40px;
+      line-height: 150px;
+      color: #D41F26; } }
 
 @media screen and (max-width: 360px) {
   .contact .card form {
@@ -3350,4 +3377,12 @@ video {
     background-color: transparent;
     border: #D41F26 1px solid;
     color: #FFFFFF;
-    padding: 6px 8px; } }
+    padding: 6px 8px; }
+  #shop .shop-heading-image h1 {
+    font-size: 18px;
+    line-height: 150px;
+    color: #FFFFFF; }
+    #shop .shop-heading-image h1 span {
+      font-size: 35px;
+      line-height: 150px;
+      color: #D41F26; } }
