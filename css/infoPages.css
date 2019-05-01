@@ -22,11 +22,6 @@ h1.info-pages {
 }
 
 #info-page .red {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-align: left !important;
     color: #D41F26;
 }
 
@@ -201,4 +196,13 @@ h1.info-pages {
     align-items: center;
 
     color: #000000;
+}
+
+#info-page .contact h3,
+#info-page .contact h3 span.red {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
 }
